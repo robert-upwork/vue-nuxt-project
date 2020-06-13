@@ -1,6 +1,8 @@
 <template>
   <header-layout>
-    <privacy-policy></privacy-policy>
+    <no-ssr>
+      <privacy-policy></privacy-policy>
+    </no-ssr>
   </header-layout>
 </template>
 

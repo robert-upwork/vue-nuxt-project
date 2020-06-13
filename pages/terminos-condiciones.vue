@@ -1,6 +1,8 @@
 <template>
   <header-layout>
-    <terms-conditions></terms-conditions>
+    <no-ssr>
+      <terms-conditions></terms-conditions>
+    </no-ssr>
   </header-layout>
 </template>
 

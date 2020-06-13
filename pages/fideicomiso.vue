@@ -1,6 +1,8 @@
 <template>
   <header-layout>
-    <fiduciary-corporation></fiduciary-corporation>
+    <no-ssr>
+      <fiduciary-corporation></fiduciary-corporation>
+    </no-ssr>
   </header-layout>
 </template>
 

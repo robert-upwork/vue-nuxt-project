@@ -1,6 +1,8 @@
 <template>
   <header-layout>
+      <no-ssr>
     <blog></blog>
+    </no-ssr>
   </header-layout>
 </template>
 

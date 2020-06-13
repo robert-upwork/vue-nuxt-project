@@ -1,6 +1,8 @@
 <template>
   <header-layout>
-    <reclamation-book></reclamation-book>
+    <no-ssr>
+      <reclamation-book></reclamation-book>
+    </no-ssr>
   </header-layout>
 </template>
 

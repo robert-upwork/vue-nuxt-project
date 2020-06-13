@@ -1,6 +1,8 @@
 <template>
   <header-layout>
+    <no-ssr>
     <firbid></firbid>
+    </no-ssr>
   </header-layout>
 </template>
 
