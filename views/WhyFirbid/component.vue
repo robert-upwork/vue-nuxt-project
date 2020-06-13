@@ -4,13 +4,13 @@
 <script>
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
-import carousel from 'vue-owl-carousel'
+// import carousel from 'vue-owl-carousel'
 import $ from 'jquery'
 
 export default {
-  components: {
-    "new-carousel": carousel
-  },
+  // components: {
+  //   "new-carousel": carousel
+  // },
   data() {
     return {
       dialogVisible: false

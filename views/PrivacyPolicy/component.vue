@@ -4,8 +4,12 @@
 <script>
 import politicas from "../../constants/politicasdeprivacidad.json";
 import $ from 'jquery'
+import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
 
 export default {
+  components: {
+     VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+  },
   data() {
     return {
       politicas: politicas,

@@ -2,7 +2,12 @@
 <template src="./template.html"></template>
 
 <script>
+import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
+
 export default {
+  components: {
+    VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+  },
   data() {
     return {
       dialogVisible: false

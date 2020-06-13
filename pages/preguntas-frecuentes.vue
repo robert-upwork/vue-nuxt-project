@@ -1,9 +1,9 @@
 <template>
-  <header-layout>
     <no-ssr>
+  <header-layout>
       <frequent-questions></frequent-questions>
-    </no-ssr>
   </header-layout>
+    </no-ssr>
 </template>
 
 <script>

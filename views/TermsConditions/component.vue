@@ -4,8 +4,16 @@
 <script>
 import terminos from "../../constants/terminosycondiciones.json";
 import $ from 'jquery'
+// import { ElSelect, ElOption } from 'element-ui';
+import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
 
 export default {
+  // components: {
+  //  ElSelect, ElOption
+  // },
+   components: {
+    VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+  },
   data() {
     return {
       terminos: terminos,
@@ -18,7 +26,6 @@ export default {
       nav.classList.toggle("nav-active");
     },
     scrolling(id) {
-          console.log(id);
           const nav = document.getElementById(id);
           $('.slider').click(function(){
 

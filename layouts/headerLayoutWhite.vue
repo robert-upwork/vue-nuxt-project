@@ -205,7 +205,6 @@ export default {
   
   methods: {
     navSlide() {
-      console.log("Mostrando o ocultando menu:", this.showMenu)
       if(!this.showMenu)
         this.showMenu =  true;
       else{

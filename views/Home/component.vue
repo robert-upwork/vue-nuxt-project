@@ -8,7 +8,9 @@
   import sal from "sal.js";
   import FormatData from "../../helpers/formatData";
   import $ from 'jquery'
-  
+  import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
+
+
   const changeTypeForm = {
     exchange_type: {
       ask: "-.----",
@@ -20,7 +22,8 @@
   export default {
     components: {
       "carousel-3d": Carousel3d,
-      "slide-3d": Slide
+      "slide-3d": Slide,
+      VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
     },
     data() {
       return {

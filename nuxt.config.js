@@ -6,7 +6,13 @@ export default {
   ** Headers of the page
   */
   head: {
-    // script: [{ src: 'jquery.min.js', ssr: false }],
+    script: [
+      { src: 'jquery.min.js', ssr: false },
+      { src: '//code.tidio.co/3mka6fxk3h32dwizitkjv4jlvkmz0ip7.js'},
+      { src: 'https://unpkg.com/element-ui/lib/index.js'},
+      { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'},
+      { src: 'https://www.googletagmanager.com/gtag/js?id=UA-158853923-1'},
+    ],
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -31,9 +37,10 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/element-ui', ssr: false },
+    { src: '~/plugins/element-ui', mode: 'client', ssr: false },
     { src: '~/plugins/jquery', ssr: false },
-    { src: '~/plugins/vuetify', ssr: false },
+    { src: '~/plugins/vuetify', mode: 'client', ssr: false },
+    { src: '~/plugins/vue-carousel', mode: 'client', ssr: false },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,8 +54,13 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    "bootstrap-vue/nuxt",
   ],
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
