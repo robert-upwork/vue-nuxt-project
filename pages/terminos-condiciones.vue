@@ -12,11 +12,17 @@ export default {
     "header-layout": HeaderLayout,
     "terms-conditions": TermsConditions
   },
-  metaInfo: {
-    title: 'Términos y Condiciones | FIRBID',
-    meta: [
-        {name: 'description', content:'Conoce los términos y condiciones de todas tus operaciones de subasta de dólares.'}
-    ]
+  head() {
+    return {
+      title: "Términos y Condiciones | FIRBID",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Conoce los términos y condiciones de todas tus operaciones de subasta de dólares."
+        }
+      ]
+    };
   }
 };
 </script>

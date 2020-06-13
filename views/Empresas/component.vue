@@ -3,10 +3,12 @@
 
 <script>
 /* eslint-disable */
+
 import blog from "../../services/blog";
 import ChangeType from "../../services/changeType";
 import {Carousel3d, Slide} from "vue-carousel-3d"
 import FormatData from "../../helpers/formatData";
+import $ from 'jquery'
 
 const changeTypeForm = {
   exchange_type: {

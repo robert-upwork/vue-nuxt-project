@@ -3,6 +3,8 @@
 
 <script>
 import terminos from "../../constants/terminosycondiciones.json";
+import $ from 'jquery'
+
 export default {
   data() {
     return {

@@ -7,7 +7,8 @@
   import { Carousel3d, Slide } from "vue-carousel-3d";
   import sal from "sal.js";
   import FormatData from "../../helpers/formatData";
-
+  import $ from 'jquery'
+  
   const changeTypeForm = {
     exchange_type: {
       ask: "-.----",
@@ -62,10 +63,14 @@
         img_default: "https://res.cloudinary.com/firbix/image/upload/v1587480854/LandingPage/xaiax7maltovouzzrdv6.png"
       };
     },
-    async created() {
-      await this.getPosts();
-      await this.pagging();
+    asyncData() {
+      this.getPosts();
+      this.pagging();
     },
+    // async created() {
+    //   await this.getPosts();
+    //   await this.pagging();
+    // },
     mounted() {
       $(document).ready(() => {
         console.log("DDDD")

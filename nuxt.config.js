@@ -6,7 +6,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    script: [{src: 'jquery.min.js', ssr: false}],
+    // script: [{ src: 'jquery.min.js', ssr: false }],
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -31,8 +31,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui',
-    
+    { src: '~/plugins/element-ui', ssr: false },
+    { src: '~/plugins/jquery', ssr: false },
+    { src: '~/plugins/vuetify', ssr: false },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -58,14 +59,14 @@ export default {
   ** Build configuration
   */
   build: {
-    transpile: [/^element-ui/],
+    transpile: [/^element-ui/, /^vuetify/],
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     },
     plugins: [
-      new webpack.ProvidePlugin({  
+      new webpack.ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
         'window.jQuery': 'jquery',

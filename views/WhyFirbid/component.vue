@@ -5,6 +5,8 @@
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
 import carousel from 'vue-owl-carousel'
+import $ from 'jquery'
+
 export default {
   components: {
     "new-carousel": carousel

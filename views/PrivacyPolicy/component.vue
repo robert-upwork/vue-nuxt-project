@@ -3,6 +3,8 @@
 
 <script>
 import politicas from "../../constants/politicasdeprivacidad.json";
+import $ from 'jquery'
+
 export default {
   data() {
     return {

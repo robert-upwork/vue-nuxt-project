@@ -4,6 +4,8 @@
 <script>
 import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
 import axios from "axios";
+import $ from 'jquery'
+
 const defaultForm = {
   isClient: false,
   documentType: "",

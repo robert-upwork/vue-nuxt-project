@@ -3,6 +3,8 @@
 
 <script>
 import preguntas from "../../constants/preguntasfrecuentes.json";
+import $ from 'jquery'
+
 export default {
   data() {
     return {

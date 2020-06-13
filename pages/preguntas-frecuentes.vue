@@ -13,7 +13,7 @@ export default {
         "frequent-questions": FrequentQuestions
     },
     
-    metaInfo() {
+    head() {
         return {
             title: 'Cómo Subastar Dólares | Preguntas Frecuentes FIRBID',
             meta: [
