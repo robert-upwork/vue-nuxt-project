@@ -1,0 +1,157 @@
+<div >
+  <!-- Banner -->
+  <div class="fiduciary col-12 sinpa no-gutters m-0">
+    <!-- Cuerpo -->
+    <div class="container">
+      <div class=" no-gutters cuerpo">
+        <div class="bg-blue row  justify-content-center text-light titulo-fideicomiso">
+          <!-- Mobile -->
+  
+          <div class="confird-logo2">
+            <img class="img-fluid fideicomiso-image" src="@/assets/logo-corfid.svg" alt="Corfid">
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="title-corfid title-fiduciary w-500 mt-5 mt-md-5" >Igual de seguro que un banco.</p>
+  
+            <p class="cards-corfid mb-1">
+              Se encargará de administrar y dar protección a tus fondos en las cuentas bancarias dónde realizarás el pago de tus operaciones de tipo de cambio.
+            </p>
+           
+            <!-- <p class="cards-corfid cards-corfid-arrow conoce mt-3 hide-xs">
+              <a target="_blank" href="https://www.corfid.com.pe/">
+                <img src="@/assets/icons/right-arrow.png" alt="">Conoce CORFID
+              </a>
+            </p> -->
+          </div>
+  
+          <div class="col-12 col-md-6 imagen-fideicomiso p-3">
+            <a target="_blank" href="https://www.corfid.com.pe/"><img src="@/assets/logo-corfid.svg" class="img-fluid img-banner-fideicomiso" alt="" /></a>
+            
+            <div class="imagen-fideicomiso-mobile">
+              <img src="@/assets/escudo.svg" class="img-fluid" alt="" />
+              <h2>
+                Igual de seguro que un banco.
+              </h2>
+            </div>
+          </div>
+          
+  
+        </div>
+      </div>
+      <el-dialog title="FIRBID" :visible.sync="dialogVisible" width="600px">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1V_xRb0x9aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </el-dialog>
+    </div>
+  
+  </div>
+
+  <!-- Ventajas -->
+  <div id="fideicomiso" class="advantage container-fluid py-5 fideicomiso-ventajas ">
+    <div class="row justify-content-center text-center no-gutters">
+      <p class="title">Ventajas de operar con un fideicomiso</p>
+    </div>
+      <!-- Mobile -->
+      <carousel class="fiduciary-carousel" :per-page="1" style="padding-top:30px"
+          paginationColor="#dce3ec" paginationActiveColor="#272c3c" :width="575" >
+          <slide :key="index">
+            <div class="col-12 justify-content-center">
+              <div class="card-div pt-lg-5 imagen-ventajas3">
+                <img src="@/assets/fidei-card1@2x.png" class="img-fluid img-advantage" alt="" />
+                <p class="titulo-ventaja">Seguridad</p>
+                <p class="descripcion-ventaja">Seguridad financiera al darle inembargabilidad a tus fondos.
+                </p>
+              </div>
+            </div>
+          </slide>
+          <slide :key="index">
+            <div class="col-12 justify-content-center">
+              <div class="card-div pt-lg-5 imagen-ventajas4">
+                <img src="@/assets/fidei-card2@2x.png" class="img-fluid img-advantage" alt="" />
+                <p class="titulo-ventaja">Control</p s>
+                <p class="descripcion-ventaja">Procede de acuerdo a tus instrucciones.</p>
+              </div>
+            </div>
+          </slide>
+          <slide :key="index">
+            <div class="col-12 justify-content-center">
+              <div class="card-div pt-lg-5 imagen-ventajas3">
+                <img src="@/assets/fidei-card3@2x.png" class="img-fluid img-advantage" alt="" />
+                <p class="titulo-ventaja">Confidencialidad</p>
+                <p class="descripcion-ventaja">Otorga confidencialidad y secreto fiduciario respecto al origen de tus fondos y datos personales.
+                </p>
+              </div>
+            </div>
+          </slide>
+          <slide :key="index">
+            <div class="col-12 justify-content-center">
+              <div class="card-div pt-lg-5 imagen-ventajas4">
+                <img src="@/assets/fidei-card4@2x.png" class="img-fluid img-advantage" alt="" />
+                <p class="titulo-ventaja">Acceso</p s>
+                <p class="descripcion-ventaja">Te permite negociar de manera directa con las entidades financieras.</p>
+              </div>
+            </div>
+          </slide>
+      </carousel>
+    <div class="fiduciary-element">
+      <div class="row  justify-content-md-center content-four">
+        <div class="col-12 col-md-5 col-lg-4 mt-lg-5 mt-lg-0 mb-5 d-flex justify-content-center">
+          <div class="card-div pt-lg-5 imagen-ventajas3">
+            <img src="@/assets/fidei-card1@2x.png" class="img-fluid" alt="" />
+            <p class="titulo-ventaja">Seguridad</p>
+            <p class="descripcion-ventaja">Seguridad financiera al darle inembargabilidad a tus fondos.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 mt-lg-5 mt-lg-0 mb-5 d-flex justify-content-center">
+          <div class="card-div pt-lg-5 imagen-ventajas4">
+            <img src="@/assets/fidei-card2@2x.png" class="img-fluid" alt="" />
+            <p class="titulo-ventaja">Control</p s>
+            <p class="descripcion-ventaja">Procede de acuerdo a tus instrucciones.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-5 col-lg-4 mt-lg-5 mt-lg-0 mb-5 d-flex justify-content-center">
+          <div class="card-div pt-lg-5 imagen-ventajas3">
+            <img src="@/assets/fidei-card3@2x.png" class="img-fluid" alt="" />
+            <p class="titulo-ventaja">Confidencialidad</p>
+            <p class="descripcion-ventaja">Otorga confidencialidad y secreto fiduciario respecto al origen de tus fondos y datos personales.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 mt-lg-5 mt-lg-0 mb-5 d-flex justify-content-center">
+          <div class="card-div pt-lg-5 imagen-ventajas4">
+            <img src="@/assets/fidei-card4@2x.png" class="img-fluid" alt="" />
+            <p class="titulo-ventaja">Acceso</p s>
+            <p class="descripcion-ventaja">Te permite negociar de manera directa con las entidades financieras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- <d
+    </div>
+    iv class="row justify-content-around mx-auto mt-lg-5 align-items-center no-gutters">
+      <div class="col-12 mt-lg-5 mt-lg-0 col-lg-4 no-gutters">
+        <div class="card-div pt-lg-5 imagen-ventajas3">
+          <img src="@/assets/fidei-card3@2x.png" class="img-fluid" alt="" />
+          <p class="titulo-ventaja">Confidencialidad</p>
+          <p class="descripcion-ventaja">Otorga confidencialidad y secreto fiduciario respecto al origen de tus fondos y datos
+            personales.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 mt-lg-5 mt-lg-0 col-lg-4 no-gutters">
+        <div class="card-div pt-lg-5 imagen-ventajas4">
+          <img src="@/assets/fidei-card4@2x.png" class="img-fluid" alt="" />
+          <p class="titulo-ventaja">Acceso</p s>
+          <p class="descripcion-ventaja">Te permite negociar de manera directa con todas las entidades financieras sin más
+            papeleos.</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <el-dialog title="FIRBID" :visible.sync="dialogVisible" width="600px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1V_xRb0x9aw" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</el-dialog>
+</div>

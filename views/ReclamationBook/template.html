@@ -1,0 +1,182 @@
+<v-app>
+  <div class="reclamation">
+
+    <!-- MAIN BANNER -->
+    <div class="fondo align-items-center no-gutters m-0">
+      <div class="fondo-bg no-gutters container-fluid">
+        <!-- BANNER -->
+        <div class="container">
+          <div class="book-1">
+            <ul class="navbar-nav">
+              <li class="nav-item text-white">
+                <h2>
+                  Libro de Reclamaciones
+                </h2>
+              </li>
+              <li class="nav-item">
+                <p class="text-white" style="max-width:900px; width: 100%; margin: auto;">
+                  Aquí puedes registrar tus quejas o reclamos relacionados a los servicios brindados conforme a Ley N° 29571, Código de Protección y Defensa del Consumidor.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- LIBRO DE RECLAMACIONES -->
+  
+    <div class="book-2 container mx-auto">
+      <!-- <div class="row mb-3">
+        <div class="col ling d-flex justify-content-center justify-content-md-start">
+          <p class="mr-4">¿Eres cliente?</p>
+          <el-switch v-model="form.isClient">
+          </el-switch>
+        </div>
+      </div> -->
+      <div class="col-12 row" style="margin-bottom: 30px;">
+        <p>
+          Lamentamos que hayas tenido algún tipo de problema, ten por seguro que recibiremos tu reclamo y haremos todo lo
+          necesario para solucionarlo.
+        </p>
+      </div>
+  
+      <v-row v-if="!form.isClient">
+        <v-col :cols="6" md="6" class="column-reclamation-book">
+          <v-select outlined v-model="form.documentType" label="Tipo de documento" :items="documentTypeList"
+            item-value="value" item-text="label"></v-select>
+        </v-col>
+        <v-col :cols="6" md="6" class="column-reclamation-book">
+          <v-text-field type="number" v-model="form.documentNumber" label="Número de documento" outlined></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row v-if="!form.isClient">
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.father_lastname" label="Apellido Paterno" outlined></v-text-field>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.mother_lastname" label="Apellido Materno" outlined></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row v-if="!form.isClient">
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.email"  label="Correo" outlined></v-text-field>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.phone" label="Celular" outlined></v-text-field>
+        </v-col>
+      </v-row>
+      <v-row v-if="!form.isClient">
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field label="Dirección" v-model="form.address" outlined></v-text-field>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-select :items="departmentList" item-value="value" item-text="label" label="Departamento" outlined
+            v-model="form.department"></v-select>
+        </v-col>
+      </v-row>
+      <v-row v-if="!form.isClient">
+        <v-col :cols="6" md="6" class="column-reclamation-book">
+          <v-select v-model="form.province" label="Provincia" :items="departmentList" item-value="value" item-text="label"
+            outlined></v-select>
+        </v-col>
+        <v-col :cols="6" md="6" class="column-reclamation-book">
+          <v-select v-model="form.district" label="Distrito" :items="districtList" item-value="value" item-text="label"
+            outlined></v-select>
+        </v-col>
+      </v-row>
+      <v-row></v-row>
+      <v-row>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-select outlined v-model="form.insertInto" label="¿Qué desea ingresar?" :items="insertIntoList"
+            item-value="value" item-text="label"></v-select>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-menu v-model="menu2" :close-on-content-click="false" :nudge-right="40" transition="scale-transition" offset-y
+            min-width="290px">
+            <template v-slot:activator="{ on }">
+              <v-text-field v-model="form.incidenceDate" outlined label="Fecha de incidencia"  readonly
+                v-on="on">
+              </v-text-field>
+            </template>
+            <v-date-picker v-model="form.incidenceDate" @input="menu2 = false"></v-date-picker>
+          </v-menu>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-select :items="productServiceList" item-value="value" item-text="label" label="Producto o servicio" outlined
+            v-model="form.productService"></v-select>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-select :items="reasonList" item-value="value" item-text="label" label="Seleccione motivo" outlined
+            v-model="form.reason"></v-select>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col :cols="12">
+          <v-textarea outlined label="Agregar un mensaje" v-model="form.message"></v-textarea>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col :cols="12" md="6" class="my-auto">
+          <p>
+            ¿Necesitas adjuntar documentos?
+            <br>
+            Hazlo desde aquí
+          </p>
+        </v-col>
+        <v-col :cols="12" md="6" class="text-center">
+          <el-upload class="upload-demo w-100" drag action="" multiple :auto-upload="false" :on-change="uploadList" :on-remove="removeList" >
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <img src="@/assets/card-upload.png" alt="">
+              <div class="el-upload__text">Adjunta o arrastra documento</div>
+            </div>
+          </el-upload>
+        </v-col>
+      </v-row>
+      <v-row v-if="form.isClient">
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.email" label="Correo" outlined></v-text-field>
+        </v-col>
+        <v-col :cols="12" md="6" class="column-reclamation-book">
+          <v-text-field v-model="form.password" type="password" label="Contraseña" outlined></v-text-field>
+        </v-col>
+      </v-row>
+  
+      <!-- DETALLES -->
+  
+      <div class="row mt-5 mb-3">
+        <div class="col">
+          En caso de ser un reclamo o queja, acepto los términos y condiciones al momento de enviar esta información:
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="w-75 text-justify" style="margin-left: 10%;">Manifiesto mi conformidad con el contenido del reclamo y autorizo  a FIRBID a brindar la información al Instituto Nacional de Defensa de la  Competencia y de la Propiedad Intelectual (INDECOPI), en caso sea necesario.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <p>
+            <el-checkbox v-model="authorization" class="mr-3"></el-checkbox>
+            Autorizo la recopilación y tratamiento de mis datos personales. Puedes revisar nuestra política de recopilación de datos personales haciendo clic <a target="_blank" href="https://www.firbid.com/politicas-privacidad" style="color: inherit;"> aquí</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="w-75 text-center mx-auto"
+            style="background-color: rgba(220, 227, 236, 0.17); font-size: 14px; margin:auto; padding-top: 10px;padding-bottom: 10px;padding-left: 30px;padding-right: 30px;">Al presionar el
+            botón enviar, verificaremos tus datos y te enviaremos un correo de confirmación
+            con todo el detalle de tu reclamo, pero sobre todo trabajaremos en la solución.</p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="btn mx-auto btn-send-book" @click="submit" >Enviar</p>
+      </div>
+    </div>
+  
+  
+  </div>
+</v-app>

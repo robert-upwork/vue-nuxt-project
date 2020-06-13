@@ -1,0 +1,30 @@
+[
+    {
+        "id":"politicas01",
+        "descripcion":"AVISO DE PRIVACIDAD"
+    },
+    {
+        "id":"politicas02",
+        "descripcion":"INFORMACIÓN RECOPILADA POR FIRBID"
+    },
+    {
+        "id":"politicas03",
+        "descripcion":"FIRBID RECOPILA LA SIGUIENTE INFORMACIÓN DEL CLIENTE"
+    },
+    {
+        "id":"politicas04",
+        "descripcion":"SOBRE EL BANCO DE DATOS DE FIRBID"
+    },
+    {
+        "id":"politicas05",
+        "descripcion":"USO DE DATOS PERSONALES"
+    },
+    {
+        "id":"politicas06",
+        "descripcion":"DERECHOS DEL CLIENTE"
+    },
+    {
+        "id":"politicas07",
+        "descripcion":"MODIFICACIONES DEL AVISO DE PRIVACIDAD"
+    }
+]

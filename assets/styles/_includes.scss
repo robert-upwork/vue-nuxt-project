@@ -1,0 +1,137 @@
+@import './variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Utilidades */
+.btn {
+    border-radius: .1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-primary {
+    &:hover {
+        background-color: $hover-primary;
+    }
+}
+
+.icon {
+    font-size: 20px;
+    color: $white;
+    transition: color .5s;
+    cursor: pointer;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-md-100 {
+    width: 100% !important;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mt-7 {
+    margin-top: 7rem;
+}
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.mt-9 {
+    margin-top: 9rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.my-7 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.mt-lg-6 {
+    @include media-breakpoint-up(lg) {
+        margin-top: 6rem;
+    }
+}
+
+.mt-lg-7 {
+    @include media-breakpoint-up(lg) {
+        margin-top: 7rem;
+    }
+}
+
+.mt-lg-8 {
+    @include media-breakpoint-up(lg) {
+        margin-top: 8rem;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.bg-shadow {
+    box-shadow: $card_box_shadow;
+}
+
+.link-hover-dark {
+    color: $white;
+    transition: color .6s;
+    transition: all .4s;
+    img{
+        
+        transition: all .4s;
+    }
+
+    &:hover {
+        color: $dark;
+
+        img {
+            filter:brightness(0.1);
+        }
+    }
+}
+
+.btn-large {
+    width: 190px;
+    height: 40px;
+}
+
+.h-35-px {
+    height: 35px;
+}

@@ -1,0 +1,597 @@
+<div class="">
+  <!-- MAIN BANNER -->
+  <div class="preguntas-frecuentes row align-items-center text-center justify-content-center no-gutters ">
+    <div class="fondo-frequent row align-items-center text-center justify-content-center no-gutters">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <p class="w-400 text-white complemento-frecuente">
+            Te damos la bienvenida a nuestros
+          </p>
+        </li>
+        <li class="nav-item text-white titulo-frecuente">
+          <p class="category">Términos y Condiciones</p>
+        </li>
+        <li class="input-searching nav-item d-flex align-items-center" >
+          <div style="position: relative; width: 100%;">
+            <el-select @change="scrolling(result)" class="select" filterable clearable v-model="result" 
+              placeholder="Buscar por palabras clave">
+              <el-option v-for="(item, index) in terminos" :key="item.id" :label="item.descripcion" 
+              :value="item.id"></el-option>
+            </el-select>
+            <div class="clicking-content slider">
+              <img src="@/assets/lupa.svg" alt="">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Banner -->
+  <div class="col-12 sinpa container-fluid second-banner color-menu row no-gutters p-0 m-0">
+    <div class="col-xs-12 col-lg-4">
+      <div style="background-color: white;" class="nav mx-auto agrupador flex-column nav-pills" id="v-pills-tab"
+        role="tablist" aria-orientation="vertical">
+        <p class="preguntas-title" >Índice</p>
+        <a class="text-dark terminos01 active" id="v-pills-general-tab terminos01" data-toggle="pill" href="#v-pills-general"
+          role="tab" aria-controls="v-pills-general">01. General</a>
+        <a class="text-dark terminos02" id="v-pills-fideicomiso-tab terminos02" data-toggle="pill" href="#v-pills-fideicomiso"
+          role="tab" aria-controls="v-pills-fideicomiso">02. Registro en la plataforma</a>
+        <a class="text-dark terminos03" id="v-pills-sabout-fideicomiso-tab terminos03" data-toggle="pill"
+          href="#v-pills-about-fideicomiso" role="tab" aria-controls="v-pills-about-fideicomiso">03. Sobre fideicomiso
+          de administración</a>
+        <a class="text-dark terminos04" id="v-pills-platform-tab terminos04" data-toggle="pill" href="#v-pills-platform" role="tab"
+          aria-controls="v-pills-platform">04. Operatividad de la plataforma</a>
+        <a class="text-dark terminos05" id="v-pills-obligations-tab terminos05" data-toggle="pill" href="#v-pills-obligations"
+          role="tab" aria-controls="v-pills-obligations">05. Obligaciones</a>
+        <a class="text-dark terminos06" id="v-pills-non-compliance-tab terminos06" data-toggle="pill" href="#v-pills-non-compliance"
+          role="tab" aria-controls="v-pills-non-compliance">06. Sobre incumplimiento de operaciones pactadas por el
+          cliente</a>
+        <a class="text-dark terminos07" id="v-pills-platform-use-tab terminos07" data-toggle="pill" href="#v-pills-platform-use"
+          role="tab" aria-controls="v-pills-platform-use">07. Uso de la plataforma</a>
+        <a class="text-dark terminos08" id="v-pills-user-administration-tab terminos08" data-toggle="pill"
+          href="#v-pills-user-administration" role="tab" aria-controls="v-pills-user-administration">08. Administración
+          de usuarios</a>
+        <a class="text-dark terminos09" id="v-pills-responsibility-tab terminos09" data-toggle="pill" href="#v-pills-responsibility"
+          role="tab" aria-controls="v-pills-responsibility">09. Limitación de responsabilidad</a>
+        <a class="text-dark terminos10" id="v-pills-cesion-tab terminos10" data-toggle="pill" href="#v-pills-cesion" role="tab"
+          aria-controls="v-pills-cesion">10. Vigencia y Cesión Contractual</a>
+        <a class="text-dark terminos11" id="v-pills-confidence-tab terminos11" data-toggle="pill" href="#v-pills-confidence"
+          role="tab" aria-controls="v-pills-confidence">11. Confidencialidad</a>
+        <a class="text-dark terminos12" id="v-pills-intelectual-tab terminos12" data-toggle="pill" href="#v-pills-intelectual"
+          role="tab" aria-controls="v-pills-intelectual">12. Propiedad Intelectual</a>
+        <a class="text-dark terminos13" id="v-pills-jurisdiction-tab terminos13" data-toggle="pill" href="#v-pills-jurisdiction"
+          role="tab" aria-controls="v-pills-jurisdiction">13. Aviso de privacidad</a>
+        <a class="text-dark terminos27" id="v-pills-reclamation-tab terminos27" data-toggle="pill" href="#v-pills-reclamation"
+          role="tab" aria-controls="v-pills-reclamation">14.	Libro de reclamaciones</a>
+        <a class="text-dark terminos28" id="v-pills-juris-tab terminos28" data-toggle="pill" href="#v-pills-juris"
+          role="tab" aria-controls="v-pills-juris">15. Ley aplicable y Jurisdicción</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-8">
+      <div class="tab-content" style="margin-top: 10vh; line-height: 30px;" id="v-pills-tabContent">
+        <!-- TAB 1 -->
+        <div class="tab-pane terminos-tab-pane fade  terminos01 show active" id="v-pills-general" role="tabpanel"
+          aria-labelledby="v-pills-general-tab">
+          <p class="w-500 color-plomo">Condiciones de servicio de FIRBID</p>
+          <p class="w-500 color-plomo">Última modificación: 07 de abril de 2020</p>
+          <p>
+            Te agradecemos que uses el servicio de FIRBID. El servicio se brinda
+            a través de FIRBID Soluciones Digitales SAC, cuyo domicilio fiscal
+            está ubicado en Calle Alonso de Molina 171, Oficina 301, Santiago de
+              Surco, Lima, Perú.
+          </p>
+          <p class="h6" id="terminos01">1. General</p>
+          <p>
+            Se deja constancia que, mediante el presente documento se reflejan únicamente los principales términos y condiciones del contrato de afiliación que suscriben los CLIENTE(s)/Cliente(s) (Persona jurídica o persona natural bancarizada que se registra en la Plataforma para hacer uso de los Servicios brindados por FIRBID) con FIRBID FINANZAS DIGITALES S.A.C. (en adelante “FIRBID”).
+          </p>
+          <p>
+            Conste por el presente documento el Contrato Comercial celebrado entre FIRBID y el CLIENTE. Además, el presente contrato regula el acceso, utilización y facilidades que ofrece la plataforma www.firbid.com (en adelante, el “Contrato”).
+          </p>
+          <p id="terminos14">
+            1.1 PROCEDIMIENTO DE ACEPTACIÓN CONTRACTUAL
+          </p>
+          <p>
+            La aceptación electrónica o física del presente contrato constituye la manifestación de voluntad de los CLIENTES para la afiliación a la Plataforma y la aceptación de todas las condiciones del presente documento. Cabe recordar que la contratación electrónica se encuentra recogida en el artículo 141 del Código Civil, los cuales establecen de manera expresa que la manifestación de voluntad efectuada a través de medios electrónicos es legal, siendo que los actos jurídicos que se celebren por dichos medios tienen plena validez. 
+          </p>
+          <p id="terminos15">
+            1.2 FIRBID NO REALIZA INTERMEDIACIÓN FINANCIERA
+          </p>
+          <p>
+            Resulta importante aclarar que FIRBID no realiza operaciones de intermediación financiera, debido a que FIRBID no se dedica a la captación y colocación de dinero de terceros con la finalidad de ponerlo en circulación en la economía y así obtener una ganancia o lucro por realizar dichas operaciones. 
+          </p>
+          <p>
+            FIRBID proporciona a los Clientes el acceso y uso de una plataforma electrónica que facilita el intercambio de información, la identificación de intereses comunes y la posibilidad de efectuar intercambio de divisas. En dicho escenario, FIRBID actúa como mandatario de los Clientes, sin asumir la titularidad sobre los fondos canalizados.
+          </p>
+          <p>
+            1.3 DEFINICIONES
+          </p>
+          <p>
+            a. <b>“FIRBID FINANZAS DIGITALES”</b>. –  Persona jurídica constituida bajo el régimen de sociedad anónima cerrada, que tiene como objeto social principal realizar actividades económicas relacionadas con la implementación de una plataforma en línea denominada “FIRBID”, que permite que personas naturales y jurídicas se conecten con EMPRESAS AUTORIZADAS e interactúen y concreten operaciones financieras.
+          </p>
+          <p>
+            b. <b>“Empresa(s) Autorizada(s)”</b>. – Empresas jurídicas autorizadas que cuentan con todas las facultades legales, regulatorias y financieras para realizar operaciones de  compra y venta de divisas como Bancos, Cajas Municipales entre otras instituciones financieras y privadas. 
+          </p>
+          <p>
+            c. <b>“Contrato”</b>. – Es el Contrato comercial que celebra FIRBID con El CLIENTE.
+          </p>
+          <p>
+            d. <b>“CLIENTE(s)”</b>. – Persona jurídica o persona natural bancarizada que se registra en la Plataforma para hacer uso de los Servicios brindados por FIRBID.
+          </p>
+          <p>
+            e. <b>“Entidad Fiduciaria”</b>. – Entidad fiduciaria regulada con la cual FIRBID ha celebrado un Contrato de fideicomiso de administración de flujos con la finalidad de que dicha entidad se encargue de facilitar el intercambio de divisas entre los clientes de EL FIDEICOMITENTE, a través de la recepción y realización de transferencias bancarias desde LA(S) CUENTA(S) DE INTERCAMBIO administradas por CORFID, conforme a las instrucciones que emita FIRBID en su calidad de FIDEICOMITENTE y  mandatario con facultades de disposición y representación suficiente de sus clientes. 
+          </p>
+          <p>
+            f. <b>“Formulario de registro”</b>. – Es toda información y documentación provista; a través de LA PLATAFORMA, por el CLIENTE y es parte del presente contrato donde proporciona información relevante e indispensable, que se constituye como un requisito previo para iniciar operaciones en la Plataforma. Tiene como finalidad la gestión de riesgos financieros y prevención Lavado de Activos y Financiamiento del Terrorismo (LA/FT).
+          </p>
+          <p>
+            g. <b>“Plataforma”</b>. – Es la plataforma Digital denominada FIRBID que permite que sus CLIENTES se conecten con Empresas Autorizadas para interactuar y concretar operaciones de intercambio de divisas.
+          </p>
+          <p>
+            h. <b>“Servicios”</b>. - Son los servicios que brinda FIRBID a sus CLIENTES para que puedan identificar intereses comunes y efectuar intercambios de divisa, a través de la Plataforma. 
+          </p>
+        </div>
+        <!-- TAB 2 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos02 fade show" id="v-pills-fideicomiso" role="tabpanel"
+          aria-labelledby="v-pills-fideicomiso-tab">
+          <p class="h6" id="terminos02">2. REGISTRO EN LA PLATAFORMA</p>
+          <p>
+            a. El registro en la Plataforma es a través de la aceptación y firma del presente Contrato <b>no obliga al CLIENTE a un costo de afiliación, ni al uso exclusivo de la Plataforma.</b> El registro, una vez aceptado por FIRBID, le permite acceder a los Servicios.
+          </p>
+          <p>
+            b. FIRBID ha celebrado un contrato de fideicomiso con la entidad fiduciaria CORFID, otorgándole a FIRBID un mandato de representación detallado en el punto 3.
+          </p>
+          <p>
+            c. El CLIENTE declara y da fé que los datos proporcionados en el formulario de registro son verás y, tiene carácter de declaración jurada y permite: 
+          </p>
+          <p>
+            A la entidad fiduciaria y FIRBID conocer a El CLIENTE para evitar riesgos financieros y prevenir el lavado de activos y narcotráfico según lo determina los entes regulatorios. El CLIENTE declara que la información proporcionada es verdadera, completa y exacta.
+          </p>
+          <p>
+            Asimismo, se responsabilizan por la veracidad, exactitud, vigencia y autenticidad de la información suministrada. Adicionalmente, el CLIENTE declara conocer que, de resultar falsa la declaración efectuada, me encontraré sujeto a las responsabilidades administrativas y penales correspondientes, de conformidad con la normativa vigente.
+          </p>
+          <p>
+            d. Crear un mercado seguro de intercambio de Divisas y Operaciones Financieras en donde operen Personas Naturales y Jurídicas que cumplan con especificaciones financieras y legales mínimas que garanticen el buen funcionamiento del modelo de negocio.
+          </p>
+          <p>
+            e. Especifica las cuentas de destino bancarias autorizadas por El CLIENTE para que FIRBID pueda actuar en representación exclusiva frente al Fideicomiso.
+          </p>
+        </div>
+        <!-- TAB 3 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos03 fade show" id="v-pills-about-fideicomiso" role="tabpanel"
+          aria-labelledby="v-pills-about-fideicomiso-tab">
+          <p class="h6" id="terminos03">3. SOBRE EL FIDEICOMISO DE ADMINISTRACION</p>
+          <p>
+            FIRBID FINANZAS DIGITALES S.A.C. ha celebrado un contrato de fideicomiso de administración con la Entidad Fiduciaria <b>CORFID CORPORACIÓN FIDUCIARIA S.A;</b> a efectos de que dicha entidad se encargue de la gestión y canalización de los desembolsos efectuados por el CLIENTE (s) y las Empresas Autorizadas en las cuentas bancarias administradas por la entidad fiduciaria, denominadas cuentas bancarias de intercambio.
+          </p>
+          <p>
+            La entidad fiduciaria es un ente regulado y está obligado a reportar las operaciones de cambio de monedas a la Unidad de Inteligencia Financiera UIF de la Superintendencia de Banca y Seguros SBS para los fines regulatorios pertinentes.
+          </p>
+          <p id="terminos16">
+            3.1 MANDATO CON REPRESENTACION
+          </p>
+          <p>
+            A través del presente Contrato El CLIENTE le otorga a FIRBID un mandato civil con representación confiriéndole facultades para que pueda gestionar y canalizar las instrucciones de El CLIENTE sobre los fondos que depositen en las cuentas bancarias de intercambio administradas por la entidad fiduciaria. 
+          </p>
+          <p>
+            El contra valor de dichas operaciones serán depositadas “SOLO” en las cuentas propias registradas y autorizadas por El CLIENTE. En ese sentido, FIRBID no tiene ninguna facultad para realizar instrucciones a cuentas bancarias diferentes a las autorizadas por El CLIENTE.
+          </p>
+          <p id="terminos17">
+            3.2 IDENTIFICACION DEL CLIENTE y GESTION DE RIESGOS Y PREVENCIÓN
+            LA/FT
+          </p>
+          <p>
+            FIRBID ha celebrado un contrato de fideicomiso con CORFID CORPORACIÓN FIDUCIARIA S.A. regulada, que cumple con todos los procesos y sistemas auditados por la Superintendencia de Banca y Seguros (SBS), para facilitar el intercambio de divisas entre los clientes de FIRBID, a través de la recepción y realización de transferencias bancarias desde la(s) cuentas(s) de intercambio administradas por CORFID, conforme a las instrucciones que emita FIRBID en su calidad de FIDEICOMITENTE y mandatario con facultades de disposición y representación suficiente de sus clientes. 
+          </p>
+          <p>
+            La Entidad Fiduciaria podrá ejecutar los procesos de conocimiento de los clientes de FIRBID, que serían CLIENTE (s) - no clientes de CORFID, con la finalidad cumplir con la prevención de lavado de activos y financiamiento del terrorismo LA/FT conforme lo establecido por la normativa vigente que le es aplicable a la Entidad Fiduciaria.
+          </p>
+          <p>
+            Como parte del proceso FIRBID tiene el encargo de recolectar la información requerida por la ENTIDAD FIDUCIARIA y autentificar que los datos son verídicos y exactos para que dicha entidad pueda realizar su labor de verificación en sus sistemas y procesos de prevención de lavado de activos y financiamiento al terrorismo.   
+          </p>
+          <p>
+            La ENTIDAD FIDUCIARIA establece distintos regímenes de debida diligencia para el conocimiento de sus Clientes. Para ello, podrá utilizar diversos medios para identificar a sus CLIENTES y podrá contactar a los CLIENTES en cualquier momento, para confirmar la veracidad de la información que han proporcionado al momento de registrarse. Asimismo, FIRBID corroborará que dicha información es verdadera, accediendo a fuentes de acceso público y a través de entidades especializadas en la provisión de servicios de verificación. 
+          </p>
+          <p>
+            A efectos de prevenir cualquier riesgo de Lavado de Activos y Financiamiento del Terrorismo (LA/FT), la ENTIDAD FIDUCIARIA y FIRBID se reservan el derecho de requerir información adicional y, en especial, cuando pretendan realizar operaciones por montos que superen el umbral requeridos para el registro de operaciones, conforme a la Ley Nº 27693, Ley que crea la Unidad de Inteligencia Financiera (en adelante, la “Ley UIF”), su Reglamento y normas complementarias, según corresponda. 
+          </p>
+          <p>
+            De considerarlo necesario, FIRBID puede solicitar algún comprobante y/o dato adicional a efectos de corroborar la información proporcionada por los CLIENTES, así como de suspender temporal o desactivar definitivamente las cuentas de aquellos CLIENTES cuyos datos no hayan podido ser confirmados o que se haya verificado su falsedad, sin que ello genere derecho alguno a resarcimiento por parte del CLIENTE.
+          </p>
+          <p>
+            La ENTIDAD FIDUCIARIA proporciona cualquier información u operación requerida por la Superintendencia de Banca y Seguros (SBS) en cualquier momento que la entidad regulatoria lo solicite o de acuerdo a los procedimientos de ley vigentes. 
+          </p>
+          <p>
+            La ENTIDAD FIDUCIARIA y FIRBID podrán estar obligados a facilitar información sobre las transacciones de los CLIENTES a las autoridades o entidades gubernamentales, en el marco de la lucha contra el lavado de activos y financiamiento del terrorismo, conforme al presente contrato sobre excepciones al deber de confidencialidad.
+          </p>
+        </div>
+        <!-- TAB 4 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos04 fade show" id="v-pills-platform" role="tabpanel"
+          aria-labelledby="v-pills-platform-tab">
+          <p class="h6" id="terminos04">
+            4. OPERATIVIDAD DE LA PLATAFORMA
+          </p>
+          <p id="terminos18">
+            4.1 PREMISAS DE LA OPERACIÓN
+          </p>
+          <p>
+            a.	Sólo operan CLIENTES que han sido verificados y aprobados por la entidad fiduciaria que no se encuentren vinculadas en procesos de lavado de activos y financiamiento del terrorismo LA/FT.
+          </p>
+          <p>
+            b.	Una operación confirmada y no pagada está afecta a la inhabilitación del servicio de hasta el pago de una penalidad equivalente al 0.5% del valor de la operación.
+          </p>
+          <p>
+            c.	Los fondos de los CLIENTES son bancarizados.
+          </p>
+          <p>
+            d.	Las operaciones solo podrán realizarse a través de transferencias electrónicas. Los pagos no se realizan con cheques, ni efectivo.
+          </p>
+          <p>
+            e.	Los fondos operan en cuentas bancarias a nombre de los titulares CLIENTES.
+          </p>
+          <p id="terminos19">
+            4.2 SUBASTA
+          </p>
+          <p>
+            Las operaciones de subasta permiten exponer en tiempo real las necesidades de compra y venta de divisas a todos Los CLIENTES registrados en la plataforma para que las EMPRESAS AUTORIZADAS compitan en ofrecerle su mejor oferta y concrete con el CLIENTE las condiciones de la operación: monto negociado y tipo de cambio. 
+          </p>
+          <p id="terminos20">
+            4.3 PROCESO
+          </p>
+          <p>
+            1.	Subasta: El CLIENTE registra la operación configurando el monto en dólares que quiere comprar y/o vender, define el banco de origen desde donde va a pagar la operación, el origen de sus fondos y su cuenta bancaria propia donde desea recibir el contravalor. El CLIENTE ejecuta la Subasta.
+          </p>
+          <p>
+            Durante la exposición de la oferta, el CLIENTE recibe propuestas de las EMPRESAS AUTORIZADAS, la plataforma sugiere la mejor tasa, pero son los CLIENTES los que concretan las condiciones de la operación.
+          </p>
+          <p>
+            2.	Confirmación de la operación: El CLIENTE confirma la operación con la misma contraseña con la que acceden al sistema.
+          </p>
+          <p>
+            3.	Pago de la operación: CLIENTE (s) realizan el pago en las cuentas bancarias administradas por la entidad fiduciaria hasta el tiempo señalado por LA PLATAFORMA, señalando las cuentas bancarias de origen y destino registradas en el sistema.
+          </p>
+          <p>
+            La entidad Fiduciaria verifica depósito de los fondos del CLIENTE por la operación pactada.
+          </p>
+          <p>
+            4.	Pago al CLIENTE: La entidad fiduciaria paga al CLIENTE en la cuenta bancaria de destino instruido por este en el punto 1 del presente acápite.
+          </p>
+          <p id="terminos21">
+            4.4 CONSIDERACIONES ADICIONALES
+          </p>
+          <p>
+            FIRBID tiene todas las facultades de implementar mejoras y/o hacer cambios en la operatividad de la plataforma y los procesos con el objetivo de simplificar los procesos y mejorar la experiencia de los CLIENTES y EMPRESAS AUTORIZADAS.
+          </p>
+        </div>
+        <!-- TAB 5 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos05 fade show" id="v-pills-obligations" role="tabpanel"
+          aria-labelledby="v-pills-about-obligations-tab">
+          <p class="h6" id="terminos05">
+            5. OBLIGACIONES
+          </p>
+          <p id="terminos22">
+            5.1 OBLIGACIONES DE FIRBID
+          </p>
+          <p>
+            Mantener total arbitrariedad sobre los participantes: CLIENTE (s) y EMPRESAS AUTORIZADAS sobre las operaciones que se realicen en LA PLATAFORMA.
+          </p>
+          <p>
+            Mantener total transparencia sobre las operaciones que se realicen en LA PLATAFORMA, sin dar privilegio de información y de otra índole a ningún participante.
+          </p>
+          <p>
+            Atender solicitudes de información a El CLIENTE, sobre estadísticas realizadas en FIRBID, sin violar el derecho de confidencialidad de otro CLIENTE o EMPRESA AUTORIZADA.
+          </p>
+          <p>
+            Dar fiel cumplimiento a todos los compromisos señalados en el presente contrato.
+          </p>
+          <p id="terminos23">
+            5.2 OBLIGACIONES DEL CLIENTE
+          </p>
+          <p>
+            Cumplir con el pago de las operaciones confirmadas con las EMPRESAS AUTORIZADAS.
+          </p>
+          <p>
+            El incumplimiento de ALGUNO de los acápites mencionados autoriza a FIRBID a rescindir el contrato y cerrar las cuentas de acceso a la Plataforma hasta que el CLIENTE demuestre una debida diligencia y de ser el caso no tenga deudas pendientes por incumplimiento de las operaciones.
+          </p>
+        </div>
+        <!-- TAB 6 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos06 fade show" id="v-pills-non-compliance" role="tabpanel"
+          aria-labelledby="v-pills-non-compliance-tab">
+          <p class="h6" id="terminos06">
+            6. SOBRE INCUMPLIMENTO DE OPERACIONES PACTADAS POR EL CLIENTE.
+          </p>
+          <p>
+            La propuesta de valor de FIRBID es ofrecer sus Clientes una comunidad de intercambio de divisas seguro y transparente, donde sientan un sentido de pertenencia.
+          </p>
+          <p>
+            En ese sentido, para garantizar el funcionamiento del modelo de negocio y ejecutar el fiel cumplimiento de las operaciones acordadas El CLIENTE se compromete a <b>efectuar el pago por las operaciones confirmadas en la fecha y hora pactada.</b>
+          </p>
+          <p>
+            En caso El CLIENTE no cumpla con efectuar el pago por la operación pactada autoriza a FIRBID a suspender el servicio de subasta, salvo que el cliente demuestre una debida diligencia.
+          </p>
+          <p>
+            En caso el CLIENTE no muestre una debida diligencia sobre la obligación pactada, el servicio de subasta será suspendido hasta el pago de una <b>penalidad equivalente al 0.5% del monto de la operación incumplida en moneda nacional.</b> El mismo que tiene como objetivo:
+          </p>
+          <p>
+            “Cubrir todos los gastos operativos, financieros de la transacción y daños de reputación, que le permita a FIRBID asegurarse de mantener un mercado seguro y confiable”. 
+          </p>
+          <p>
+            Una vez pagada la penalidad por incumplimiento, FIRBID corroborará dicho pago y emitirá una constancia de pago, inmediatamente el servicio de subasta se activará.
+          </p>
+        </div>
+        <!-- TAB 7 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos07 fade show" id="v-pills-platform-use" role="tabpanel"
+          aria-labelledby="v-pills-platform-use-tab">
+          <p class="h6" id="terminos07">
+            7. USO DE LA PLATAFORMA
+          </p>
+          <p>
+            EL CLIENTE se compromete a utilizar la Plataforma de conformidad con la Ley, el presente Contrato, la moral, las buenas costumbres y el orden público.
+          </p>
+          <p>
+            EL CLIENTE se obliga a no utilizar la Plataforma con fines o efectos ilícitos, lesivos de los intereses o derechos de terceros, o que de cualquier forma pueda dañar, inutilizar, deteriorar la Plataforma o impedir un normal por otros CLIENTES. 
+          </p>
+          <p>
+            EL CLIENTE se compromete expresamente a no destruir, alterar, inutilizar o, de cualquier otra forma, dañar los datos, programas o documentos electrónicos y demás que se encuentren en la Plataforma. 
+          </p>
+          <p>
+            EL CLIENTE se compromete a no intentar penetrar o probar la vulnerabilidad de un sistema o de una red propia de la Plataforma, así como quebrantar las medidas de seguridad o de autenticación del mismo. 
+          </p>
+          <p>
+            EL CLIENTE se compromete a hacer un uso adecuado de los contenidos que se ofrecen en la Plataforma y a no emplearlos para incurrir en actividades ilícitas, así como a no publicar ningún tipo de contenido ilícito.
+          </p>
+          <p>
+            EL CLIENTE se compromete a no utilizar la Plataforma para, a modo de referencia, más no limitativo, enviar correos electrónicos masivos (spam) o correos electrónicos con contenido amenazante, abusivo, hostil, ultrajante, difamatorio, vulgar, obsceno o injurioso. Asimismo, se compromete a no utilizar un lenguaje ilícito, abusivo, amenazante, obsceno, vulgar, racista, ni cualquier lenguaje que se considere inapropiado, ni anunciar o proporcionar enlaces a sitios que contengan materia ilegal u otro contenido que pueda dañar o deteriorar la red personal o computadora de otro CLIENTE. 
+          </p>
+          <p>
+            FIRBID se reserva la potestad de determinar a su libre criterio, cuándo se produce la vulneración de cualquiera de los preceptos antes enunciados, así como la potestad de eliminar dichos contenidos. 
+          </p>
+          <p>
+            En caso El CLIENTE infrinja lo establecido en el presente Contrato, se puede suspender o cancelar las cuentas, así como iniciar acciones por responsabilidades civiles o penales, dependiendo de la gravedad de la infracción.
+          </p>
+          <p id="terminos24">
+            7.1 CUENTA Y CONTRASEÑA
+          </p>
+          <p>
+            Una vez efectuado el registro, El CLIENTE podrá acceder a su cuenta ingresando el correo y contraseña elegida. El CLIENTE se obliga a mantener la confidencialidad de su contraseña.
+          </p>
+          <p>
+            La cuenta es personal, única e intransferible, y está prohibido que El CLIENTE registre o posea más de una cuenta. En caso de que FIRBID detecte distintas cuentas que contengan datos coincidentes o relacionados, podrá suspender o desactivar la cuenta.
+          </p>
+          <p>
+            El CLIENTE será responsable por todas las operaciones efectuadas en su cuenta, pues el acceso a la misma está restringido al ingreso y uso de su contraseña, de conocimiento exclusivo de El CLIENTE. El CLIENTE se compromete a notificar a FIRBID en forma inmediata y por medio idóneo y fehaciente, cualquier uso no autorizado de su cuenta, así como el ingreso por terceros no autorizados a la misma. Está prohibida la venta, cesión o transferencia de la cuenta bajo ningún título.
+          </p>
+          <p>
+            Asimismo, no podrán utilizar los servicios aquellos CLIENTES cuyas cuentas hayan sido suspendidas temporalmente o desactivadas definitivamente, a raíz del incumplimiento del presente Contrato.
+          </p>
+          <p>
+            El CLIENTE puede solicitar la creación de nuevas cuentas a través de LA PLATAFORMA para algún CLIENTE Autorizado adicional, el mismo que será registrado y autentificado.
+          </p>
+          <p>
+            El Administrador de la cuenta puede solicitar dar de baja a cualquier CLIENTE Autorizado.
+          </p>
+        </div>
+        <!-- TAB 8 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos08 fade show" id="v-pills-user-administration" role="tabpanel"
+          aria-labelledby="v-pills-user-administration-tab">
+          <p class="h6" id="terminos08">
+            8. ADMNISTRACIÓN DE USUARIOS
+          </p>
+          <p>
+            A raíz de la implantación de las políticas de privacidad conferidas en el presente documento, se aplican las políticas siguientes a la información de la CUENTA gestionada por FIRBID:
+          </p>
+          <p>
+            <u>Definiciones</u>
+          </p>
+          <p>
+            Cuenta de USUARIO: Conjunto de datos del USUARIO (nombre de usuario, contraseña, nombre propio, apellido(s), dirección de correo electrónico, idioma preferido).
+          </p>
+          <p>
+            USUARIO: Persona autorizada y asignada a la cuenta en la PLATAFORMA para las transacciones objeto del presente contrato.
+          </p>
+          <p>
+            USUARIO: Persona autorizada y asignada a la cuenta en la PLATAFORMA para las transacciones objeto del presente contrato.
+          </p>
+          <p>
+            <u>Validación de cuenta</u>
+          </p>
+          <p>
+            La cuenta de todo USUARIO debe ir asociada a un nombre de USUARIO válido y único y a una dirección de correo electrónico. Al crear una cuenta, el USUARIO debe validarla. De lo contrario la cuenta será borrada. Si se modifica la dirección de correo electrónico, el USUARIO deberá validar la nueva dirección.
+          </p>
+          <p><u>Caducidad del perfil del servicio</u></p>
+          <p>
+            Trascurridos doce meses de inactividad en un servicio, se toman ciertas medidas en el perfil correspondiente del USUARIO.
+          </p>
+          <p>
+            La persona autorizada en caso EMPRESA recibe un aviso por correo electrónico un mes antes de que finalice el plazo. La fecha de caducidad se pospone en el momento de registrarse en el servicio con sus datos de acceso.
+          </p>
+          <p><u>Caducidad de la cuenta</u></p>
+          <p>
+            La cuenta del USUARIO se borra si éste está inactivo durante doce meses en todos los servicios.
+          </p>
+          <p>
+            No obstante, los nombres del USUARIO registrado quedan reservados, es decir, no podrán ser utilizados por otros usuarios.
+          </p>
+          <p>
+            Acciones de los usuarios inactivos o borrados
+          </p>
+          <p>
+            o	Resultados de búsquedas: los USUARIOS inactivos aparecen marcados como «Archivados».
+          </p>
+          <p>
+            o	Las actividades históricas del usuario permanecen vinculada al nombre completo del USUARIO, pero si realiza alguna acción en la PLATAFORMA, se mostrará el mensaje «Este usuario ya no está activo». 
+          </p>
+          <p>
+            o	Datos borrados del servicio de los USUARIOS a la resolución del contrato: todo, excepto contenidos compartidos a los entes regulatorios sobre las transacciones realizadas reportadas por la ENTIDAD FIDUCIARIA.
+          </p>
+          <p>
+            o	Se detienen las notificaciones por correo electrónico.
+          </p>
+          <p>
+            <u>Perfiles de USUARIOS </u>
+          </p>
+          <p>
+            Los perfiles de USUARIOS serán determinados en el momento del registro:
+          </p>
+          <p>
+            o	USUARIO persona: USUARIO tiene acceso a todos los perfiles de la subasta a título personal.
+          </p>
+          <p>
+            o	USUARIO persona autorizada: USUARIO autorizado por una persona jurídica y tiene acceso a todos los perfiles de la subasta a nombre de la empresa. 
+          </p>
+        </div>
+        <!-- TAB 9 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos09 fade show" id="v-pills-responsibility" role="tabpanel"
+          aria-labelledby="v-pills-responsibility-tab">
+          <p class="h6" id="terminos09">
+            9. LIMITACIÓN DE RESPONSABILIDAD
+          </p>
+          <p>
+            o	FIRBID no se hace responsable de los posibles daños o perjuicios en la Plataforma que se puedan derivar de interferencias, omisiones, interrupciones, virus informáticos, averías o desconexiones en el funcionamiento operativo del sistema electrónico, de retrasos o bloqueos en el uso de este sistema electrónico causados por deficiencias o sobrecargas en el sistema de Internet o en otros sistemas electrónicos, así como también de daños que puedan ser causados por terceras personas mediante intromisiones ilegítimas fuera del control de FIRBID.
+          </p>
+          <p>
+            o	Por otro lado, si bien FIRBID gestiona los fondos que El CLIENTE deposite en la cuenta respectiva, dicha gestión no la realiza por cuenta propia, sino en representación de El CLIENTE, bajo la figura de mandato civil con representación. En tal sentido, FIRBID no tiene incidencia alguna en la decisión de intercambio de divisas que realizan los CLIENTES y EMPRESAS AUTORIZADAS entre sí. Los CLIENTES y EMPRESAS AUTORIZADAS son quienes deciden, de manera particular, intercambiar divisas. 
+          </p>
+        </div>
+        <!-- TAB 10 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos10 fade show" id="v-pills-cesion" role="tabpanel" aria-labelledby="v-pills-cesion-tab">
+          <p class="h6" id="terminos10">
+            10. VIGENCIA Y CESIÓN CONTRACTUAL
+          </p>
+          <p id="terminos25">
+            10.1 VIGENCIA Y RESOLUCIÓN DEL CONTRATO
+          </p>
+          <p>
+            En caso de terminación anticipada del presente convenio, no exime a las partes de ninguna obligación existente entre ellas antes de producida la terminación del mismo.
+          </p>
+          <p id="terminos26">
+            10.2 CESIÓN DE POSICIÓN CONTRACTUAL
+          </p>
+          <p>
+            o	El CLIENTE no podrá ceder este Contrato, sin el consentimiento de FIRBID.
+          </p>
+          <p>
+            o	No obstante, este Contrato podrá ser cedido por FIRBID, en caso decida vender sus acciones a favor de cualquier tercero, la misma que (i) quedará obligada por el presente Contrato; y/o (ii) será el nuevo encargado del banco de datos que contenga los datos y el registro de su empresa.
+          </p>
+          <p>
+            o	Luego de producida la cesión, FIRBID no tendrá ninguna responsabilidad con respecto de cualquier hecho que ocurra a partir de la fecha de la cesión. 
+          </p>
+        </div>
+        <!-- TAB 11 -->
+        <div class="tab-pane terminos-tab-pane my-4 mx-4 terminos11 fade show" id="v-pills-confidence" role="tabpanel"
+          aria-labelledby="v-pills-confidence-tab">
+          <p class="h6" id="terminos11">
+            11. CONFIDENCIALIDAD
+          </p>
+          <p>
+            o	FIRBID se abstendrá de divulgar, publicar o comunicar a terceros cualquier información que conozca en virtud de la ejecución del presente Contrato. Toda información que reciba FIRBID se considera privilegiada y confidencial, por lo que divulgarla o transmitirla a terceros puede lesionar los intereses de El CLIENTE. En consecuencia, FIRBID se obliga a guardar confidencialidad sobre los datos, especificaciones, estados financieros, valores o cualquier información que El CLIENTE le proporcionen en relación con este Contrato, comprometiéndose además a no ponerla en manos ni a disposición de terceras personas.
+          </p>
+          <p>
+            o	Asimismo, FIRBID adoptará las medidas de seguridad necesarias para garantizar la protección de la información de El CLIENTE para evitar su alteración, pérdida, tratamiento y/o acceso no autorizado, habida cuenta del estado de la técnica, la naturaleza de los datos almacenados y los riesgos a que están expuestos. En este sentido, FIRBID usará los estándares de la industria en materia de protección de la confidencialidad de la información de El CLIENTE.
+          </p>
+          <p>
+            o	Las obligaciones de FIRBID con respecto a la información confidencial no se aplicarán a aquella información que (i) esté o vaya a estar disponibles al público, (ii) que FIRBID reciba legítimamente de terceros sin obligaciones de confidencialidad, (iii) que FIRBID pueda demostrar a satisfacción que fueron desarrolladas independientemente, o (iv) que El CLIENTE autoricen a FIRBID su difusión. Sobre este último punto, autoriza expresamente a FIRBID a difundir información que le sirva a la Entidad Fiduciaria para dar cumplimiento a sus obligaciones como sujeto obligado ante la UIF, de conformidad con la Ley UIF, su Reglamento y normas complementarias.
+          </p>
+          <p>
+            o	Por otro lado, la excepción de confidencialidad también aplica en los siguientes casos: (i) solicitudes de información de autoridades públicas en ejercicio de sus funciones y el ámbito de sus competencias; (ii) solicitudes de información en virtud de órdenes judiciales; y, (iii) solicitudes de información en virtud de disposiciones legales.
+          </p>
+        </div>
+        <!-- TAB 12 -->
+        <div class="tab-pane my-4 mx-4 terminos12 fade show" id="v-pills-intelectual" role="tabpanel"
+          aria-labelledby="v-pills-intelectual-tab">
+          <p class="h6" id="terminos12">
+            12. PROPIEDAD INTELECTUAL
+          </p>
+          <p>
+            o	FIRBID es propietaria de todo el contenido, incluyendo imágenes, gráficos, textos y todos los elementos de propiedad industrial que se encuentren en la Plataforma. En aquellos casos en que no sea el propietario, FIRBID cuenta con todas las licencias necesarias para su uso por parte de los titulares de dicho contenido o derechos de propiedad intelectual. 
+          </p>
+          <p>
+            o	Se deben respetar los derechos de propiedad intelectual de titularidad de FIRBID y de terceros. Queda prohibida la reproducción, distribución, transformación o cualquier otra forma de utilización del contenido que se encuentre en la Plataforma, sin la autorización previa y expresa de FIRBID.
+          </p>
+        </div>
+        <!-- TAB 13 -->
+        <div class="tab-pane my-4 mx-4 terminos13 fade show" id="v-pills-jurisdiction" role="tabpanel"
+          aria-labelledby="v-pills-jurisdiction-tab">
+          <p class="h6" id="terminos13">
+            13. LEY APLICABLE Y JURISDICCIÓN
+          </p>
+          <p>
+            Conforme a lo establecido en la Ley N° 29733, Ley de Protección de Datos Personales, el Decreto          Supremo N° 003-2013-JUS, por el que se aprueba su Reglamento, se informa a los CLIENTES, que sean personas jurídicas y naturales, que sus datos personales serán tratados por FIRBID, conforme se detalla en este apartado.
+          </p>
+          <p>
+            INFORMACIÓN RECOPILADA POR FIRBID:
+          </p>
+          <p>
+            FIRBID recopila la siguiente información del CLIENTE,
+          </p>
+          <ol>
+            <li>
+              Datos personales proporcionados por El CLIENTE al momento de registrarse y crearse una cuenta. Los datos que se requieren pueden ser de manera enunciativa, pero no limitativa, su nombre, apellidos, número de DNI, fecha de nacimiento, número de celular, dirección de correo electrónico, datos de representante legal y accionistas, declaración de origen de los fondos, ocupación, dirección de domicilio (en adelante, los “Datos Personales”). 
+            </li>
+            <li>
+              Información que se recolecta cuando El CLIENTE utiliza la Plataforma, entre la que se incluye: (i) fecha y hora en la que el CLIENTE solicita el servicio; (ii) historial de solicitudes de servicio que El CLIENTE haya solicitado, a través de la Plataforma; (iii) Direcciones IP; (iv) Información sobre aspectos operativos de la Plataforma, como análisis y estadísticas de navegación, tráfico, entre otros (en adelante, la “Información de Uso”). 
+            </li>
+          </ol>
+          <p>
+            SOBRE EL BANCO DE DATOS DE FIRBID:
+          </p>
+          <p>
+            Los Datos Personales y la Información de Uso serán incorporados a un banco de datos de titularidad de FIRBID. El CLIENTE da su consentimiento expreso para la inclusión de su información en dicho banco de datos.
+          </p>
+          <p>
+            USO DE DATOS PERSONALES:
+          </p>
+          <p>
+            Los Datos Personales y la Información de Uso serán tratadas con las siguientes finalidades: 
+          </p>
+          <ol type="a"> 
+            <li>Atender el registro de El CLIENTE y brindar soporte técnico.</li>
+            <li>Verificar y validar la identidad de El CLIENTE.</li>
+            <li>Elaborar estudios estadísticos y/o analíticos sobre la operatividad y navegabilidad de la Plataforma.</li>
+            <li>Elaborar estudios estadísticos y/o analíticos sobre el servicio que brinda FIRBID.</li>
+            <li>Atender quejas, reclamos o sugerencias de El CLIENTE y CLIENTES. </li>
+            <li>Enviarle comunicaciones y notificaciones de FIRBID.</li>
+            <li>Ceder o compartir la Información de El CLIENTE con proveedores o socios de FIRBID para permitir la ejecución de los servicios contratados por El CLIENTE, sin violar los derechos de confidencialidad.</li>
+            <li>Transferir la Información de El CLIENTE a empresas que brinden servicios basado en infraestructura en la nube en el extranjero, a fin de poder alojar y almacenar la Información de El CLIENTE. Ello en la medida que resulta indispensable para poder brindarle el servicio contratado.</li>
+            <li>Usarlas para facilitar a El CLIENTE al registro a futuras plataformas asociadas a la empresa FIRBID.</li>
+          </ol>
+          <p>
+            El CLIENTE manifiesta expresamente que ha sido debidamente informado de todas las finalidades antes mencionadas. Asimismo, a través de la aceptación del presente Aviso de Privacidad, autoriza y otorga su consentimiento, de manera previa, libre, expresa e inequívoca y gratuita, para el tratamiento de su información, de conformidad con las finalidades antes descritas. Sin perjuicio de lo anterior, reconoce y acepta que cualquier tratamiento de su información que sea necesaria para la ejecución de la relación contractual no requieren de su consentimiento. 
+          </p>
+          <p>
+            DERECHOS DEL CLIENTE:
+          </p>
+          <p>
+            Se pone en conocimiento que los derechos de acceso, información, actualización, rectificación, inclusión, supresión o cancelación y oposición de sus Datos Personales se podrán ejercer mediante petición dirigida a info@firbid.com. Sin perjuicio de lo anterior, FIRBID podrá conservar determinada información a fin de que sirva de prueba ante una eventual reclamación contra nuestra empresa por responsabilidades derivadas del tratamiento de dicha información.
+          </p>
+          <p>
+            MODIFICACIONES DEL AVISO DE PRIVACIDAD:
+          </p>
+          <p>
+            FIRBID se reserva expresamente el derecho a modificar, actualizar o completar en cualquier momento el presente Aviso de Privacidad. Cualquier modificación o actualización será inmediatamente publicada en la Plataforma y se le solicitará su aceptación y consentimiento nuevamente.
+          </p>
+        </div>
+        <!-- TAB 14 -->
+        <div class="tab-pane my-4 mx-4 terminos27 fade show" id="v-pills-reclamation" role="tabpanel"
+          aria-labelledby="v-pills-reclamation-tab">
+          <p class="h6" id="terminos27">
+            14.	LIBRO DE RECLAMACIONES
+          </p>
+          <p>
+            Conforme a lo establecido en la Ley N° 29733, Ley de Protección de Datos Personales, el Decreto          Supremo N° 003-2013-JUS, por el que se aprueba su Reglamento, se informa a los CLIENTES, que sean personas jurídicas y naturales, que sus datos personales serán tratados por FIRBID, conforme se detalla en este apartado.
+          </p>
+        </div>
+        <!-- TAB 15 -->
+        <div class="tab-pane my-4 mx-4 terminos28 fade show" id="v-pills-juris" role="tabpanel"
+          aria-labelledby="v-pills-juris-tab">
+          <p class="h6" id="terminos28">
+            15.	LEY APLICABLE Y JURISDICCION
+          </p>
+          <p>
+            En caso de discrepancia o controversia las partes se someten a la jurisdicción de los Jueces y Tribunales de la ciudad de Lima.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

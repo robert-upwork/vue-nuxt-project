@@ -1,0 +1,158 @@
+<div class="">
+  <!-- BANNER -->
+  <div class="col-12 sinpa politicas-de-privacidad-content align-items-center no-gutters m-0">
+    <div
+      class="row align-items-center text-center justify-content-center no-gutters" 
+    >
+      <ul class="navbar-nav mt-5 mt-lg-0">
+        <li class="nav-item">
+          <p class="nav-link title text-white">
+            Te damos la bienvenida a nuestras
+          </p>
+        </li>
+        <li class="nav-item text-white input-searching">
+          <p class="category">Políticas de Privacidad</p>
+        </li>
+        <li class="nav-item d-flex align-items-center ">
+          <!-- <input class="banner-input border-input px-3 py-3 py-lg-3 boton-buscador" type="search" placeholder="Buscar por palabras clave" />
+          <i class="fas fa-search mt-0 mt-md-1 mt-lg-0 position-relative"></i> -->
+          <div style="position: relative; width: 100%;">
+            <el-select
+              @change="scrolling(result)"
+              suffix-icon="el-icon-date"
+              filterable
+              clearable
+              v-model="result"
+              id="politicas-privacidad"
+              placeholder="Buscar por palabras clave"
+            >
+              <el-option
+                v-for="(item, index) in politicas"
+                :key="item.id"
+                :label="item.descripcion"
+                :value="item.id"
+              ></el-option>
+            </el-select>
+            <div class="clicking-content slider">
+              <img src="@/assets/lupa.svg" alt="">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div
+    class="col-12  py-5 my-md-5 privacy container-fluid align-items-center justify-content-center"
+  >
+    <p style="color: #87879C">Políticas de privacidad de FIRBID</p>
+    <p style="color: #87879C">Última modificación: 13 de diciembre de 2019</p>
+    <p style="font-size: 31px; font-weight: bold;">
+      Te damos la bienvenida a FIRBID
+    </p>
+    <p>
+      Te agradecemos que uses el servicio de FIRBID. El servicio se brinda a través de FIRBID Soluciones Digitales SAC, cuyo domicilio fiscal está ubicado en
+
+      <strong> Avenida Paramonga Mza. A Lote 10 - Urb. Huertos de San Antonio - Santiago de Surco.</strong
+      >
+    </p>
+    <p style="font-size: 22px; font-weight: bold;" id="politicas01">
+      AVISO DE PRIVACIDAD
+    </p>
+    <p>
+      Conforme a lo establecido en la Ley N° 29733, Ley de Protección de Datos
+      Personales, el Decreto Supremo N° 003-2013-JUS, por el que se aprueba su
+      Reglamento, se informa a los CLIENTES, que sean personas jurídicas y
+      naturales, que sus datos personales serán tratados por FIRBID, conforme se
+      detalla en este apartado.
+    </p>
+    <p style="font-weight: bold;" id="politicas02">
+      INFORMACIÓN RECOPILADA POR FIRBID:
+    </p>
+    <p style="font-weight: 500;" id="politicas03">
+      FIRBID recopila la siguiente información del CLIENTE,
+    </p>
+    <p>
+      1. Datos personales proporcionados por El CLIENTE al momento de
+      registrarse y crearse una cuenta. Los datos que se requieren pueden ser de
+      manera enunciativa, pero no limitativa, su nombre, apellidos, número de
+      DNI, fecha de nacimiento, número de celular, dirección de correo
+      electrónico, datos de representante legal y accionistas, declaración de
+      origen de los fondos, ocupación, dirección de domicilio (en adelante, los
+      “Datos Personales”).
+    </p>
+    <p>
+      2. Información que se recolecta cuando El CLIENTE utiliza la Plataforma,
+      entre la que se incluye: (i) fecha y hora en la que el CLIENTE solicita el
+      servicio; (ii) historial de solicitudes de servicio que El CLIENTE haya
+      solicitado, a través de la Plataforma; (iii) Direcciones IP; (iv)
+      Información sobre aspectos operativos de la Plataforma, como análisis y
+      estadísticas de navegación, tráfico, entre otros (en adelante, la
+      “Información de Uso”).
+    </p>
+    <p style="font-weight: bold;" id="politicas04">
+      SOBRE EL BANCO DE DATOS DE FIRBID:
+    </p>
+    <p>
+      Los Datos Personales y la Información de Uso serán incorporados a un banco
+      de datos de titularidad de FIRBID. El CLIENTE da su consentimiento expreso
+      para la inclusión de su información en dicho banco de datos.
+    </p>
+    <p style="font-weight: bold;" id="politicas05">
+      USO DE DATOS PERSONALES:
+    </p>
+    <p>
+      Los Datos Personales y la Información de Uso serán tratadas con las
+      siguientes finalidades:
+    </p>
+    <p>
+      a. Atender el registro de El CLIENTE y brindar soporte técnico. b.
+      Verificar y validar la identidad de El CLIENTE. c. Elaborar estudios
+      estadísticos y/o analíticos sobre la operatividad y navegabilidad de la
+      Plataforma. d. Elaborar estudios estadísticos y/o analíticos sobre el
+      servicio que brinda FIRBID. e. Atender quejas, reclamos o sugerencias de
+      El CLIENTE y CLIENTES. f. Enviarle comunicaciones y notificaciones de
+      FIRBID. g. Ceder o compartir la Información de El CLIENTE con proveedores
+      o socios de FIRBID para permitir la ejecución de los servicios contratados
+      por El CLIENTE, sin violar los derechos de confidencialidad. h. Transferir
+      la Información de El CLIENTE a empresas que brinden servicios basado en
+      infraestructura en la nube en el extranjero, a fin de poder alojar y
+      almacenar la Información de El CLIENTE. Ello en la medida que resulta
+      indispensable para poder brindarle el servicio contratado. i. Usarlas para
+      facilitar a El CLIENTE al registro a futuras plataformas asociadas a la
+      empresa FIRBID.
+    </p>
+    <p>
+      El CLIENTE manifiesta expresamente que ha sido debidamente informado de
+      todas las finalidades antes mencionadas. Asimismo, a través de la
+      aceptación del presente Aviso de Privacidad, autoriza y otorga su
+      consentimiento, de manera previa, libre, expresa e inequívoca y gratuita,
+      para el tratamiento de su información, de conformidad con las finalidades
+      antes descritas. Sin perjuicio de lo anterior, reconoce y acepta que
+      cualquier tratamiento de su información que sea necesaria para la
+      ejecución de la relación contractual no requieren de su consentimiento.
+    </p>
+    <p style="font-weight: bold;" id="politicas06">
+      DERECHOS DEL CLIENTE:
+    </p>
+    <p>
+      Se pone en conocimiento que los derechos de acceso, información,
+      actualización, rectificación, inclusión, supresión o cancelación y
+      oposición de sus Datos Personales se podrán ejercer mediante petición
+      dirigida a : Sin perjuicio de lo anterior, FIRBID podrá conservar
+      determinada información a fin de que sirva de prueba ante una eventual
+      reclamación contra nuestra empresa por responsabilidades derivadas del
+      tratamiento de dicha información.
+    </p>
+    <p style="font-weight: bold;" id="politicas07">
+      MODIFICACIONES DEL AVISO DE PRIVACIDAD:
+    </p>
+    <p>
+      FIRBID se reserva expresamente el derecho a modificar, actualizar o
+      completar en cualquier momento el presente Aviso de Privacidad. Cualquier
+      modificación o actualización será inmediatamente publicada en la
+      Plataforma y se le solicitará su aceptación y consentimiento nuevamente.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,830 @@
+@import '~/assets/styles/includes';
+
+.our-team {
+  .sinpa{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  background-color: #F0F4F8;
+  .out-team-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .trends {
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  .trend-movil-content {
+    text-align: center; 
+    position: absolute;
+    bottom: 0; 
+    @media(min-width: 768px){
+      bottom: -4vw;
+    }
+  }
+
+  .trend-movil-user {
+    font-size: 22px !important;
+    font-weight: 700;
+    color: $dark;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .trend-movil-description {
+    font-size: 16px;
+    color: #87879c;
+    width: 80%;
+    margin: 0 auto;
+    background-color: $primary;
+  }
+
+  .trend-movil-middleware {
+    font-size: 12px;
+    color: #87879c;
+  }
+
+  .trend-card {
+    height: 100%;
+    .img-movil{
+      width: 100%;
+    }
+    &:hover{
+      .gestor{
+
+        bottom: 0;
+      }
+    }
+    .gestor {
+      position: absolute;
+      width: 100%;
+      bottom: -145px;
+      background-color: #f0f4f8;
+      left: 0;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+    }
+  }
+
+
+}
+.slider-2{
+  .VueCarousel-slide{
+    padding-bottom: 0px;
+    @media(min-width: 768px){
+      padding-left: 25px;
+      padding-right: 25px;
+
+    }
+  }
+}
+.carousel-valores{
+  .VueCarousel-slide{
+    width: 100%;
+    .slider {
+      box-shadow: -2px 4px 22px -11px rgba(0, 0, 0, 0.32) !important;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  }
+}
+
+.bg-shadow{
+  box-shadow: -2px 4px 22px -11px rgba(0, 0, 0, 0.32) !important; 
+}
+.w-50.title {
+  @include media-breakpoint-up(lg) {
+    width: 50% !important;
+  }
+}
+
+.our-team-title,
+.values-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 0 !important;
+  margin-bottom: -15px;
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 15px!important;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
+
+.team-card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  height: 60vh;
+
+  @include media-breakpoint-up(md){
+    height: 55vh;
+  }
+
+}
+
+.VueCarousel .VueCarousel-pagination[data-v-438fd353] {
+  position: absolute !important;
+  bottom: -3rem !important;
+}
+
+.valores-title {
+  font-size: 22px;
+}
+
+.values-img {
+
+  @media(min-width:992px) {
+    width: 80px;
+  }
+}
+
+.experience-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: $dark;
+}
+
+.experience-subtitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.experience-description {
+  font-size: 16px;
+  color: #1F1933 !important;
+  width: 90%;
+  margin-left: 3rem;
+  @media(min-width: 768px){
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .carousel.we-team{
+    display: none;
+  }
+}
+.experiencia-imagen{
+  // padding: 15px;
+  background-color: white;
+}
+.firbid-banner{
+  background: url("../../assets/fondos/zwhyfirbid-responsive.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 594px !important;   
+  @media(min-width: 768px) {
+      background-image:url("../../assets/fondos/2why-firbid-desktop.jpg") !important;
+      height: 594px !important;    
+      margin-top: 90px !important;
+  }
+}
+.firbid-banner1 {
+
+  @media(min-width: 768px) {
+
+    display: flex !important;
+    align-items: center;
+  }
+}
+.firbid-banner2 {
+  display: flex !important;
+  align-items: center;
+  padding-top: 86px !important;
+  justify-content: center;
+  .why-firbid{
+    padding-bottom: 0 !important; 
+  }
+  @media(min-width: 768px) {
+    display: none !important;
+    
+  }
+}
+//  WHY FIRBID
+.trend-card {
+  position: relative;
+  overflow: hidden;
+
+  .img-fluid[data-v-ef6b1b4c] {
+    height: 100%;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+
+.trend-card:hover {
+  background-color: white;
+}
+
+
+.why-firbid {
+  flex-direction: column;
+  margin-left: 15%;
+  .yomequedoencasa{
+    margin-bottom: 0;
+  }
+}
+
+.why-firbid-title {
+  font-size: 22px;
+  width: 60%;
+  font-weight: bold;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 50px;
+    width: 40%;
+  }
+}
+
+.why-firbid p {
+  width: 70%;
+  text-justify: auto;
+}
+
+.content .descrip {
+  font-size: 1.2vw !important;
+}
+
+
+.content .title {
+  font-size: 1.5vw !important;
+}
+
+// OUR VALUES
+.fondo-curvo {
+  padding-top: 30px;
+  background-color: #F0F4F8;
+}
+.us-3{
+  max-width: 1300px;
+  width: 100%;
+  box-shadow: none;
+  margin: auto;
+}
+.item-us-3{
+  padding-left: 15px;
+  padding-right: 15px;
+  @media(min-width: 768px)
+  {}
+  @media(min-width: 992px){
+
+    width: 25%;
+  }
+  @media(min-width: 1200px){
+    width: 25%;
+  }
+}
+.our-values-img-1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  // width: 50%;
+}
+
+.our-values-img-2 {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  // width: 50%;
+  z-index: 0;
+}
+
+.VueCarousel.d-lg-none.carousel.mt-5.mx-auto.bg-shadow {
+  .VueCarousel-pagination {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-values-lg {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+  }
+}
+
+.img-card {
+  width: 50%;
+}
+.nuestro-valores{
+  p{
+    text-align: justify;
+    @media(min-width: 992px){
+      text-align: left;
+    }
+  }
+  .values-title{
+    text-align: center !important;
+    padding-bottom: 15px;
+  }
+}
+
+.value-card {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: -2px 0 82px rgba(39, 44, 60, 0.13);
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  transition: all 0.6s;
+  display: none;
+  h3{
+    text-align: center;
+  }
+  @media(min-width: 768px){
+  }
+  @media(min-width: 992px){
+    text-align: left;
+    display: block;
+    height: 340px;
+    .values-title{
+      font-size: 17px;
+      padding-bottom: 15px;
+    }
+  }
+  @media(min-width: 1200px){
+    .values-title{
+      font-size: 20px;
+    }
+    height: 280px;
+
+  }
+}
+.value-card:hover{
+  transform: scale(1.1);
+}
+.value-card img {
+  margin-top: 1vw !important;
+}
+
+
+.value-title {
+  color: $primary;
+  font-weight: bold;
+  line-height: 20px;
+  @media(min-width: 992px){
+    height: 50px;
+  }
+  @media(min-width: 1200px){
+    height: 40px;
+  }
+}
+
+.value-description {
+  font-size: 14px;
+  color: #87879C;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.content img {
+  max-height: 64px;
+  @media(min-width:1400px){
+  }
+  @media(min-width:1200px){
+  }
+  
+  @media(min-width:1024px){
+    margin-top: 53px !important;
+    margin-bottom: 30px;
+  }
+  @media(min-width:992px){
+    margin-top: 30px !important;
+    margin-bottom: 30px;
+  }
+}
+
+.content .title {
+  color: #9768ff;
+  font-size: 1.2vw !important;
+}
+
+.content .descrip {
+  color: #87879c;
+  font-size: 1vw !important;
+}
+
+// ESAN
+.esan h3,
+.esan h4,
+.esan p {
+  text-align: left;
+}
+
+.esan p {
+  color: #1f1933;
+}
+
+.esan .description {
+  color: #87879c;
+  width: 80%;
+  font-size: 1.5vw;
+}
+
+.esan .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 5vw;
+}
+
+.esan .subtitle{
+  margin-top: -1rem;
+  font-size: 1.7rem; font-weight: bold;
+}
+
+// Footer
+.fondo-footer {
+  background-color: #272c3c;
+}
+
+// Footer
+.fondo-footer {
+  background-color: #272c3c;
+}
+
+.footer li {
+  margin-top: -10px;
+}
+
+.footer li p {
+  cursor: pointer;
+}
+
+.hide-md-y {
+  display: flex;
+}
+
+.hide-md-n {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .hide-md-y {
+    display: none;
+  }
+
+  .hide-md-n {
+    display: block;
+  }
+  .our-values-card{
+    .our-values-card-items{
+      display: none;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .our-values-lg{
+    display: none !important;
+  }
+
+  .our-values-responsive{
+    display: block !important;
+  }
+  
+  // BODY
+  .hide-xs {
+    display: none;
+  }
+  .hide-lg {
+    display: block;
+  }
+  .firbid-bg {
+    background-image: none !important;
+  }
+
+  .why-firbid {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .why-firbid p {
+    width: 100%;
+    text-justify: auto;
+  }
+  .why-firbid .title {
+    font-size: 6vw !important;
+    margin-bottom: 4.5vw !important;
+  }
+  .description {
+    margin-top: 5vw !important;
+  }
+  .our-values-card p:first-child {
+    text-align: center !important;
+  }
+  hr.mt-5 {
+    display: none;
+  }
+  .our-values {
+    background: url("../../assets/our-values-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  .our-values-card {
+    text-align: initial !important;
+  }
+  .VueCarousel-wrapper {
+    
+  }
+  .VueCarousel-dot[data-v-438fd353] button {
+    padding: 2px !important;
+  }
+  .slider {
+    background-color: white;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .slider img {
+    padding-top: 0 !important;
+    margin-top: 50px;
+    height: 54px;
+    margin-bottom: 10px;
+  }
+  .slider h3 {
+    font-size: 20px !important;
+    padding-left: 0 !important;
+    padding-bottom: 25px;
+  }
+  .slider{
+    max-width: 400px !important;
+    margin: auto;
+  }
+  .slider p {
+    font-size: 16px !important;
+    padding-left: 0 !important;
+    padding-bottom: 10px;
+  }
+  .our-values-card {
+    width: 100%;
+    text-align: center;
+  }
+  hr.text-info {
+    display: none;
+  }
+  .value-card {
+    margin-top: 40px;
+  }
+  // ESAN
+  .esan div h3,
+  .esan h4,
+  .esan p {
+    text-align: center;
+  }
+  .esan img {
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  
+  .why-firbid .descripcion-secundaria{
+    font-size: 14px !important;
+  }
+  .middleware{
+    font-size: 12px;
+  }
+  .esan .description {
+    color: #87879c;
+    width: 100%;
+    display: none;
+    font-size: 4vw;
+  }
+}
+
+.why-carousel{
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+  }
+}
+
+.VueCarousel-navigation{
+  display: block;
+}
+.card-img-top{
+  width: 100%;
+}
+.card{
+  margin-bottom: 10px;
+}
+
+.out-team-item{
+  padding-left: 5px;
+  padding-right: 5px;
+  @media(min-width:768px){
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .our-team-container{
+    box-shadow: 0px 10px 18px #272C3C21;
+    .img-presentation{
+      background-color: #272C3C;
+      position: relative;
+      height: 170px;
+      .name{
+        padding-top: 15px;
+        color: white;
+        text-align: center;
+        font-size: 23px;
+      }
+      
+      .title{
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 15px;
+        color: white;
+      }
+      img{
+        padding-top: 20px;
+        top:40px;
+        left: calc(50% - 75px);
+        max-height: 170px;        
+        position: absolute;
+        box-shadow: 0px 6px 11px #00000025;
+        border-radius: 50%;
+        @media(min-width: 768px){
+          left: calc(50% - 67.5px);
+          max-height: 135px;
+          padding-top: 0px;
+          top:60px;
+
+        }
+        @media(min-width: 992px){
+          top:60px;
+          max-height: 150px;
+          left: calc(50% - 75px);
+
+        }
+      }
+    }
+    .content-presentation{
+      background-color: white;
+      padding-top: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      .title{
+        font-size: 18px;
+        font-weight: bold;
+        color: #1F1933;
+        @media(min-width: 768px){
+        }
+        @media(min-width: 992px){}
+        @media(min-width: 1200px){
+          font-size: 23px;
+        }
+      }
+      .sub_title{
+        font-size: 16px;
+        color: #1F1933;
+        @media(min-width: 768px){}
+        @media(min-width: 992px){}
+        @media(min-width: 1200px){
+          font-size: 22px;
+        }
+      }
+      .descripcion{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        color: #87879C;
+        font-size: 16px;
+        text-align: justify;
+        @media(min-width: 768px){
+          height: 120px;
+        }
+        @media(min-width: 992px){
+          height: 90px;
+
+        }
+        @media(min-width: 1200px){
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+}
+.esan-img{
+  padding: 0;
+  img{
+    box-shadow: -2px 0px 82px 0px rgba(39, 44, 60, 0.13);
+  }  
+}
+@media only screen and (min-width: 768px){
+
+  .our-team{
+    .trends {      
+      .VueCarousel-wrapper {
+        width: 100%;
+        margin-left: 0vw;
+        // height: 70vw;
+      }
+    }  
+  }
+}
+
+.nuestra-experiencia{
+  @media(min-width:992px){
+    padding-right: 45px;
+  }
+  p{
+    color: #1F1933;
+    @media(min-width: 768px){
+      color: #87879C;
+    }
+    &.visible-sm{
+      display: none;
+      @media(min-width: 768px){
+        display: block;
+      }
+    }
+    &.title, &.title2{
+      color: #1F1933;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 30px;
+      margin-bottom: 0;
+      max-width: 268px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media(min-width: 768px){
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 37px;
+        max-width: initial;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      @media(min-width: 992px){
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 47px;
+        margin-bottom: 0;
+      }
+      @media(min-width: 1200px){
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+        margin-bottom: 0;
+      }
+    }
+    &.title2{
+      padding-bottom: 30px;
+    }
+    
+  }
+  
+}
+
+.why-titulo .descripcion-principal {
+  font-size: 20px ;
+  width: 90%;
+
+  @media(min-width: 768px){}
+  @media(min-width: 992px){
+    font-size: 42px;
+  }
+}
+
+.mobile-description {
+  font-size: 22px !important;
+  width: 100%;
+  max-width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}

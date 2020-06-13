@@ -1,0 +1,114 @@
+[
+    {
+        "id":"terminos01",
+        "descripcion":"General"
+    },
+    {
+        "id":"terminos02",
+        "descripcion":"Registro en la plataforma"
+    },
+    {
+        "id":"terminos03",
+        "descripcion":"Sobre fideicomiso de administración"
+    },
+    {
+        "id":"terminos04",
+        "descripcion":"Operatividad de la plataforma"
+    },
+    {
+        "id":"terminos05",
+        "descripcion":"Obligaciones"
+    },
+    {
+        "id":"terminos06",
+        "descripcion":"Sobre el incumplimientos de operaciones pactadas por el cliente"
+    },
+    {
+        "id":"terminos07",
+        "descripcion":"Uso de la plataforma"
+    },
+    {
+        "id":"terminos08",
+        "descripcion":"Administración de usuarios"
+    },
+    {
+        "id":"terminos09",
+        "descripcion":"Limitacion de responsabilidad"
+    },
+    {
+        "id":"terminos10",
+        "descripcion":"Vigencia y Cesión Contractual"
+    },
+    {
+        "id":"terminos11",
+        "descripcion":"Confidencialidad"
+    },
+    {
+        "id":"terminos12",
+        "descripcion":"Propiedad intelectual"
+    },
+    {
+        "id":"terminos13",
+        "descripcion":"Aviso de privacidad"
+    },
+    {
+        "id":"terminos27",
+        "descripcion":"Libro de reclamaciones"
+    },
+    {
+        "id":"terminos28",
+        "descripcion":"Ley aplicable y Jurisdicción"
+    },
+    {
+        "id":"terminos14",
+        "descripcion":"PROCEDIMIENTO DE ACEPTACIÓN CONTRACTUAL"
+    },
+    {
+        "id":"terminos15",
+        "descripcion":"FIRBID NO REALIZA INTERMEDIACIÓN FINANCIERA"
+    },
+    {
+        "id":"terminos16",
+        "descripcion":"MANDATO CON REPRESENTACION"
+    },
+    {
+        "id":"terminos17",
+        "descripcion":"IDENTIFICACION DEL CLIENTE y GESTION DE RIESGOS Y PREVENCIÓN LA/FT"
+    },
+    {
+        "id":"terminos18",
+        "descripcion":"PREMISAS DE LA OPERACIÓN"
+    },
+    {
+        "id":"terminos19",
+        "descripcion":"SUBASTA"
+    },
+    {
+        "id":"terminos20",
+        "descripcion":"PROCESO"
+    },
+    {
+        "id":"terminos21",
+        "descripcion":"CONSIDERACIONES ADICIONALES"
+    },
+    {
+        "id":"terminos22",
+        "descripcion":"OBLIGACIONES DE FIRBID"
+    },
+    {
+        "id":"terminos23",
+        "descripcion":"OBLIGACIONES DEL CLIENTE"
+    },
+    {
+        "id":"terminos24",
+        "descripcion":"CUENTA Y CONTRASEÑA "
+    },
+    {
+        "id":"terminos25",
+        "descripcion":"VIGENCIA Y RESOLUCIÓN DEL CONTRATO"
+    },
+    {
+        "id":"terminos26",
+        "descripcion":"CESIÓN DE POSICIÓN CONTRACTUAL"
+    }
+]

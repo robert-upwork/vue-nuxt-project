@@ -1,0 +1,406 @@
+.v-icon.mdi-menu-down{
+  display: none !important;
+}
+
+// EXCLUSIVOS
+el-upload {
+  height: 150px;
+}
+
+.el-upload-dragger {
+  width: 421px !important;
+  height: 73.86px !important;
+  border: 2px dashed #d9d9d9;
+}
+
+.input {
+  border-radius: 0px !important;
+  margin-bottom: 5px !important;
+}
+
+span.el-input__prefix {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.el-date-editor span {
+  visibility: hidden !important;
+}
+
+.el-input__icon,
+.el-input__prefix {
+  visibility: hidden;
+  display: none !important;
+}
+
+em {
+  color: #9768ff;
+}
+
+.sorry {
+  width: 80%;
+  margin: auto;
+}
+
+.ling {
+  justify-content: center;
+}
+
+// BODY
+.body {
+  font-family: "DM Sans";
+  font-weight: 400;
+  overflow-x: hidden;
+  margin-top: -15vh;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.w-700 {
+  font-weight: 700;
+}
+
+.hide-lg {
+  display: none;
+}
+
+// BANNER
+.fondo {
+  
+}
+
+.fondo-bg {
+  background: url("../../assets/fondos/f_libro.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  @media(min-width:768px){
+    background: url("../../assets/fondo_2.png");
+    background-position: bottom;
+    background-size: cover;
+
+  }
+}
+
+.banner {
+  margin-top: 15vh;
+}
+
+.banner-input {
+  width: 100%;
+}
+
+// LIBRO DE RECLAMACIONES
+.reclamation-bg {
+  background-color: #dce3ec;
+}
+
+.reclamation {
+  // padding-top: 100px;
+  // padding-bottom: 120px;
+  // padding-left: 10%;
+  // padding-right: 10%;
+}
+
+.container.reclamation{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.reclamation .w-25 {
+  width: 50vw !important;
+}
+
+@media screen and (max-width: 992px) {
+  // BODY
+  .hide-xs {
+    display: none;
+  }
+
+  .hide-lg {
+    display: block;
+  }
+
+  .fab,
+  .fas {
+    font-size: 1.8rem;
+  }
+
+  .fa-bars {
+    margin-right: 20%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  // SUBASTA
+  .cambio-banner {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-bid {
+    width: 98% !important;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .card-bid {
+    width: 98%;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+
+  .medium {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .change-type {
+    font-size: 16px;
+  }
+
+  .last-actualization,
+  .hour-actualization {
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .card-bid .title {
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ===============================
+        CUADRO COMPARATIVO
+   =============================== */
+  .compare-data {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .info-bid {
+    font-size: 11px;
+    width: 100%;
+  }
+
+  /* ===============================
+   =============================== */
+  .card-work img {
+    padding-top: 0%;
+    margin-left: 5%;
+  }
+
+  .card-work-title {
+    margin-left: 10%;
+    font-size: 1.5rem !important;
+  }
+
+  .card-work-description {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 0.8rem !important;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .testimonio {
+    width: 100% !important;
+  }
+  // HEADER
+  .nav-finale {
+    margin-top: 50%;
+  }
+
+  .firbid-responsive {
+    margin-top: 2rem;
+  }
+
+  .firbid-btn {
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .fab,
+  .fas {
+    font-size: 1.2rem;
+  }
+
+  .fa-bars {
+    margin-right: 20%;
+  }
+
+  // SUBASTA
+  .subasta {
+    background-size: initial;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  // OPERATIONS
+  .fideicomiso {
+    width: 90%;
+  }
+
+  // CUADRO COMPARATIVO
+  .imagen {
+    margin-left: !important;
+  }
+
+  // CARD-WORK
+  .card-work {
+    height: 50vh;
+  }
+
+  // TRENDS
+  // TENDENCIAS
+  .trend-card {
+    width: 100%;
+    height: 135vw;
+  }
+
+  // Testimonio
+  .testimonio {
+    width: 100% !important;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@media only screen and(max-width: 992px) {
+  .nombre-reclamacion,
+  .paterno-reclamacion,
+  .correo-reclamacion,
+  .direccion-reclamacion,
+  .fecha-reclamacion {
+    padding-bottom: 39px;
+  }
+}
+
+@media only screen and (max-width: 992px){
+
+  .reclamation .document-type-input input{
+    width: 35vw !important;
+  }
+
+  .reclamation .document-number-input, .reclamation .document-number-input input{
+    width: 40vw !important;
+  }
+
+  .fa-envelope{
+    top: 20% !important;
+  }
+
+  .reclamation .el-upload-dragger{
+    width: 80vw !important;
+  }
+
+  .container.reclamation{
+    // padding-left: 0 !important;
+    // padding-right: 0 !important;
+  }
+}
+
+
+.book-1{
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 83px;
+  h2{
+    margin-top: 30px;
+    font-size: 22px; 
+    padding-bottom: 30px;
+    @media(min-width: 768px){
+      font-size: 42px;
+    }
+  }
+  p{
+    font-size: 13px;
+    @media(min-width: 768px){
+      font-size: 16px;
+    }
+  }
+}
+
+.book-2{
+  padding-top: 40px !important;
+  padding-bottom: 100px;
+  p{
+    text-align: center;
+    @media(min-width: 768px){
+      text-align: left;
+    }
+  }
+  input{
+    &.el-input__inner{
+  
+      width: 100% !important;
+    }
+  }
+  .el-select, .el-input__inner{
+    width: 100% !important;
+  }
+  input, textarea{
+    width: 100% !important;
+  }
+
+}
+
+.el-input,
+.el-select,
+.el-input__inner {
+  height: 60px;
+  width: 80vw;
+  margin-bottom: 2rem;
+}
+
+@media(min-width:768px){
+  .el-select,
+  .el-input__inner {
+    height: 60px;
+    width: 100%;
+    max-width: 460px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.el-upload-dragger{
+
+  transition: 0.5s;
+}
+.el-upload-dragger:hover{
+  border-color: #272C3C !important;
+}
+.column-reclamation-book{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.btn-send-book{
+  background-color: #9768ff; 
+  padding-left: 45px;
+  padding-right: 45px;
+  color: #dce3ec;
+  &:hover, &:focus{
+    color: white;
+  }
+}

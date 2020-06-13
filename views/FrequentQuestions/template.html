@@ -1,0 +1,1101 @@
+<div>
+  <!-- BANNER -->
+  <div>
+    <div class="fondo-frequent row align-items-center text-center justify-content-center no-gutters">
+      <ul class="navbar-nav ">
+        <li class="nav-item"></li>
+        <h2 class="nav-link title text-white w-400 complemento-frecuente">
+          Te damos la bienvenida a nuestras
+        </h2>
+        </li>
+
+        <li class="nav-item text-white titulo-frecuente">
+          <p class="category"">Preguntas Frecuentes</p>
+        </li>
+        <li class="input-searching nav-item d-flex align-items-center">
+          <div style="position: relative; width: 100%;">
+            <el-select @change="scrolling(result)" class="select" filterable clearable v-model="result"
+              placeholder="Buscar por palabras claves">
+              <el-option class="slider" v-for="(item, index) in preguntas" :key="item.id" :label="item.descripcion"
+                :value="item.id"></el-option>
+            </el-select>
+            <div class="clicking-content slider">
+              <img src="@/assets/lupa.svg" alt="">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Banner -->
+  <div class="col-12 sinpa container-fluid second-banner row no-gutters p-0 m-0 color-menu"
+    style="background-color: #ffffff;">
+    <div class="col-xs-12 col-lg-4">
+      <div style="background-color: white; " class="nav mx-auto agrupador flex-column nav-pills" id="v-pills-tab"
+        role="tablist" aria-orientation="vertical">
+        <p class="preguntas-title" >Índice</p>
+        <!-- <a class=" preguntados preguntas01 active menu-options" id="v-pills-home-tab" data-toggle="pill"
+          href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">01. General</a> -->
+        <a class=" preguntados menu-options preguntas02" id="v-pills-profile-tab" data-toggle="pill"
+          href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">01. Información
+          Básica</a>
+        <a class=" menu-options preguntados preguntas03" id="v-pills-non-compliance-tab" data-toggle="pill"
+          href="#v-pills-non-compliance" role="tab" aria-controls="v-pills-non-compliance" aria-selected="false">02.
+          Incumplimiento de operaciones
+          pactadas</a>
+        <a class=" menu-options preguntados preguntas04" id="v-pills-bid-tab" data-toggle="pill"
+          href="#v-pills-bid" role="tab" aria-controls="v-pills-bid" aria-selected="false">03. La Subasta</a>
+        <a class=" menu-options preguntados preguntas05" id="v-pills-interbancary-tab" data-toggle="pill"
+          href="#v-pills-interbancary" role="tab" aria-controls="v-pills-interbancary" aria-selected="false">04.
+          Registro de usuarios</a>
+        <a class=" menu-options preguntados preguntas06" id="v-pills-client-tab" data-toggle="pill"
+          href="#v-pills-client" role="tab" aria-controls="v-pills-client" aria-selected="false">05. Operaciones por el
+          cliente</a>
+        <a class=" menu-options preguntados preguntas07" id="v-pills-security-tab" data-toggle="pill"
+          href="#v-pills-security" role="tab" aria-controls="v-pills-security" aria-selected="false">06. Seguridad</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-8">
+      <div class="tab-content" style="margin-top: 10vh;" id="v-pills-tabContent">
+        <!-- TAB 1 -->
+        <!-- <div class="tab-pane fade  preguntas01 show active" id="v-pills-home" role="tabpanel"
+          aria-labelledby="v-pills-home-tab" style="line-height: 24px; width: 100%;">
+          <p class="span"><span style="color: #87879C;">Preguntas frecuentes de FIRBID</span></p>
+          <p class="span"><span style="color: #87879c;">
+              Última modificación: 30 de marzo de 2020
+            </span>
+          </p>
+          <p>
+            Te agradecemos que uses el servicio de FIRBID El servicio se brinda
+            a través de FIRBID Soluciones Digitales SAC, cuyo domicilio fiscal
+            está ubicado en Calle Alonso de Molina 171, Oficina 301, Santiago de
+            Surco, Lima, Perú.
+          </p>
+          <h5 style="font-size: 22px;">General</h5>
+          <p>
+            1. Asegúrate de tener configurado tus cuentas de banco en soles y
+            dólares.
+          </p>
+          <p>
+            2. Una operación confirmada y no cumplida está sujeto a penalidades
+            equivalentes al 0.5% del valor de la operación y cancelación de la
+            cuenta del USUARIO.
+          </p>
+          <p>
+            3. No aceptamos cheques, ni efectivo.
+          </p>
+          <p>
+            4. Por seguridad, solo trabajamos con cuentas bancarias del titular.
+          </p>
+          <p>
+            5. Una vez confirmada y pactada la operación, tienes 10 minutos para
+            confirmar la transferencia de los fondos.
+          </p>
+          <p>
+            6. Asegurate que has autorizado a tu banco hacer transferencia
+            bancarias por los montos que vas a operar
+          </p>
+        </div> -->
+        <!-- TAB 2 -->
+        <div class="tab-pane fade preguntas02 show active" id="v-pills-profile" role="tabpanel"
+          aria-labelledby="v-pills-profile-tab">
+          <p style="font-size: 22px; width: 100%;">Información Básica</p s>
+          <p style="width: 100%;">Puntos que debes saber antes de iniciar una subasta en FIRBID.</p>
+          <ul class="navbar-nav " style="width: 100%;">
+            <li class="nav-item">
+              <p>
+                1. Asegúrate de tener configuradas tus cuentas de banco en soles y dólares.
+              </p>
+            </li>
+            <li class="nav-item">
+              <p>
+                2. Una operación confirmada y no pagada está sujeta a la suspensión del servicio de subasta de dólares.
+              </p>
+            </li>
+            <li class="nav-item">
+              <p>
+                3. No aceptamos cheques, ni efectivo, toda operación se debe realizar por la banca online de tu banco.
+              </p>
+            </li>
+            <li class="nav-item">
+              <p>
+                4. Por seguridad, solo trabajamos con cuentas bancarias del titular de la cuenta FIRBID.
+              </p>
+            </li>
+            <li class="nav-item">
+              <p>
+                5. Asegúrate que has autorizado a tu banco hacer transferencias bancarias por los montos que vas a
+                negociar.
+              </p>
+            </li>
+          </ul>
+
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link pregunta" id="preguntas08" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Me cobran por usar FIRBID?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="preguntas08 collapse" aria-labelledby="headingOne"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    No te cobramos ningun tipo de comisión por el uso del servicio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas09" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Desde qué bancos puedo transferir/recibir mi dinero?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse preguntas09" aria-labelledby="headingTwo"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    Por el momento tenemos cuentas bancarias de fideicomiso en los siguientes bancos: <b> BCP, Interbank
+                      y BBVA.</b>
+                  </p>
+
+                  <p>
+                    Puedes transferir y recibir tu dinero desde otros bancos, pero debes considerar que esta operación
+                    puede ejecutarse hasta en un día útil por los procesos y tiempos interbancarios
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas10" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Necesito un monto mínimo para operar en FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse preguntas10" aria-labelledby="headingThree"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  En estos momentos el monto mínimo para operar es 100 dólares.
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas11" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿FIRBID funciona con cuentas bancarias fuera de Lima?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse preguntas11" aria-labelledby="headingFour"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    Solo con cuentas bancarias del Banco de Crédito del Perú (“BCP”) es posible operar desde cualquier
+                    plaza sin costo alguno. Con otras entidades bancarias existe un costo promedio de transferencia
+                    interplaza de 0.5% del monto transferido.
+                    <br><br>
+                    Estamos trabajando en desarrollar un proceso y sistema que haga un mercado financiero más justo y
+                    transparente.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas12" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Puedo operar en FIRBID con efectivo?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse preguntas12" aria-labelledby="headingFive"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    No; por seguridad, las operaciones solo podrán pagarse a través de transferencias electrónicas.
+                    FIRBID no recibirá cheques, ni efectivo. Con FIRBID ya no necesitas realizar largas colas o
+                    exponerte con trasladar dinero físico para obtener un tipo de cambio competitivo, opera en digital.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas13" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿En qué horario funciona el servicio FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse preguntas13" aria-labelledby="headingSix"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    FIRBID está abierto de lunes a viernes desde las 09:00 a.m. a 5:00 p.m. Sin embargo, te recomendamos
+                    negocies tus operaciones de compra y venta de dólares en horas de la mañana, dado que el tipo de
+                    cambio es más competitivo en ese momento.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Septima -->
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas14" type="button" data-toggle="collapse"
+                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué monedas puedo negociar en FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven" class="collapse preguntas14" aria-labelledby="headingSeven"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    En FIRBID actualmente puedes negociar operaciones de compra y venta de “DOLARES”. En el futuro evaluaremos incluir otras monedas y otros tipos de productos financieros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Octava -->
+            <div class="card">
+              <div class="card-header" id="headingEight">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas15" type="button" data-toggle="collapse"
+                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cómo sé que mi dinero está seguro?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseEight" class="collapse preguntas15" aria-labelledby="headingEight"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    FIRBID trabaja con inversionistas, entidades financieras y grupos económicos de gran respaldo que
+                    operan en los grandes mercados financieros.
+                  </p>
+                  <p>
+                    Asimismo, tu dinero siempre estará seguro gracias a la presencia de la corporación fiduciaria CORFID, tus fondos operarán en cuentas bancarias inembargables e intangibles, eliminando cualquier riesgo de fraude. 
+                  </p>
+                  <p>
+                    Las empresas registradas en la Superintendencia de Banca, seguros y AFPs (“SBS”), como las casas de
+                    cambio no necesariamente garantizan la inembargabilidad del dinero de sus clientes, fraudes o
+                    pérdidas de los fondos. La presencia de la SBS no ha determinado ningún fondo de seguro en dichos
+                    escenarios.
+                  </p>
+                  <!-- <p>
+                    Por ejemplo, si una casa de cambio tiene alguna deuda con
+                    SUNAT y este embarga sus cuentas bancarias de intercambio,
+                    pone en riesgo el fondo de sus clientes.
+                  </p> -->
+                </div>
+              </div>
+            </div>
+            <!-- Novena -->
+            <div class="card">
+              <div class="card-header" id="headingNine">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas16" type="button" data-toggle="collapse"
+                    data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué es el fideicomiso?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseNine" class="collapse preguntas16" aria-labelledby="headingNine"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    El fideicomiso es una relación jurídica en la cual el fiduciante (“quien aporta”) transfiere bienes
+                    en fideicomiso a un tercero, que se denomina fiduciario (Corporación fiduciaria CORFID), para la
+                    construcción de un patrimonio autónomo, sujeto al dominio fiduciario de este último y afecto al
+                    cumplimiento del fin especifico de “cambio de monedas” a favor de un tercero denominado beneficiario
+                    (“Cliente”).
+                  </p>
+                  <p>
+                    El fideicomiso constituye un patrimonio autónomo e independiente de todas las partes involucradas.
+                    Con la finalidad de garantizar la adecuada administración de los fondos que se operan a través de la
+                    plataforma FIRBID, todas las sumas de dinero son depositadas en una cuenta bancaria (la “cuenta
+                    FIRBID”) abierta a nombre del patrimonio fideicomitido creado y administrado por CORFID corporacion
+                    fiduciaria (el “fiduciario”) en virtud del contrato de fideicomiso de administración de fecha 07 de
+                    febrero de 2020 (el “contrato de fideicomiso”), en los términos y condiciones establecidos en el
+                    Contrato de Fideicomiso.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Decima -->
+            <div class="card">
+              <div class="card-header" id="headingTen">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas17" type="button" data-toggle="collapse"
+                    data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿A qué cuentas me van a depositar el dinero?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTen" class="collapse preguntas17" aria-labelledby="headingTen"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    El pago de tus operaciones se realizará a las cuentas bancarias que hayas instruido en tu operación. Es importante mencionar que antes de inicar una subasta es necesario que agregues los números de tus cuentas bancarias para realizar tus operaciones.
+                  </p>
+                  <p>
+                    Por tu seguridad, siempre pagaremos a las cuentas bancarias del titular.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Onceava -->
+            <div class="card">
+              <div class="card-header" id="headingEleven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas18" type="button" data-toggle="collapse"
+                    data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Puedo tener más de una cuenta en FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseEleven" class="collapse preguntas18" aria-labelledby="headingEleven"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    No, la cuenta es personal, única e intransferible, y está prohibido que el USUARIO / CLIENTE
+                    registre o posea más de una cuenta. En caso de que FIRBID detecte distintas cuentas que contengan
+                    datos coincidentes o relacionados, podrá suspender o desactivar la cuenta.
+                  </p>
+                  <p>
+                    Por otro lado, puede suceder que un usuario tenga una cuenta como persona natural y otra como empresa jurí­dica, siempre y cuando el correo electrónico no sea el mismo en ambas cuentas. En ese caso, no existirá ningún inconveniente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Doceava -->
+            <div class="card">
+              <div class="card-header" id="headingTwelve">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas19" type="button" data-toggle="collapse"
+                    data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Por qué confirmar una operación con la contraseña de acceso?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwelve" class="collapse preguntas19" aria-labelledby="headingTwelve"
+                data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>
+                    La contraseña de acceso funciona como un token digital que permite al USUARIO / CLIENTE aceptar los
+                    términos y condiciones de cada operación pactada. Así mismo, evita cualquier riesgo de suplantación
+                    de cuenta, fraude y errores en el momento de configurar una operación.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Treceava -->
+            <div class="card">
+              <div class="card-header" id="headingThirteen">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas20" type="button" data-toggle="collapse"
+                    data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué pasa si me equivoqué en la configuración de mi operación y la adjudiqué con mi contraseña?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThirteen" class="collapse preguntas20" aria-labelledby="headingThirteen"
+                data-parent="#accordionSolo">
+                <div class="card-body">
+                  <p>
+                    Debes comunicarte inmediatamente a través de nuestros canales de atención y soporte: WhatsApp,
+                    teléfono o chat corporativo, indicando el número de seguimiento de la operación para que nuestro
+                    equipo, te ayude a evitar cualquier riesgo de incumplimiento de pago por operación pactada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- TAB 3 -->
+        <div class="tab-pane preguntas03 fade show " style="line-height: 24px; width: 100%;"
+          id="v-pills-non-compliance" role="tabpanel" aria-labelledby="v-pills-non-compliance-tab">
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionSolo">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta ml-1" id="preguntas21" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="color:#1F1933; width: 80%;">¿Hay alguna penalidad por incumplimiento de
+                    pago de una operación pactada?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse preguntas21" aria-labelledby="headingOne"
+                data-parent="#accordionSolo">
+                <div class="card-body ml-3">
+                  <p>
+                    Según los términos y condiciones del <b>CONTRATO DE TÉRMINOS Y CONDICIONES DE USO</b>, en caso de
+                    incumplimiento de pago de una operación pactada, se suspende el servicio de subasta para él cliente.
+                  </p>
+                  <p>
+                    Deberás comunicarte a través de nuestros canales de atención, solicitar el permiso para pagar la
+                    operación pactada y evitar la suspensión del servicio de subasta.
+                  </p>
+                  <p>
+                    En caso no realices este procedimiento, el servicio de subasta será suspendido hasta el pago de una
+                    penalidad equivalente al <b>0.5% del valor de la operación</b> para cubrir los gastos operativos y
+                    financieros de la operación pactada a una entidad financiera.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 4 -->
+        <div class="tab-pane fade preguntas04 show" id="v-pills-bid" role="tabpanel"
+          aria-labelledby="v-pills-bid-tab">
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionBid">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button pregunta" id="preguntas22" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="text-align: initial; color:#1F1933;">¿Cómo funciona el proceso de subasta en FIRBID?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse preguntas22" aria-labelledby="headingOne" data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    El proceso de subasta está compuesto de 4 pasos simples y rápidos:
+                  </p>
+                  <ul class="navbar-nav " style="width: 80%;">
+                    <li class="nav-item">
+                      <p>
+                        1. Configura la cantidad a subastar y en 1 minuto las entidades financieras competirán en línea con su tipo de cambio.
+                      </p>
+                    </li>
+                    <li class="nav-item">
+                      <p>
+                        2. Tienes hasta 3 minutos para confirmar el mejor tipo de cambio como resultado de tu subasta.
+                      </p>
+                    </li>
+                    <li class="nav-item">
+                      <p>
+                        3. Transfiere el monto de la operación a la cuenta bancaria a nombre de “fideicomiso FIRBID”
+                        administrado por la corporación fiduciaria CORFID.
+                      </p>
+                    </li>
+                    <li class="nav-item">
+                      <p>
+                        4. El fideicomiso verifica y en 15 minutos promedio realiza la transferencia del contravalor en
+                        la cuenta bancaria registrada, en caso la cuenta sea desde los bancos BCP, BBVA o INTERBANK. Con
+                        otros bancos, las transferencias son interbancarias y puede demorar 1 día dependiendo de los
+                        horarios interbancarios.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas23" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cuánto tiempo dura la subasta en FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse preguntas23" aria-labelledby="headingTwo" data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    El tiempo de la subasta es de 1 minuto.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas24" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cuánto tiempo tengo para confirmar la operación una vez concluida la subasta?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse preguntas24" aria-labelledby="headingThree"
+                data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    Una vez concluida la subasta, tienes (03) tres minutos para confirmar el tipo de cambio ganador
+                    ofrecido por las instituciones registradas. Posterior a ese tiempo la operación se cancelará y
+                    deberás configurar una nueva operación.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas25" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cuánto tiempo tengo para hacer la transferencia de los fondos una vez confirmada la operación?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse preguntas25" aria-labelledby="headingFour"
+                data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    Una vez confirmada y pactada la operación con la entidad financiera, tienes (20) veinticinco minutos para confirmar el depósito de los fondos en las cuentas de fideicomiso. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas26" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué pasa si se me presenta un imprevisto y no podré depositar los fondos en el tiempo reglamentado?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse preguntas26" aria-labelledby="headingFive"
+                data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    Comunícate inmediatamente a través de nuestros canales chat o via telefónica para ayudarte y darte el soporte necesario para que no se genere una operación incumplida que te desahabilite de la comunidad, ni te asignen un cobro de penalidades. Asimismo, mantener el tipo de cambio pactado.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas27" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿En cuánto tiempo recibo mi dinero una vez haya hecho el depósito de los fondos?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse preguntas27" aria-labelledby="headingSix"
+                data-parent="#accordionBid">
+                <div class="card-body">
+                  <p>
+                    Una vez que hayamos verificado que los fondos se encuentran en las cuentas de fideicomiso, el depósito de tus fondos es inmediato, nosotros te notificaremos la transferencia al instante. Si se trata de un mismo banco, es aproximadamente 15 minutos. Si se trata de una transferencia interbancaria dependerá de los horarios de los bancos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 5 -->
+        <div class="tab-pane fade preguntas05 show " id="v-pills-interbancary" role="tabpanel"
+          aria-labelledby="v-pills-interbancary-tab">
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionBank">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button pregunta" id="preguntas28" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="text-align: initial; color:#1F1933;">¿La información proporcionada en el registro es confidencial?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse preguntas28" aria-labelledby="headingOne" data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    Si, nosotros no publicamos ningún tipo de información de nuestros clientes, en cumplimiento con la Ley de Protección de Datos. La información nos sirve para que la empresa fiduciaria valide que nuestros USUARIOS no están vinculados a procesos de lavado de activos y financiamiento al terrorismo.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas29" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cuánto tiempo demora el proceso de validación de cuenta?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse preguntas29" aria-labelledby="headingTwo" data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    El proceso es inmediato ya que hemos integrado nuestros sistemas a RENIEC, SUNAT y la empresa fiduciaria para hacer que este proceso sea ágil. 
+                  </p>
+                  <p>
+                    Para asegurar la seguridad de las transacciones realizadas en la plataforma, se realizará una validación de los datos ingresados al crear tu cuenta, previo a que puedas realizar operaciones. Para esta validación, podrí­amos requerir información adicional que será solicitada en el momento oportuno.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas30" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="text-align: initial; color:#1F1933!important;">
+                    Soy extranjero. ¿Puedo crear una cuenta en FIRBID?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse preguntas30" aria-labelledby="headingThree"
+                data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    Sí­, puedes registrarte con la información de tu Carnet de Extranjería o Pasaporte.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas31" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    style="text-align: initial; color:#1F1933!important;">
+                    Me preguntan si soy PEP¿Qué significa eso?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse preguntas31" aria-labelledby="headingFour"
+                data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    Una PEP (persona expuesta polí­ticamente) son personas naturales, nacionales o extranjeras, que cumplen o que en los últimos cinco (5) años hayan cumplido funciones públicas destacadas o funciones prominentes en una organización internacional, sea en el territorio nacional o extranjero y cuyas circunstancias financieras puedan ser objeto de un interés público. Incluye a sus parientes hasta segundo grado de consanguinidad, segundo de afinidad y al cónyuge.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas32" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué cargos podrían ser considerados como PEP?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse preguntas32" aria-labelledby="headingFive"
+                data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    Los cargos más comunes son: presidentes, jefes de estado, ministros, regidores, gobernadores, fiscales, jueces, dirigentes políticos, altos mandos militares o de la Policí­a, gerentes de empresas con participación estatal mayoritaria, cónsules, embajadores, etc.
+                  </p>
+                  <p>
+                    También son consideradas PEP los colaboradores directos de las personas mencionadas en la lista anterior.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas33" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Existen requisitos para registrarse?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse preguntas33" aria-labelledby="headingSix"
+                data-parent="#accordionBank">
+                <div class="card-body">
+                  <p>
+                    Los requisitos son mínimos para asegurarnos de crear una comunidad de empresas y personas seguras, con sentido de pertenencia:
+                  </p>
+                  <ul>
+                    <li class="ml-4">Tener cuentas bancarias en soles y dólares.</li>
+                    <li class="ml-4">No tener antecedentes policiales, crediticios, ni antecedentes de lavado de activos y financiamiento al terrorismo.</li>
+                    <li class="ml-4">Ser domiciliado en territorio peruano.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 6 -->
+        <div class="tab-pane fade preguntas06 show" id="v-pills-client" role="tabpanel"
+          aria-labelledby="v-pills-interbancary-tab">
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionClient">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break ml-3" type="button pregunta" id="preguntas34" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Qué son las operaciones interbancarias?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse preguntas34" aria-labelledby="headingOne"
+                data-parent="#accordionClient">
+                <div class="card-body ml-3">
+                  <p>
+                    Son operaciones realizadas desde bancos distintos al BCP, BBVA o INTERBANK, debiendo operar a través
+                    de transferencias interbancarias. Esto se debe a que la entidad fiduciaria no tiene cuentas
+                    bancarias en dichos bancos para las operaciones de FIRBID.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas35" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Cuál es la diferencia entre las
+                    operaciones por BCP, Interbank y BBVA con las operaciones Interbancarias?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseTwo" class="collapse preguntas35" aria-labelledby="headingTwo"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    La diferencia está en el tiempo. Esto se debe a que en estas operaciones participan bancos en donde
+                    la entidad fiduaciaria aún no tiene cuentas para las operaciones de FIRBID; por lo tanto, el proceso
+                    se adecua a los horarios para transferencias interbancarias que tienen estos bancos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas36" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Cuánto tiempo se demora la Operación
+                    Interbancaria?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseThree" class="collapse preguntas36" aria-labelledby="headingThree"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    La recepción del dinero depende del horario de la operación realizada. Nosotros te notificaremos una
+                    vez hayamos recibido tus fondos, en ese instante transferiremos y te comunicaremos que tus fondos ya
+                    han sido instruidos a tu cuenta de destino configurada.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas37" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Qué necesito para realizar Operaciones
+                    Interbancarias?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseFour" class="collapse preguntas37" aria-labelledby="headingFour"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    Debe registrar el código de cuenta interbancario (CCI) de sus cuentas soles y/o dóares, para el
+                    origen y destino de la operación.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas38" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Qué es el CCI?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseFive" class="collapse preguntas38" aria-labelledby="headingFive"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    Es el Código de Cuenta Interbancario (CCI), y sirve para realizar transferencias entre diferentes
+                    bancos. Este CCI puede verificarlo en su banca en lí­nea.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas39" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                    style="text-align: initial; color:#1F1933; width: 100%;">
+                    ¿Qué son las Transferencias Interbancarias Inmediatas?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseSix" class="collapse preguntas39" aria-labelledby="headingSix"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    Es una alternativa que proporcionan los bancos para que las transferencias interbancarias se
+                    realicen rápidamente y es solo válida para personas. Esta opción debe ser elegida desde tu banca en
+                    línea pues no aparece de forma automática.
+                  </p>
+                  <p>
+                    Para este tipo de transferencias desde tu banca en línea, todos los bancos tienen como límite máximo $ 10 mil dólares americanos y un horario establecido de lunes a viernes de 9 am a 3:45pm.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas40" data-toggle="collapse"
+                    data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Cómo realizar una Operación Interbancaria?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseSeven" class="collapse preguntas40" aria-labelledby="headingSeven"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    Para realizar una transferencia interbancaria o transferencia a otros bancos desde tu banca en
+                    lí­nea, debes ingresar el tipo y número de tu documento, además del CCI de la cuenta que FIRBID te
+                    asignó en el momento que registraste tu operación.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="card">
+              <div class="card-header" id="headingEight">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas41" data-toggle="collapse"
+                    data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"
+                    style="text-align: initial; color:#1F1933; width: 100%;">¿Existen montos mí­nimos y máximos por
+                    Operación Interbancaria?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseEight" class="collapse preguntas41" aria-labelledby="headingEight"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    La cantidad mínima para transferencias interbancarias es de $ 500 dólares americanos y no existe un
+                    lí­mite de monto máximo de transferencia. La cuenta o el banco puede tener algún límite de
+                    transferencia interbancaria, te sugerimos consultarlo con tu banco.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingNine">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-break" type="button pregunta" id="preguntas42" data-toggle="collapse"
+                    data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+                    style="text-align: initial; color:#1F1933; width: 100%;">
+                    ¿Existe algún costo por este tipo de Operación Interbancaria?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseNine" class="collapse preguntas42" aria-labelledby="headingNine"
+                data-parent="#accordionClient">
+                <div class="card-body">
+                  <p>
+                    FIRBID no cobra ningún tipo de comisión. Sin embargo, para este tipo de transacciones tu banco puede cobrarte comisión por transferir a otro banco, para saber el monto exacto te sugerimos consultarlo. De ser el caso, debes cubrir la comisión de enví¬o de dinero a FIRBID y nosotros asumimos la comisión al realizar la transferencia de retorno a tu cuenta bancaria destino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAB 7 -->
+        <div class="tab-pane fade preguntas07 show " id="v-pills-security" role="tabpanel"
+          aria-labelledby="v-pills-client-tab">
+          <div class="accordion" style="line-height: 24px; width: 90%;" id="accordionSecurity">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link pregunta" id="preguntas43" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Cómo sé que mis fondos están seguros?
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="preguntas43 collapse" aria-labelledby="headingOne"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>
+                    Tus fondos operan en cuentas bancarias inembargables estructuradas por la corporación fiduciaria CORFID. Eliminando cualquier tipo de riesgo financiero o fraude de cualquier participante o institución financiera que participa en las operaciones de intercambio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas44" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué tan seguro es usar FIRBID para cambiar dinero online?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse preguntas44" aria-labelledby="headingTwo"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>
+                    Nuestra tecnologí­a ha sido desarrollada bajo los estandares de seguridad de la información ISO 27001, que cumple con todos los procesos y estandares de seguridad tecnológica. De esa manera, toda la organización tiene procesos alineados a garantizar la seguridad del sistema y de las operaciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas45" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Por qué tengo que proporcionar mis datos personales y de mi empresa para registrarme?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse preguntas45" aria-labelledby="headingThree"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>Para que la entidad fiduciaria cumpla con la Resolución SBS Nro. 486-2008 y resoluciones adicionales vigentes hasta el momento, publicadas por la UIF - SBS.</p>
+                  <p>La información que nos entregues es confidencial y cumplimos con la con la Ley de Protección de Datos. </p>
+                  <p>
+                    Contamos también con políticas de privacidad que puedes leer. Si aún tienes preguntas, siempre estamos a tu disposición.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas46" type="button" data-toggle="collapse"
+                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué significa que la entidad fiduciaria esté registrada en la SBS?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse preguntas46" aria-labelledby="headingFour"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>
+                    De acuerdo a la ley 29028 y la resolución de la SBS N486 2008, la corporación fiduciaria CORFID tiene procesos auditados y supervisados por la SBS al igual que un banco. Tiene designado un oficial de cumplimiento para las operaciones de FIRBID y se encargará de registrar las operaciones realizadas y validar los datos del usuario, reportar a la Unidad de Inteligencia Financiera (UIF) las operaciones sospechosas, capacitar y monitorear a los trabajadores de la organización.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas47" type="button" data-toggle="collapse"
+                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué una empresa este registrada en SBS es suficiente para tener mis fondos seguros?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse preguntas47" aria-labelledby="headingFive"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>
+                    No, ello no asegura que la empresa donde realizas tus operaciones financieras, no tenga ningún problema financiero que pueda poner en riesgo tus fondos. Por ejemplo, una deuda con SUNAT podrí¬a embargar los fondos de las cuentas de la empresa, poniendo en riesgo los fondos de los USUARIOS.
+                  </p>
+                  <p>
+                    Por esta razón, FIRBID salvaguarda tus fondos en una empresa tercera, independiente, regulada por la SBS, que garantice la inembargabilidad de los fondos de los USUARIOS.
+                  </p>
+                  <p>
+                    La empresa fiduciaria tiene procesos y sistemas auditados por los agentes reguladores, que garanticen la seguridad de los fondos de los USUARIOS.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed pregunta" id="preguntas48" type="button" data-toggle="collapse"
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                    style="text-align: initial; color:#1F1933!important;">
+                    ¿Qué sucede si la institución registrada no realiza el depósito de los fondos o se hecha para atrás en la operación?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse preguntas48" aria-labelledby="headingSix"
+                data-parent="#accordionSecurity">
+                <div class="card-body">
+                  <p>
+                    Las empresas financieras mantienen fondos en las cuentas de fideicomiso para garantizar el cumplimiento de todas las operaciones a los USUARIOS.
+                  </p>
+                  <p>
+                    Las empresas financieras registradas son solidas y pertenecen a grupos importantes en el sector financiero. No existe un riesgo de incumplimiento para el USUARIO.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

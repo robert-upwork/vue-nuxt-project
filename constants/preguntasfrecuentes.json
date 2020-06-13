@@ -1,0 +1,187 @@
+[
+  {
+    "id": "preguntas01",
+    "descripcion": "General"
+  },
+  {
+    "id": "preguntas02",
+    "descripcion": "Información Basica"
+  },
+  {
+    "id": "preguntas03",
+    "descripcion": "Incumplimiento de operaciones pactadas"
+  },
+  {
+    "id": "preguntas04",
+    "descripcion": "La subasta"
+  },
+  {
+    "id": "preguntas08",
+    "descripcion": "Me cobran por usar FIRBID"
+  },
+  {
+    "id": "preguntas09",
+    "descripcion": "¿Desde qué bancos puedo transferir/recibir mi dinero?"
+  },
+  {
+    "id": "preguntas10",
+    "descripcion": "¿Necesito un monto mínimo para operar en FIRBID?"
+  },
+  {
+    "id": "preguntas11",
+    "descripcion": "¿FIRBID funciona con cuentas bancarias fuera de Lima?"
+  },
+  {
+    "id": "preguntas12",
+    "descripcion": "¿Puedo operar en FIRBID con efectivo?"
+  },
+  {
+    "id": "preguntas13",
+    "descripcion": "¿En qué horario funciona el servicio FIRBID?"
+  },
+  {
+    "id": "preguntas14",
+    "descripcion": "¿Qué monedas puedo negociar en FIRBID?"
+  },
+  {
+    "id": "preguntas15",
+    "descripcion": "¿Cómo sé que mi dinero está seguro?"
+  },
+  {
+    "id": "preguntas16",
+    "descripcion": "¿Qué es el fideicomiso?"
+  },
+  {
+    "id": "preguntas17",
+    "descripcion": "¿A qué cuentas me van a depositar el dinero?"
+  },
+  {
+    "id": "preguntas18",
+    "descripcion": "¿Puedo tener más de una cuenta en FIRBID?"
+  },
+  {
+    "id": "preguntas19",
+    "descripcion": "¿Por qué confirmar una operación con la contraseña de acceso?"
+  },
+  {
+    "id": "preguntas20",
+    "descripcion": "¿Qué pasa si me equivoqué en la configuración de mi operación y la adjudiqué con mi contraseña?"
+  },
+  {
+    "id": "preguntas21",
+    "descripcion": "¿Hay alguna penalidad por incumplimiento en caso no deposite los fondos en la fecha y hora indicada?"
+  },
+  {
+    "id": "preguntas22",
+    "descripcion": "¿Cómo funciona el proceso de subasta en FIRBID?"
+  },
+  {
+    "id": "preguntas23",
+    "descripcion": "¿Cuánto tiempo dura la subasta en FIRBID?"
+  },
+  {
+    "id": "preguntas24",
+    "descripcion": "¿Cuánto tiempo tengo para confirmar la operación una vez concluida la subasta?"
+  },
+  {
+    "id": "preguntas25",
+    "descripcion": "¿Cuánto tiempo tengo para hacer la transferencia de los fondos una vez confirmada la operación?"
+  },
+  {
+    "id": "preguntas26",
+    "descripcion": "¿Qué pasa si se me presenta un imprevisto y no podré depositar los fondos en el tiempo reglamentado?"
+  },
+  {
+    "id": "preguntas27",
+    "descripcion": "¿En cuánto tiempo recibo mi dinero una vez haya hecho el depósito de los fondos?"
+  },
+
+  {
+    "id": "preguntas28",
+    "descripcion": "¿La información proporcionada en el registro es confidencial?"
+  },
+  {
+    "id": "preguntas29",
+    "descripcion": "¿Cuánto tiempo demora el proceso de validación de cuenta?"
+  },
+  {
+    "id": "preguntas30",
+    "descripcion": "Soy extranjero. ¿Puedo crear una cuenta en FIRBID?"
+  },
+  {
+    "id": "preguntas31",
+    "descripcion": "Me preguntan si soy PEP¿Qué significa eso?"
+  },
+  {
+    "id": "preguntas32",
+    "descripcion": "¿Qué cargos podrían ser considerados como PEP?"
+  },
+  {
+    "id": "preguntas33",
+    "descripcion": "¿Existen requisitos para registrarse?"
+  },
+
+
+  {
+    "id": "preguntas34",
+    "descripcion": "¿Qué son las operaciones interbancarias?" 
+  },
+  {
+    "id": "preguntas35",
+    "descripcion": "¿Cuál es la diferencia entre las operaciones por BCP, Interbank y BBVA con las operaciones Interbancarias?" 
+  },
+  {
+    "id": "preguntas36",
+    "descripcion": "¿Cuánto tiempo se demora la Operación Interbancaria?" 
+  },
+  {
+    "id": "preguntas37",
+    "descripcion": "¿Qué necesito para realizar Operaciones Interbancarias?" 
+  },
+  {
+    "id": "preguntas38",
+    "descripcion": "¿Qué es el CCI?" 
+  },
+  {
+    "id": "preguntas39",
+    "descripcion": "¿Qué son las Transferencias Interbancarias Inmediatas?" 
+  },
+  {
+    "id": "preguntas40",
+    "descripcion": "¿Cómo realizar una Operación Interbancaria?" 
+  },
+  {
+    "id": "preguntas41",
+    "descripcion": "¿Existen montos mí­nimos y máximos por Operación Interbancaria?" 
+  },
+  {
+    "id": "preguntas42",
+    "descripcion": "¿Existe algún costo por este tipo de Operación Interbancaria?" 
+  },
+
+
+  {
+    "id": "preguntas43",
+    "descripcion": "¿Cómo sé que mis fondos están seguros?" 
+  },
+  {
+    "id": "preguntas44",
+    "descripcion": "¿Qué tan seguro es usar FIRBID para cambiar dinero online?" 
+  },
+  {
+    "id": "preguntas45",
+    "descripcion": "¿Por qué tengo que proporcionar mis datos personales y de mi empresa para registrarme?" 
+  },
+  {
+    "id": "preguntas46",
+    "descripcion": "¿Qué significa que la entidad fiduciaria esté registrada en la SBS?" 
+  },
+  {
+    "id": "preguntas47",
+    "descripcion": "¿Qué una empresa este registrada en SBS es suficiente para tener mis fondos seguros?" 
+  },
+  {
+    "id": "preguntas48",
+    "descripcion": "¿Qué sucede si la institución registrada no realiza el depósito de los fondos o se hecha para atrás en la operación?" 
+  }
+]

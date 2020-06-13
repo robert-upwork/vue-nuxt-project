@@ -1,0 +1,508 @@
+@import '~/assets/styles/includes';
+
+
+.body {
+  font-family: "DM Sans";
+  font-weight: 400;
+  margin-top: -15vh;
+}
+.conoce{
+  padding-bottom: 30px;
+}
+.conoce,
+.conoce img, .conoce i {
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 11px;
+}
+.conoce:hover {
+  color: #000;
+}
+.conoce:hover img {
+  filter: grayscale(1);
+}
+.conoce:hover i{
+  color: #000;
+}
+.imagen-fideicomiso{
+  a{
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
+    }
+    
+  }
+  .img-banner-fideicomiso {
+    display: none;
+    margin: auto;
+    max-height: 290px;
+    transition: all 0.5s;
+    @media(min-width: 768px){
+      height: 110px;
+      display: block;
+    }
+  }
+  .imagen-fideicomiso-mobile{
+    display: block;
+    text-align: center;
+    @media(min-width: 768px){
+      display: none;
+    }
+    img{
+      height: 95px;
+    }
+    h2{
+      padding-top: 35px;
+      color: #1F1933;
+      font-size: 22px;
+    }
+  }
+}
+.cards-corfid-arrow{
+  &:hover{
+    a{
+      color: black;
+
+    }
+  }
+  a{
+    color: #9768FF;
+    text-decoration: none;
+    transition: 0.5s;
+    &:hover{
+    }
+  }
+  img{
+    margin-right: 10px;
+  }
+}
+.card-div{
+  transition: all 0.5s;
+}
+.card-div:hover{
+  transform: scale(1.1);
+}
+// BANNER
+.fondo {
+  padding-top: 15vh;
+
+
+  // padding-top: 1vh;
+}
+.fiduciary{
+  padding-top: 125px;
+  padding-bottom: 15px;
+  @media(min-width:768px){
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+  }
+  
+}
+.cuerpo {
+  
+  @media(min-width: 768px){
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+.title-corfid {
+  font-size: 25px;
+  @media(min-width: 768px){
+    font-size: 50px;
+  }
+}
+
+// CARTAS
+.card-div {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0px 10px 24px #272C3C21;
+  @media(min-width: 768px){
+    box-shadow: 0px 10px 24px #272C3C21;
+  }
+}
+
+// ADVANTAGE
+.advantage {
+  background-color: #f0f4f8;
+  .title{
+    max-width: 206px;
+    font-weight: bold;
+    @media(min-width: 768px){
+      max-width: inherit;
+
+    }
+  }
+}
+
+
+.advantage .justify-content-around {
+  width: 70%;
+}
+
+@media screen and (max-width: 992px) {
+  .hide-lg {
+    display: none !important;
+  }
+  .hide-xs {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-lg {
+    display: block !important;
+  }
+  .hide-xs {
+    display: none !important;
+  }
+  // BANNER
+  p {
+    margin-bottom: 0 !important;
+  }
+  .cuerpo {
+    background-image: none;
+  }
+  .no-gutters > [class*="col-"] {
+    padding-right: !important;
+    padding-left: initial !important;
+  }
+  .fondo {
+    background-image: url("../../assets/fondos/f_fideicomiso.png"),
+      linear-gradient(155deg, #7257e7 0%, #6857e7 39%, #4500be 100%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    margin-top: -10rem;
+  }
+  .title-corfid {
+    margin-bottom: 4vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+    font-size: 25px;
+    letter-spacing: -0.5px;
+    line-height: 8vw;
+  }
+  .cards-corfid {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    color: #1F1933;
+    @media(min-width: 400px){
+      text-align: center !important;
+      max-width: 90%;
+    }
+    @media(min-width: 500px){
+      text-align: center !important;
+      max-width: 80%;
+    }
+  }
+  .cards-corfid.admin {
+    padding-top: 10px;
+    font-size: 14px;
+    max-width: 70%;
+    text-align: center !important;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards-corfid img {
+    width: 20px;
+  }
+  .imagen-fideicomiso img:hover {
+    transform: scale(1.1);
+  }
+  .advantage .justify-content-around {
+    width: 100vw;
+  }
+  .cards {
+    justify-content: center !important;
+  }
+  .card-div {
+    position: relative;
+    height: auto;
+    box-shadow: -2px 4px 26px -11px rgba(0,0,0,0.32);
+    padding-bottom: 60px;
+    img{
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
+  .card-div img{
+    margin-left: 30px;
+  }
+  .card-div p {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+  }
+  .card-div img {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+  .card-div .titulo-ventaja {
+    font-size: 20px !important;
+    color: #9768ff !important;
+    line-height: 5vw;
+    margin-bottom: 5vw !important;
+  }
+  .card-div .descripcion-ventaja {
+    width: 100% !important;
+    text-align: left;
+    text-justify: inter-word;
+    font-size: 16px !important;
+    color: #87879c;
+    line-height: 5vw;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.img-banner-fideicomiso {
+  max-width: 100%;
+  @media(min-width: 450px){
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 728px) {
+  .img-banner-fideicomiso {
+    max-width: 100% !important;
+  }
+}
+
+
+.imagen-ventajas1[data-v-761d54e2], .imagen-ventajas2[data-v-761d54e2], .imagen-ventajas3[data-v-761d54e2], .imagen-ventajas4[data-v-761d54e2] {
+
+
+  @include media-breakpoint-up(md) {
+    height: 300px !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 310px !important;
+  }
+}
+
+
+.titulo-fideicomiso .title-corfid {
+  color: #1F1933;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 0;
+  line-height: 35px;
+  margin-top: 0 !important;
+  @media(min-width: 768px){
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  @media(min-width: 992px){
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @media(min-width: 1024px){
+    line-height: 55px;
+    font-size: 40px;
+  }
+  @media(min-width: 1200px){
+    line-height: 55px;
+    font-size: 50px;
+  }
+}
+
+
+.cards-corfid-img{
+    width: 18px;
+    object-fit: scale-down;
+}
+
+.cards-corfid {
+  color: #1F1933;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.confird-logo{
+  text-align: center;
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+    img{
+      height: 80px;
+      max-height: 80px;
+    }
+  } 
+}
+.confird-logo2{
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 30px;
+  img{
+    height: 50px;
+    max-height: 50px;
+  }
+  @media(min-width: 768px){
+    display: none;
+    text-align: center;
+  }
+}
+
+.meet-firbid {
+  font-weight: normal;
+  font-size: 16px!important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  img{
+    height: 11px;
+    max-width: 8px;
+    position: relative;
+    top: -2px;
+  }
+  @media(min-width:768){
+    margin-top: 120px;
+    margin-bottom: 100px !important;
+    
+  }
+  a{
+    transition: 1s;
+  }
+}
+.content-four{
+  padding-left: 30px;
+  padding-right: 30px;
+  @media(min-width: 768px){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.title-fiduciary{
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+  }
+}
+.fiduciary-element{
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.advantage {
+  .img-advantage{
+    height: 39px;
+  }
+  .title {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    @media(min-width: 768px){
+      font-size: 30px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+  
+    }
+  }
+  .descripcion-ventaja{
+    height: 80px;
+  }
+}
+
+
+.fideicomiso-ventajas .title {
+  @media(min-width: 768px){
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cards-corfid.admin {
+    font-size: 16px;
+  }
+  .cards-corfid {
+    font-size: 16px;
+  }
+  .imagen-ventajas1,
+  .imagen-ventajas2,
+  .imagen-ventajas3,
+  .imagen-ventajas4 {
+    height: 320px;
+    width: 306px !important;
+    padding: 3rem 2rem !important;
+  }
+  .imagen-ventajas1 img {
+    width: auto !important;
+    height: 50px !important;
+  }
+  .imagen-ventajas2 img {
+    width: auto;
+    height: 50px;
+  }
+  .imagen-ventajas3 img {
+    width: auto;
+    height: 50px;
+  }
+  .imagen-ventajas4 img {
+    width: auto;
+    height: 50px;
+  }
+  .imagen-ventajas1 .titulo-ventaja,
+  .imagen-ventajas2 .titulo-ventaja,
+  .imagen-ventajas3 .titulo-ventaja,
+  .imagen-ventajas4 .titulo-ventaja {
+    font-size: 20px !important;
+    color: #9768ff;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .imagen-ventajas1 .descripcion-ventaja,
+  .imagen-ventajas2 .descripcion-ventaja,
+  .imagen-ventajas3 .descripcion-ventaja,
+  .imagen-ventajas4 .descripcion-ventaja {
+    font-size: 16px !important;
+    color: #87879c;
+  }
+  
+}
+
+.fiduciary-carousel{
+  .VueCarousel-pagination{
+    top: 10px;
+    .VueCarousel-dot-container{
+      margin-top: 0;
+      .VueCarousel-dot {
+        margin-top: 0;
+      }
+    }
+  }
+  @media(min-width: 768px){
+    display: none;
+  }
+}

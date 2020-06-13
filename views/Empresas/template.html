@@ -1,0 +1,598 @@
+<div class="" >
+
+		<!-- Banner -->
+		<div class="banner-empresas container-fluid no-gutters p-0">
+			<div class="empresas align-items-center justify-content-center text-light p-0">
+					<div class="align-items-center py-5 text-light">
+							<!-- Gestion inteligente -->
+							<div class="col-12 col-lg-5 my-5 offset-lg-1 titulo-empresa text-center text-lg-left">
+									<p class="subasta2-empresa-title px-md-0 informacion-principal">Subasta tus dólares como las grandes empresas.
+									<p class="w-400 gest px-md-0 informacion-secundaria  text-white">Haz tus operaciones de cambio más rentables haciendo que entidades financieras compitan por tu dinero.</p>
+									
+									<!-- <div class="start-bid mt-5 mt-lg-5 w-75 mx-auto justify-content-center"> -->
+									<div class="mx-auto account">
+											<a target="_blank" href="https://app.firbid.com/registro/empresa" class="mt-3 btn btn-primary px-4">Crear tu cuenta empresa</a>
+									</div>
+
+									<p class="yomequedoencasa">
+											#YoMeQuedoEnCasa
+									</p>
+									<p class="yomequedoencasa3">
+											#YoMeQuedoEnCasa
+									</p>
+									<!-- </div> -->
+							</div>
+					</div>
+			</div>
+		</div>
+
+		<!-- Operaciones y Fideicomiso -->
+		<div class="fideicomiso empresas-fideicomiso no-gutters px-0 bg-shadow" style="padding-top: 0;">
+			<!-- PC -->
+
+			<div class="col-12 shadow" style="background: #F8F9FD;">
+					<div class="container  sinpa">
+							<div class="align-items-center content-exchange">
+									<div class="col-sm-8 col-12 row">
+											<div class="col-md-6 sinpa item-exchange item-exchange-1 border-right-bussiness">
+													<div class="img-content sinpa">
+															<img class="img-fluid fideicomiso-empresas-image" src="@/assets/sunat.svg" alt="">
+													</div>
+													<div class="img-content">
+															<img class="img-fluid fideicomiso-empresas-image" src="@/assets/banca-seguros-afp.png" alt="">
+													</div>
+															
+											</div>
+											<div class="col-md-6 sinpa item-exchange item-exchange-2">
+													<p class="text-1">
+															COMPRA
+															<span>
+																	{{sbsChange.exchange_type.ask}}
+															</span>
+													</p>
+													<p class="text-1"
+															style=" ">
+															VENTA
+															<span>
+																	{{sbsChange.exchange_type.bid}}
+															</span>
+													</p>
+											</div>
+									</div>
+							</div>
+					</div>
+			</div>
+
+			<!-- Negocia tus dolares -->
+			<div class="container-fluid col-12 py-2 no-gutters" style="background-color: #f0f4f8; width: 100vw;">
+					<div class="container sinpa_md">
+
+							<div class="row align-items-center">
+
+									<!-- Negocia Mobile -->
+									<div class="col-12 soon-available col-lg-5 ml-lg-5">
+											<div class="row align-items-center justify-content-center">
+													<p class="negocio mb-4" style="letter-spacing: -1.78px; font-size: 24px;">Empoderamos a las pequeñas y medianas empresas.</p>
+													<p class="px-3 negocio-after px-md-0 mt-1 mt-md-5 mb-4" style="color: #87879c;">Entidades financieras competirán con su tipo de cambio corporativo por tu dinero, sistema que hasta hoy era exclusivo de las grandes empresas.
+													</p>
+											</div>
+									</div>
+	
+	
+	
+									<!-- ¿Cuanto te gustaria subasta2r? -->
+									<div class="col-12 col-lg-6 subasta2r-contenedor mt-md-5 sinpa_md">
+											<div class="carde-bid mx-0 img-fluid">
+													<div class="content d-flex flex-column justify-content-center">
+															<p class="text-center howmany mx-auto mt-4">¿Cuánto te gustaria subastar?</p> <!-- PRIMERA PARTE SUBASTA2 -->
+															<ul class="navbar-nav">
+																	<li class="nav-item">
+																			<a v-if="!readOnly" class="nav-link w-500 text-white moneda-subasta2" href="#"
+																					style="font-size: 13px;">
+																					<img src="@/assets/icons/peru.png" class=""> PEN
+																			</a>
+																			<a v-if="readOnly" class="nav-link w-500 text-white moneda-subasta2"
+																					href="#" style="font-size: 13px;">
+																					<img src="@/assets/icons/united-states.png" alt="" class="">
+																					USD
+																			</a>
+																			<!-- <div class="dropdown-menu" style="margin-left: 30px;"
+																					aria-labelledby="navbarDropdown">
+																					<a class="dropdown-item" href="#">United States Dollar</a>
+																			</div> -->
+																	</li>
+																	<li class="nav-item caja-subasta2" style="position: relative;">
+																			<input type="text" :readonly="!readOnly" v-model="dollars"
+																					class="w-100 bid-input border pl-2" id="bid-input-1"/>
+																			<p class="text-white ml-2"
+																					style="position: absolute; top: -10px; font-size: 14px;">Tú
+																					envias
+																			</p>
+																	</li>
+															</ul>
+
+															<div style="position: relative;">
+																	<hr class="mx-auto mt-4"
+																			style="border-style: solid; background-color: #dce3ec; color:#ffffff; border-width: 1px;     max-width: 95%;">
+																	<img @click="exchangeValue" class="exchange exchange-icon" src="@/assets/exchange.png"
+																			alt="">
+															</div>
+
+															<!-- SEGUNDA PARTE SUBASTA2 -->
+															<ul class="navbar-nav">
+																	<li class="nav-item">
+																			<a v-if="readOnly" class="nav-link w-500 ml-md-0 text-white moneda-subasta2" href="#"
+																					style="font-size: 13px;">
+																					<img src="@/assets/icons/peru.png" class=""> PEN
+																			</a>
+																			<a v-if="!readOnly" class="nav-link w-500 text-white moneda-subasta2" href="#"
+																					style="font-size: 13px;">
+																					<img src="@/assets/icons/united-states.png" alt="" class="">
+																					USD
+																			</a>
+																			<!-- <div class="dropdown-menu" style="margin-left: 30px;"
+																					aria-labelledby="navbarDropdown">
+																					<a class="dropdown-item" href="#">Soles Peruanos</a>
+																			</div> -->
+																	</li>
+																	<li class="nav-item caja-subasta2" style="position: relative;">
+																			<input   type="text" :readonly="readOnly" v-model="soles"
+																					class="w-100 pl-2 border bid-input" id="bid-input-2" />
+																					
+																			<p class="text-white ml-2 mt-3"
+																					style="position: absolute; top: -10px; font-size: 14px;">Tú
+																					recibes
+																			</p>
+																	</li>
+															</ul>
+															<div class="d-flex account mt-3">
+																	<a href="https://app.firbid.com/registro" class="btn btn-primary btn-large mx-auto init-acount">Iniciar subasta</a>
+															</div>
+													</div>
+													
+											</div>
+
+											<!-- <p class="hide-xs mt-4 text-center"
+													style="font-size: 14px; margin-left: auto; margin-right: auto;">
+													<img src="@/assets/icons/play.png" width="10%" class="img-fluid mr-1 d-none d-lg-block"
+															alt="">Conoce el
+													propósito de FIRBID</p> -->
+										<!-- <p class="hide-xs mt-4 text-center"
+															style="font-size: 14px; margin-left: auto; margin-right: auto;">
+															<img src="@/assets/icons/play.png" width="10%" class="img-fluid mr-1 d-none d-lg-block"
+																	alt="">Conoce el
+															propósito de FIRBID</p> -->
+													</div>
+													<!-- Negocia -->
+									<div class="col-12 no-soon d-none d-md-block col-md-6 sinpa_md">
+											<div class="row align-items-center negocia-title-content">	
+													<p class="negocia-title">Empoderamos a las pequeñas y medianas empresas.</p>
+													<p class="negocia-description my-3">
+															Entidades financieras competirán con su tipo de cambio corporativo por tu dinero, sistema que hasta hoy era exclusivo de las grandes empresas.
+															
+													</p>
+													<!-- <p class="negocia-description">
+															Recuerda que mientras mayor sea el volumen de tu transacción, mejor será el tipo de cambio que obtendrás.
+													</p> -->
+											</div>
+									</div>
+							</div>
+					</div>
+					<!-- <hr class="w-75 d-none mx-auto d-md-block"> -->
+			
+			
+					<!-- <div class="container-fluid text-center justify-content-center imgs-gray">
+							<div class="row banks-web container mx-auto d-flex align-items-center">
+									<div class="col-6 col-md-6 col-sm-6 col-lg-3 banks-web-img">
+											<img class="img-fluid" src="@/assets/bancos/arequipa.svg" alt="">
+									</div>
+									<div class="col-6 col-md-6 col-sm-6 col-lg-3 banks-web-img">
+											<img class="img-fluid" src="@/assets/bancos/santander.svg" alt="">
+									</div>
+									<div class="col-6 col-md-6 col-sm-6 col-lg-3 banks-web-img">
+											<img class="img-fluid" src="@/assets/bancos/coril.svg" alt="">
+									</div>
+									<div class="col-6 col-md-6 col-sm-6 col-lg-3 banks-web-img">
+											<img class="img-fluid" src="@/assets/bancos/ripley.svg" alt="">
+									</div>
+							</div>
+					</div> -->
+
+			</div>
+
+			<!-- Igual de seguro que un banco -->
+			<div class="sinpa col-12 " style="background-color: white; padding-top: 0;">
+
+					<div class="container sinpa_md   seguro-banco">
+							<div class="col-12 d-md-none col-lg-6">
+									<p class=" title text-center mx-auto"
+											style="letter-spacing: -1.78px; font-size: 40px; color: #272c3c; line-height: 50px;">
+											Igual de seguro que un banco.</p>
+									<p class="w-400 mt-md-4 description" style="color: #87879c; font-size: 16px !important;">Realizarás el pago de tus operaciones de tipo de cambio en cuentas bancarias inembargables administradas por CORFID Corporación Fiduciaria, regulada y supervisada por la Superintendencia de Banca, Seguros y AFP.</p>
+							</div>
+	
+							<div class="row pt-0 pb-lg-1 align-items-center justify-content-center mx-auto text-white none-pb">
+								<div class="col-12 col-md-12 col-lg-5 d-flex justify-content-center">
+									<img class="visible-xs" src="@/assets/logo-corfid.svg" alt="">
+									<img src="@/assets/escudo.svg" class="img-fluid mx-auto firbid-youtube visible-sm" alt="">
+								</div>
+								<div
+										class="col-12 col-md-12 col-lg-7 d-none d-md-block mt-md-5 mt-lg-0 text-md-center text-lg-left">
+										<p style="font-size: 40px; color: #272c3c; letter-spacing: 0; line-height: 45px;  font-weight: bold; text-align: center; ">
+												Igual de seguro que un banco.</p>
+										<center><img src="@/assets/logo-corfid.svg" style="margin-top: 30px;margin-bottom: 30px;" alt=""></center>
+										<p class="w-400 mt-4 mt-md-0 mt-lg-2" style="font-size: 16px; color: #87879c; max-width: 467px; width: 100%;text-align: center; margin:auto; padding-bottom:30px;">Realizarás el pago de tus operaciones de tipo de cambio en cuentas bancarias inembargables administradas por CORFID Corporación Fiduciaria, regulada y supervisada por la Superintendencia de Banca, Seguros y AFP.</p>
+										<!-- <p class="w-400 mt-4 mt-md-0 mt-lg-2 mb-2" style="font-size: 16px; color: #87879c;">Nuestros
+												compromiso de garantizar
+												operaciones de cambio
+												seguros al igual que un banco es la razón por la cual nuestros clientes eligen FIRBID.</p> -->
+										
+										<router-link to="/fideicomiso" class="text-decoration-none mt-md-5 mt-lg-0">
+												<p class="w-700 you-can-know" style="text-align: center;"><img
+																src="@/assets/icons/right-arrow.png" class="mr-2" alt="">Conoce más</p>
+										</router-link>
+										
+								</div>
+							</div>
+
+					</div>
+
+					<div class="col-12 d-md-none col-lg-5 ml-lg-4 seguro-banco-responsive">
+							<p class="w-400 mt-4 description"
+									style="font-size: 1.5rem; color: #87879c; font-size: 16px !important;">Realizarás el pago de tus operaciones de tipo de cambio en cuentas bancarias inembargables administradas por CORFID Corporación Fiduciaria, regulada y supervisada por la Superintendencia de Banca, Seguros y AFP.</p>
+
+							<center><img src="@/assets/escudo.svg" class="img-fluid candado-responsive" alt=""></center>
+							<p class="w-700 mt-lg-5 mx-auto text-center" style=" font-size: 14px;">
+								<router-link to="/fideicomiso" class="nav-link  active nav-1-1-1">
+									<img src="@/assets/icons/right-arrow.png" class="mr-2" alt="">
+									Conoce más
+								</router-link>
+							</p>
+							<center>
+								<img class="visible-sm"  src="@/assets/logo-corfid.svg" alt="">
+							</center>
+							
+
+					</div>
+			</div>
+			<div class="col-12 sinpa empresas-fideicomiso-4" style="background-color: white;">
+					<div class="container">
+							<div class="row">
+									<div class="col-md-12 empresas-fideicomiso-4-content">
+											<hr class="w-100 mx-auto">
+											<!-- Operaciones inmediatas e interbancarias -->
+											<div class="container-fluid">
+													<div class="empresas-sec-5 row py-5 align-items-center justify-content-between d-none d-lg-flex">
+															<div class="col-12 col-lg-6 inmediate-operations">
+																	<h2 class="operations-title operations-title-lg">
+																			Operaciones inmediatas</h2>
+
+																	<div class=" mt-4 d-flex align-items-end logos_bancos  logos_bancos-1">
+																			<img src="@/assets/ef/ibk.svg" class="img-fluid operations-image" alt="">
+																			<img src="@/assets/ef/bcp.svg" class="img-fluid operations-image" alt="">
+																			<img src="@/assets/ef/bbva.svg" class="img-fluid operations-image" alt="">
+																	</div>
+																	<hr class="w-90">
+
+																	<h2 class="operations-title operations-title-lg mt-5 mb-4">
+																			Operaciones interbancarias</h2>
+
+																	<div class="d-flex justify-content-between logos_bancos">
+																			<img src="@/assets/ef/scoti.svg" class="img-fluid operations-image " alt="">
+																			<img src="@/assets/ef_2/banbiflogo.svg" class="img-fluid operations-image " style="max-height: 37px;" alt="">
+																			<img src="@/assets/ef_2/banbiflogo.svg" class="img-fluid operations-image " style="max-height: 37px; opacity:0;" alt="">
+																	</div>
+																	<p class="w-75 w-400 operations-small mt-5 text-center">Y
+																			demás bancos</p>
+															</div>
+															<div class="col-12 col-lg-4 d-none d-lg-block">
+																	<div class="row align-items-center justify-content-center text-center">
+																			<img src="@/assets/operaciones-1.png" class="inmediate-operations-img img-fluid"
+																					style="margin-right: auto; height: auto;" alt="">
+																	</div>
+															</div>
+													</div>
+													<!-- MOBIL -->
+													<div class="row d-md-none align-items-center justify-content-center h-100">
+															<div class="col-12 col-lg-5 inmediate-operations">
+																	<ul class="navbar-nav mx-md-auto">
+																			<li class="nav-item">
+																					<h5 class="w-700 mb-4"
+																							style="letter-spacing: -1.33px; color: #1f1933; font-size: 22px !important;">
+																							Operaciones inmediatas</h5>
+																			</li>
+																	</ul>
+																	<div class="row">
+																			<div class="col-6">
+																					<img src="@/assets/ef/ibk.svg" class="img-fluid" alt="">
+																			</div>
+																			<div class="col-6">
+																					<img src="@/assets/ef/bcp.svg" class="img-fluid" alt="">
+																			</div>
+																			<div class="col-12 mt-3">
+																					<img src="@/assets/ef/bbva.svg" class="img-fluid" alt="">
+																			</div>
+
+																	</div>
+																	<hr class="w-75 mx-auto">
+	
+																	<ul class="navbar-nav pt-3">
+																			<li class="nav-item">
+																					<h5 class="w-700"
+																							style="letter-spacing: -1.33px; color: #1f1933; font-size: 22px !important;">
+																							Operaciones interbancarias</h5 class="w-700"
+																							style="letter-spacing: -1.33px; color: #1f1933; font-size: 1.8rem;">
+																			</li>
+																	</ul>
+																	<ul class="mt-3 nav row justify-content-around">
+																			<li class="nav-item col-6">
+																					<img src="@/assets/ef/scoti.svg" class="img-fluid" alt="">
+																			</li>
+																			<li class="nav-item col-6">
+																					<img src="@/assets/ef_2/banbiflogo.svg" class="img-fluid" style="max-height: 36px;" alt="">
+																			</li>
+																	</ul>
+																	<ul class="nav w-100" style="margin-top:15px">
+																			<li class="nav-item mx-auto">
+																					<p class="w-400 text-center"
+																							style="color: #9f9faf; line-height: 27px; font-size: 1.2rem; margin-bottom: 0;">Y
+																							demás bancos</p>
+																			</li>
+																	</ul>
+															</div>
+													</div>
+											</div>
+									</div>
+							</div>
+					</div>
+			</div>
+
+			<!-- Tendencias -->
+
+
+			<div class="trends col-12 container-fluid py-2 blog-tendencias">
+					<hr class="mx-auto w-75 py-lg-3" style="margin-top: 0;">
+
+
+					<div class="align-items-center justify-content-center text-center mb-3">
+							<h3 class="w-50 digital-info">Infórmate de las últimas tendencias</h3>
+					</div>
+
+					<!-- <div class="mt-2 align-items-center justify-content-center text-center">
+							<ul class="nav" style="justify-content: center;">
+								<li class="nav-item">
+									<a class="nav-link w-700"
+											style="color: #9768ff; font-size:16px; border-bottom: 2px solid #9768FF;padding: 0px;;"
+											href="#">
+										Articulos
+									</a>
+								</li>
+
+							</ul>
+
+					</div> -->
+
+					<!-- WEB -->
+					<div class="container d-none d-lg-flex align-items-center mx-auto mt-2 mb-0 justify-content-center">
+							<div class="row">
+									<div v-for="(item, index) in postsArray" :key="index" class="col-12 col-lg-4">
+											<div class="trend-card shadow my-3 card">
+													<img v-bind:src='item.img ? item.img.data.guid.rendered : img_default ' class="img-fluid" alt="">
+													<div class="card-body" style="position: relative;">
+															<h5 class="w-500 card-title" style="color: #1f1933;">{{item.title}}</h5>
+															<p class="w-400" style="color: #87879c; display: block; text-overflow: ellipsis; word-wrap: break-word; max-height: 5.4em; line-height: 1.8em;"
+																	v-html="item.content"></p>
+															<a :href="item.link" target="_blank" style="color: #9768FF;"><img
+																			src="@/assets/icons/right-arrow.png" class="mr-2" alt="">Leer más</a>
+													</div>
+											</div>
+									</div>
+							</div>
+
+					</div>
+
+					<!-- MOBIL -->
+					<carousel class="sinpa carousel carousel-empresas blog-carousel soon-available mx-auto position-relative" :per-page="1" 
+					style="padding-top:30px"
+							paginationColor="#dce3ec" paginationActiveColor="#272c3c" :width="575" >
+							<slide v-for="(item, index) in postsArray" :key="index">
+									<div class="trend-card  card trend-card-sm" style="height: auto !important;">
+											<img v-bind:src='item.img ? item.img.data.guid.rendered : img_default ' class="img-fluid" alt="">
+											<div class="card-body" style="position: relative;">
+													<h5 class="w-500 trend-title mt-2 mb-3" style="color: #1f1933;">{{item.title}}</h5>
+													<p class="trend-description mb-3" v-html="item.content" style="font-size: 14px !important;"></p>
+													<a :href="item.link" class="carousel-a trend-link d-inline-block" target="_blank">
+															<img src="@/assets/icons/right-arrow.png" class="mr-2" alt="">Leer más
+													</a>
+											</div>
+									</div>
+							</slide>
+					</carousel>
+
+					<div class="text-center go-to-div bg-white" style="z-index: 22; background-color: #EBF0F2;">
+							<a href="http://www.firbid.com/blog" target="_blank"
+									class="go-to w-700 btn btn-outline-secondary mx-auto px-5 mx-auto ">Ir al blog</a>
+					</div>
+
+			</div>
+
+			<!-- Entidades que nos respaldan -->
+
+			<div class="testimonios">
+					<div class="col-12 sinpa position-relative testimonios-1">
+							<h5>
+								Nuestra 
+								<br class="visible-xs">
+								comunidad
+							</h5>
+							<div id="carousel-home-resources" class="carousel-empresas-pc carousel-home-resources carousel-pc carousel-6">
+									<carousel-3d :autoplay="false" :autoplayTimeout="10000" :perspective="30" :border="0" :width="685"
+											:height="250" :space="700" :clickable="true">
+			
+											<slide-3d :index="0" class="pointer">
+													<div
+															class="testimonio testimoniales-pc w-100 h-100 d-flex justify-content-center align-items-center">
+															<div class="testimonie-container w-80 mx-auto">
+																	<div class="d-flex align-items-center testimonio-header">
+																			<div class="col-4 col-sm-2 item-foto">
+																					<img src="@/assets/testimonios/pamela.png" alt="" class="img-fluid ">
+																			</div>
+																			<div class="col-8">
+																					<p class="testimonial-title">Pamela Honores</p>
+																					<p class="testimonial-charge">Gerente de Finanzas - TRANSERVICE LOGISTIC</p>
+																			</div>
+
+																	</div>
+																	<p class="testimonial-description my-3">
+																			Gracias a FIRBID me siento segura con cada operación que realizo. La subasta hace mucho más atractiva la transacción porque las entidades financieras ofertan sus mejores tipos de cambio.
+																	</p>
+																	<!-- <p @click="showModal" class="testimonial-modal-link">
+																			<img src="@/assets/play-btn.png" alt="" class="icon-play">
+																			Ver la
+																			experiencia de Andrés</p> -->
+															</div>
+													</div>
+											</slide-3d>
+			
+											<slide-3d :index="1" class="pointer">
+													<div
+															class="testimonio testimoniales-pc h-100 w-100 d-flex justify-content-center align-items-center">
+															<div class="testimonie-container w-80 mx-auto">
+																	<div class="d-flex align-items-center testimonio-header">
+																			<div class="col-4 col-sm-2 item-foto">
+																					<img src="@/assets/testimonios/portilla.png" alt="" class="img-fluid">
+																			</div>
+																			<div class="col-8">
+																					<p class="testimonial-title">Christian Portilla</p>
+																					<p class="testimonial-charge">Gerente General – RC KNITS</p>
+																			</div>
+																	</div>
+			
+																	<p class="testimonial-description my-3">
+																			La accesibilidad de poder subastar dólares en el mercado y no tener que buscar el mejor tipo de cambio, es lo que más me motivó de la plataforma FIRBID.
+																	</p>
+																	<!-- <p @click="showModal" class="testimonial-modal-link">
+																			<img src="@/assets/play-btn.png" alt="" class="icon-play">
+																			Ver la
+																			experiencia de Andrés</p> -->
+															</div>
+													</div>
+											</slide-3d>
+			
+											<slide-3d :index="2" class="pointer">
+													<div
+															class="testimonio testimoniales-pc w-100 h-100 d-flex justify-content-center align-items-center">
+															<div class="testimonie-container w-80 mx-auto">
+																	<div class="d-flex align-items-center testimonio-header">
+																			<div class="col-4 col-sm-2 item-foto">
+																					<img src="@/assets/testimonios/lopez.jpg" alt="" class="img-fluid">
+																			</div>
+																			<div class="col-8">
+																					<p class="testimonial-title">Mariela Lopez</p>
+																					<p class="testimonial-charge">Gerente General - ROYAL KNIT</p>
+																			</div>
+																	</div>
+			
+																	<p class="testimonial-description my-3">
+																			Poder cambiar dólares a través de una subasta y con entidades financieras es simplemente increíble. Gracias a FIRBID siempre obtengo un mejor tipo de cambio.
+																	</p>
+																	<!-- <p @click="showModal" class="testimonial-modal-link">
+																			<img src="@/assets/play-btn.png" alt="" class="icon-play">
+																			Ver la
+																			experiencia de Andrés</p> -->
+															</div>                            
+													</div>
+											</slide-3d>
+					
+									</carousel-3d>
+							</div>
+	
+
+							<!-- Carousel móvil -->
+							<div id="carousel-home-resources" class="carousel-home-resources carousel-5">
+								<!-- Mobile -->
+								<carousel class="testimonies-carousel-responsive" :per-page="1"
+								paginationColor="#dce3ec" paginationActiveColor="#272c3c" :width="575" >
+								<slide :key="index">
+									<div class="testimonio testimoniales-pc w-100 h-100 d-flex justify-content-center align-items-center">
+										<div class="testimonie-container mx-auto">
+											<div class="d-flex align-items-center">
+												<div class="col-2 sinpa img-content-carousel-pc">
+													<img src="@/assets/testimonios/pamela.png" alt="" class="img-fluid">
+												</div>
+												<div class="col-10">
+													<p class="testimonial-title">Pamela Honores</p>
+													<p class="testimonial-charge">Gerente de Finanzas - TRANSERVICE LOGISTIC</p>
+												</div>
+											</div>
+			
+											<p class="testimonial-description">
+												Gracias a FIRBID me siento segura con cada operación que realizo. La subasta hace mucho más atractiva la transacción porque las entidades financieras ofertan sus mejores tipos de cambio.
+											</p>
+											<!-- <p @click="showModal" class="testimonial-modal-link">
+												<img src="@/assets/play-btn.png" alt="" class="icon-play">
+												Ver la experiencia de Pamela</p> -->
+										</div>
+									</div>
+								</slide>
+								<slide :key="index">
+									<div class="testimonio testimoniales-pc h-100 w-100 d-flex justify-content-center align-items-center">
+										<div class="testimonie-container mx-auto">
+											<div class="d-flex align-items-center">
+												<div class="col-2 sinpa img-content-carousel-pc">
+													<img src="@/assets/testimonios/portilla.png" alt="" class="img-fluid">
+												</div>
+												<div class="col-10">
+													<p class="testimonial-title">Christian Portilla</p>
+													<p class="testimonial-charge">Gerente General – RC KNITS</p>
+												</div>
+											</div>
+			
+											<p class="testimonial-description">
+												La accesibilidad de poder subastar dólares en el mercado y no tener que buscar el mejor tipo de cambio, es lo que más me motivó de la plataforma FIRBID.
+											</p>
+											<!-- <p @click="showModal" class="testimonial-modal-link">
+												<img src="@/assets/play-btn.png" alt="" class="icon-play">
+												Ver la experiencia de Christian</p> -->
+										</div>
+									</div>
+								</slide>
+								<slide :key="index">
+									<div class="testimonio testimoniales-pc w-100 h-100 d-flex justify-content-center align-items-center">
+										<div class="testimonie-container mx-auto">
+											<div class="d-flex align-items-center">
+												<div class="col-2 sinpa img-content-carousel-pc">
+													<img src="@/assets/testimonios/lopez.jpg" alt="" class="img-fluid">
+												</div>
+												<div class="col-10">
+													<p class="testimonial-title">Mariela Lopez</p>
+													<p class="testimonial-charge">Gerente General - ROYAL KNIT</p>
+												</div>
+											</div>
+			
+											<p class="testimonial-description">
+												Poder cambiar dólares a través de una subasta y con entidades financieras es simplemente increíble. Gracias a FIRBID siempre obtengo un mejor tipo de cambio.
+			
+											</p>
+											<!-- <p @click="showModal" class="testimonial-modal-link">
+												<img src="@/assets/play-btn.png" alt="" class="icon-play">
+												Ver la
+												experiencia de Mariela</p> -->
+										</div>
+									</div>
+								</slide>
+							</carousel>
+							</div>
+					</div>
+			</div>
+		</div>
+		<div>
+			<el-dialog title="FIRBID" v-if="dialogVisible" :visible.sync="dialogVisible2">
+				<button id="btn-close2" class="btn-close" v-on:click="showModal2()"><img src="@/assets/x.svg" alt=""></button>
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/xG3rp9V21CE" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>				 
+			</el-dialog>
+		</div>
+	</div>

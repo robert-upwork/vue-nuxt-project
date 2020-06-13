@@ -1,0 +1,1440 @@
+@import '~/assets/styles/includes';
+
+@media only screen and (min-width: 1230px) {
+  .operations-img {
+    display: block;
+    transition: all 0.5s;
+  }
+  .operations-img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 1229px) {
+  .operations-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .soon-available {
+    display: none;
+  }
+  .informacion-secundaria {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .soon-available {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .carousel-7{
+    display: none;
+  }
+  .carousel-8{
+    display: block;
+  }
+  .carousel-home-resources {
+    .left-1 {
+      transform: translateX(-850px) translateZ(-300px) rotateY(0deg) !important;
+    }
+    .right-1 {
+      transform: translateX(850px) translateZ(-300px) rotateY(0deg) !important;
+    }
+  }
+
+  .testimonio-image {
+    width: 5vw !important;
+    margin-right: 2vw;
+  }
+
+  .hide-lg {
+    display: none !important;
+  }
+
+  .hide-xs {
+    display: block !important;
+  }
+
+  .companies {
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 2vh;
+  }
+  .monto-subasta2 {
+    height: 412px !important;
+    width: 33vw !important;
+  }
+  .monto-subasta2 .monto-titulo {
+    font-size: 1.4vw;
+    font-weight: bold;
+    text-align: center;
+  }
+  .seguro-descripcion {
+    max-width: 33.5vw;
+    padding-left: 7px;
+  }
+  .first-operations img,
+  .inmediate-operations ul img {
+    filter: grayscale(100%);
+    transition: all 0.5s;
+  }
+  .first-operations img:hover,
+  .inmediate-operations ul img:hover {
+    filter: grayscale(0%);
+  }
+
+  .titulo-tendencias h3 {
+    font-weight: bold;
+    font-size: 2.69vw !important;
+    padding: 0px 24rem;
+  }
+  .trend-card {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    overflow: hidden;
+  }
+}
+.trend-card {
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  overflow: hidden;
+}
+.little {
+  font-size: 0.9rem;
+}
+.watch-experience {
+  color: #9768ff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.watch-experience:hover {
+  color: #6228e4;
+}
+.super-little {
+  font-size: 0.8rem;
+}
+
+.more-information {
+  color: #9768ff;
+}
+
+.fondo {
+  top: 0%;
+  margin-top: 66px;
+  @media(min-width:768){
+    margin-top: 72px;
+
+  }
+  @media(min-width: 992px){
+    margin-top: 92px;
+
+  }
+}
+.empresas {
+  background-image: url("../../assets/fondos/zempresas-responsive.jpg") !important;
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+
+  margin-top: 87px;
+  @media(min-width: 768px){    
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/fondos/zempresas-desktop.jpg") !important;
+  }
+}
+
+.empresas .title {
+  font-size: 50px;
+}
+
+.empresas .gest {
+  color: #9f9faf;
+  font-size: 1.2vw;
+}
+
+.subasta2-card {
+  background-color: white;
+  box-shadow: -2px 0 82px rgba(39, 44, 60, 0.13);
+}
+
+.input-group-lg > .form-control:not(textarea) {
+  height: calc(2.5em + 1rem + 2px);
+}
+
+.bar-exchange {
+  position: relative;
+  border: 1px solid #dce3ec;
+  margin-bottom: 2rem;
+}
+
+.exchange {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: calc(3em + 1.5rem);
+}
+
+.start-bid {
+  box-shadow: 0 9px 10px rgba(39, 44, 60, 0.24);
+  border-radius: 2px;
+  background-color: #9768ff;
+  height: calc(2.2em + 1rem + 2px);
+  color: #dce3ec;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.cambio-banner-container {
+  padding-left: 1rem !important;
+}
+.cambio-banner {
+  font-size: 5vw !important;
+  padding-top: 15rem !important;
+  font-weight: 400 !important;
+  margin-top: -12rem !important;
+  margin-bottom: 2rem !important;
+  width: 80% !important;
+}
+.carde-bid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-top: 0 !important;
+  padding-left: 0 !important;
+  margin-bottom: 45px !important;
+  box-shadow: 0px 5px 10px 5px rgba(39, 44, 60, 0.24);
+  padding-top: 15px;
+  padding-bottom: 30px;
+  @media(min-width: 768px){
+    width: 483px;
+    height: 412px;
+
+  }
+}
+
+.titulo-subasta2r {
+  font-weight: 700 !important;
+  font-size: 5.5vw !important;
+  letter-spacing: 0.2vw !important;
+  padding-left: 0 !important;
+  padding-top: 0.8vw !important;
+  padding-bottom: 2vw !important;
+  text-align: center !important;
+}
+.caja-subasta2 {
+  width: 100%;
+}
+
+.caja-subasta2 p {
+  // font-size: 3.2vw !important;
+  margin-top: 20px !important;
+  font-size: 12px !important;
+  color: #87879c !important;
+}
+
+.exchange {
+  right: 7% !important;
+}
+.d-flex.mt-4 p {
+  margin-top: 0vw !important;
+  font-size: 1vw !important;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.15);
+}
+p.hide-lg.mt-4.text-center {
+  font-weight: 700 !important;
+  font-size: 3.5vw !important;
+  margin-bottom: 2rem !important;
+}
+p.hide-lg.mt-4.text-center img {
+  width: 6.5vw !important;
+  margin-right: 10px !important;
+}
+.banks-web{
+  padding-bottom: 30px;
+  .banks-web-img{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 992px){
+      height: auto;
+    }
+  }
+}
+.banks-web img {
+  @media(min-width: 768px){
+
+    filter: grayscale(100%);
+    transition: all 0.5s;
+    opacity: 0.7;
+  }
+}
+
+.banks-web img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+// BANNER
+.gestion {
+  font-weight: 400;
+  letter-spacing: -0.44px;
+  // line-height: 25px;
+  font-size: 3rem;
+}
+.firbid-youtube{
+  height: 276px;
+}
+.carde-bid {
+  background-color: white;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  @media(min-width: 768px){
+
+  }
+  .content{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    hr{
+      
+      width: 95%;
+      margin-left: 0 !important;
+      margin-top: 30px !important;
+      margin-bottom: 1rem;
+      @media(max-width: 767px){
+        margin-top: 1.5rem !important;
+        margin-bottom: 1rem !important;
+      }
+    }
+    p{
+      &.howmany{
+        display: none;
+        @media(min-width: 768px){
+          display: block;
+        }
+
+      }
+    }
+    @media(min-width: 768px){
+      padding-left: 49px;
+      padding-right: 49px;
+      width: 100%;
+
+    }
+    .account{
+      a{
+        box-shadow:0px 9px 10px rgba(39, 44, 60, 0.24);
+      }
+    }
+  }
+}
+
+.howmany {
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 1.2rem !important;
+  margin-top: 0 !important;
+}
+
+// CAJAS
+.acceso {
+  font-size: 16px;
+}
+
+.cajas img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.caja img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  transition: all 0.5s;
+  filter: grayscale(100%);
+}
+
+.caja img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+// Cuadro comparativo
+.cuadro-comparativo {
+  box-shadow: 0 26px 76px rgba(39, 44, 60, 0.17);
+}
+
+.firbid-comparativo {
+  background-color: #1f1933;
+}
+
+.medium {
+  font-size: 2.5rem;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.change-type {
+  color: #122955;
+}
+
+.last-actualization {
+  letter-spacing: 0.72px;
+  line-height: 23px;
+  color: #9f9faf;
+  text-transform: uppercase;
+}
+
+.hour-actualization {
+  letter-spacing: 0.72px;
+  line-height: 23px;
+  color: #9768ff;
+  text-transform: uppercase;
+}
+
+.compare-data {
+  letter-spacing: 0.72px;
+  line-height: 23px;
+  color: #9f9faf;
+}
+
+// Why Firbid
+.why-firbid {
+  background: white;
+  padding-top: 2rem !important;
+}
+
+.why-firbid .title {
+  font-size: 26px;
+}
+
+.why-firbid .description {
+  font-size: 1.5rem;
+}
+
+.hr-testimonio {
+  border: 0.5px solid #ffffff;
+}
+
+//  SUBASTA2
+.bid-input {
+  background-color: #fff;
+  height: 55px;
+  padding-top: 20px;
+  color: #000;
+}
+
+// Trends information
+.trends {
+  background-color: #ffffff;
+  .card-title{
+    height: 48px;
+
+  }
+  .trend-card .card-body p {
+    height: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    @media(min-width: 768px){
+      height: 84px;
+      
+      -webkit-line-clamp: 4;
+    }
+  }
+  .img-mobile{
+    max-height: 250px;
+    max-height: auto;
+    margin: auto;
+  }
+  .go-to-div{
+    a{
+      font-size: 15px;
+    }
+  }
+}
+
+.trends h3 {
+  font-size: 22px;
+  font-weight: 700;
+  @media(min-width: 992px){
+    font-size: 40px;
+  }
+}
+.carousel-5{
+  display: block;
+  .testimonial-title{
+    margin-bottom: 7px;
+  }
+  @media(min-width: 768px){
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .carousel-6 {
+    display: block;
+  }
+  .carousel-5 {
+    display: none;
+  }
+  .testimonio .cargo {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .testimonio .description {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .carousel-6 {
+    display: none;
+  }
+  .carousel-5 {
+    display: block;
+    width: 100%;
+  }
+  .carousel-3d-slide, .carousel-3d-slider{
+    height: auto !important;
+  }
+  .testimoniales-pc{
+   padding-top: 15px;
+   padding-bottom: 15px;
+  }
+  .testimonio .cargo {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .testimonio .description {
+    font-size: 12px;
+  }
+}
+.testimoniales-pc{
+ padding-top: 15px;
+ padding-bottom: 15px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+.testimonios{
+  height: 400px;
+  margin-top: 50px;
+  @media (min-width:440px){
+    height: 450px;
+    .carousel-6{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+  }
+  @media (min-width:768px){
+    height: 480px;
+
+  }
+  h5{
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: -1.78px;
+    color: #1F1933;
+    padding-top: 0px;
+    margin-top: 0;
+    padding-bottom: 30px;
+    
+    @media (min-width:768px){
+      padding-top: 0px;
+      font-size: 40px;
+    }
+  }
+
+}
+.account a{
+  border: 0 !important;
+  outline: none;
+  box-shadow:0px 9px 10px rgba(39, 44, 60, 0.24);
+}
+.account p {
+  color: #fff;
+  background-color: #9768ff;
+  font-weight: bold;
+}
+
+.account p:hover {
+  background-color: #6228e4;
+  transition: all 0.5s;
+}
+
+.go-to {
+  font-weight: 600 !important;
+  color: #272c3c !important;
+  border-color: #272c3c !important;
+  margin-bottom: 0 !important;  
+  border-radius: 2px;
+  &:active{
+    background-color: #6228e4 !important;
+    color: white !important;
+
+  }
+}
+.go-to:hover {
+  background-color: #6228e4;
+  color: white !important;
+}
+
+// Entities backup
+.entities {
+  background-color: #ebf0f2;
+}
+
+//
+
+// Testimonio
+.testi {
+  padding-top: 4rem;
+  margin-top: -12rem;
+}
+
+.testimonio {
+  width: 50%;
+  background-color: #fff;
+}
+.negocio{
+  color: #1F1933;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .carde-bid {
+    width: 70% !important;
+    background-color: white;
+  }
+  .titulo-subasta2r {
+    padding-left: 0 !important;
+    font-size: 4vw !important;
+    font-weight: 700 !important;
+    text-align: center;
+  }
+  .supervision-contenedor {
+    top: 0;
+  }
+  .negocio{
+    font-size: 30px !important;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .negocio-after{
+    font-size: 22px !important;
+    margin-top: 10px !important;
+    text-align: center;
+  }
+  .no-soon{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-empresas{
+    margin-left: 15% !important;
+    width: 70% !important;
+  }
+  .carousel-empresas .trend-card{
+    width: 100% !important;
+  }
+  .carousel-empresas .trend-card h5{
+    font-size: 16px !important;
+    height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .carousel-empresas .trend-card h5+p{
+    font-size: 12px !important;
+  }
+  .carousel-empresas .trend-card a{
+    margin-top: 20px !important;
+  }
+  .home-resources-content .companies{
+    font-size: 4.5vw;
+    margin-top: 10vh;
+    font-weight: 500;
+    width: 75% !important;
+  }
+  .gestion {
+    font-weight: 400;
+    letter-spacing: -0.44px;
+    // line-height: 25px;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .create {
+    text-align: center;
+  }
+
+  p.gest {
+    margin-top: 1rem;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  h3.nego {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  p.nego {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .op {
+    text-align: center;
+    margin: auto;
+  }
+
+  .start-bid.w-50 {
+    margin-top: 3rem;
+    margin: auto;
+    text-align: center;
+    padding: auto;
+  }
+
+  .d-flex.mt-4 p {
+    margin-top: 1vw !important;
+    font-size: 2vw !important;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .account {
+    text-align: center;
+  }
+
+  .empresas .title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .empresas .gest {
+    color: #9f9faf;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .empresas .btn {
+    text-align: center;
+  }
+
+  // BID
+
+  // Banner
+  .cambio-banner {
+    margin-top: 0px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carde-bid {
+    max-width: 340px;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    background-color: white;
+  }
+
+  // WHY FIRBID
+  .why-firbid .description {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  // Operations Inmediate
+  .inmediate-operations {
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  // Testimonio
+  .testimonio {
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+
+  .testimonio .h6 {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .testimonio .cargo {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .testimonio .description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carde-bid {
+    width: 100% !important;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-empresas{
+    margin-left: 5% !important;
+    width: 90% !important;
+  }
+  .carousel-empres
+  .trends{
+    padding-bottom: 0;
+    .trend-card{
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+  .digital-info{
+    font-size: 22px !important;
+    padding-top: 15px;
+    width: 90% !important;
+  }
+  .testimonio li img{
+    width: 15vw !important;
+  }
+  .carousel-7{
+    display: block;
+  }
+  .carousel-7 .description{
+    font-size: 5vw !important;
+  }
+  .carousel-8{
+    display: none;
+  }
+  .seguro-banco{
+    padding-top: 0;
+    .description{
+      display: none;
+    }
+    
+  }
+  .description{
+    text-align: center;
+  }
+  .seguro-banco .title {
+    padding-top: 0px;
+
+  }
+  .seguro-banco .description{
+    font-size: 5vw;
+  }
+  .banks-web img {
+    filter: grayscale(0%);
+    transition: all 0.5s;
+  }
+  .trend-card {
+    text-align: left !important;
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .informacion-principal {
+    width: 70vw !important;
+    margin: auto;
+    letter-spacing: -0.2vw !important;
+  }
+  .informacion-secundaria {
+    width: 70vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vw !important;
+  }
+  .create {
+    text-align: center;
+  }
+  .create p {
+    font-size: 4vw !important;
+    padding-top: 3vw !important;
+    padding-bottom: 3vw !important;
+    padding-left: 6vw !important;
+    padding-right: 6vw !important;
+    border-radius: 2px !important;
+  }
+  .data p {
+    font-size: 14px!important;
+    color: #122955 !important;
+    font-weight: 500;
+  }
+
+  .negocio {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    text-align: center;
+    font-family: 'DM Sans';
+    padding-left: 18px;
+    padding-right: 18px;
+
+  }
+  .negocio-after {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .banks img {
+    width: 30vw !important;
+  }
+  .why-firbid {
+    padding-top: 0rem !important;
+  }
+
+  .seguro-banco p:first-child {
+    font-size: 22px !important;
+    font-weight: bold;
+  }
+  .description {
+    margin-bottom: 15px !important;
+  }
+  .description + p {
+    margin-bottom: 30px !important;
+  }
+  .go-to {
+    font-weight: 400 !important;
+    color: #272c3c !important;
+    border-color: #272c3c !important;
+    width: 50vw;
+    border-radius: 2px;
+  }
+  .go-to:hover {
+    background-color: #6228e4;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 565px){
+  .carousel-home-resources .companies{
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 300px) and (min-width: 320px) and (orientation: landscape) {
+.carousel-empresas{
+  height: 50vw;
+}}
+
+.fideicomiso-shadow-none {
+  box-shadow: none !important;
+}
+.shadow{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.trend-card{
+  border: 0;
+}
+.trend-card-sm {
+  height: auto !important;
+}
+.fideicomiso{
+  background-color: white;
+  width: 100%;
+  &.empresas-fideicomiso {
+    .content-exchange{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media(min-width:460px){
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media(min-width:768px){
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: row;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      
+      .border-right-bussiness{
+        @media(min-width:768px){
+          padding-right: 25px !important;
+          border-right: 1px solid #272C3C23;
+        }
+      }
+      .item-exchange{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-direction: row;
+        @media(min-width:768px){
+          flex-direction: row;
+          padding: 10px 0px;
+
+        }
+        @media(min-width:992px){
+          padding: 10px 30px; 
+        }
+        &.item-exchange-1{
+          padding-top: 16px;
+          padding-bottom: 5.5px;
+          @media(min-width:768px){
+            padding-top: initial;
+            padding-bottom: initial;
+          }
+        }
+        &.item-exchange-2{
+          padding-top: 5.5px;
+          padding-bottom: 16px;
+          padding-left: 18px;
+          padding-right: 25px;
+          @media(min-width:768px){
+            padding-top: initial;
+            padding-bottom: initial;
+            padding-left: 40px !important;
+            
+          }
+        }
+        .img-content{
+
+          @media(min-width: 768px){
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          img{
+            margin-right: 0;
+          }
+        }
+        p{
+          margin-bottom: 0;
+          font-size: 13px;
+          color: #272C3C;
+          text-align: center;
+          letter-spacing: 0.72px;
+          font-weight: bold;
+          @media(min-width:768px){
+            font-size: 13px;
+            color: #9F9FAF;
+          }
+          span{
+            color: #272C3C;
+            @media(min-width:768px){
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .tc-content{
+      .tc{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        @media(min-width:768px){
+          
+          img{
+            margin-right: 10px;
+          }
+        }
+        @media(min-width:992px){
+          width: 50%;
+          margin-bottom: 0;
+          padding-left: 15px;
+          padding-right: 15px;
+          img{
+            margin-right: 10px;
+          }
+        }
+        @media(min-width:1200px){
+          
+          padding-left: 30px;
+          padding-right: 30px;
+          img{
+            margin-right: 30px;
+          }
+        }
+      }
+      .tc-1{
+        @media(min-width:992px){
+          border-right: 1px solid rgba(39, 44, 60, 0.137);
+        }
+      }
+    }
+    .empresas-fideicomiso-4{
+      .container{
+        padding-top: 0;
+        .empresas-fideicomiso-4-content{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.banner-empresas {
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .btn-large {
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .yomequedoencasa{
+    margin-bottom: 0;
+  }
+}
+
+.negocia-title-content{
+
+  @media(min-width: 992px){
+    padding-left: 30px;
+
+  }
+  @media(min-width: 1200px){
+    padding-left: 0px;
+
+  }
+}
+.negocia-title {
+  width: 80%;
+  font-size: 22px;
+  font-weight: bold;    
+  line-height: 32px;
+  letter-spacing: 0px;
+  @media(min-width: 992px){
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0px;
+  }
+}
+
+.negocia-description {
+  font-size: 16px;
+  color: #87879c;
+}
+
+
+.companies-title {
+  font-size: 22px;
+  font-weight: 700;
+
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+    width: 50%;
+  }
+}
+
+.trend-description {
+  font-size: 14px !important;
+}
+
+.carousel.blog-carousel .carousel-a {
+  font-size: 14px;
+  
+}
+
+.fideicomiso-empresas-image {
+  width: 140px;
+
+  @include media-breakpoint-up(md) {
+    width: 150px;
+  
+  }
+} 
+
+.go-to-div{
+  padding-top: 15px;
+}
+.exchange-icon {
+  position: absolute;
+  top:7px;
+  right: 0 !important;
+  cursor: pointer;
+  width: 35px;
+  @media(min-width: 768px){
+    top: 12px;
+  }
+}
+
+.subasta2r-contenedor {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    display: flex;
+    justify-content: center;;
+  }
+  .content-subasta2{
+    padding-left: 60px;
+    padding-right: 60px;
+    hr{
+      width: 90%;
+      margin-left: 0 !important;
+      margin-top: 30px !important;
+      margin-bottom: 1rem;
+      @media(max-width: 767px){
+        margin-top: 1.5rem !important;
+        margin-bottom: 1rem;
+      }
+    }
+    a.init-acount{
+      box-shadow: 0px 9px 10px rgba(39, 44, 60, 0.24);
+      outline: none;
+    }
+  }
+  
+}
+
+.testimonial-modal-link{
+  margin-bottom: 0;
+}
+
+.moneda-subasta2 {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #1f1933 !important;
+  img{
+    margin-right: 10px;
+  }
+  @media(min-width: 768px){
+    .moneda-subasta2 {
+      font-size: 2vw !important;
+    }
+  }
+}
+
+.operations-unids{
+  padding-bottom: 0 !important;
+}
+
+.testimonios{
+  background-color: white;
+  padding-top: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  .testimonios-1{
+    padding-top: 0;
+  }
+  .carousel-pc{
+    top: 40px;
+    @media(min-width:450px) {
+      top: 100px;
+    }
+  }
+}
+#carousel-home-resources{
+  .carousel-3d-slider{
+    perspective: 760px !important;
+  }
+}
+.testimonie-container{
+  
+  .testimonio-header{
+    .item-foto{
+      padding: 0;
+      text-align: center;
+      img{
+        max-height: 98px;
+        width: auto;
+      }
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+  .img-mobile-slider{
+    min-width: 80px;
+  }
+  .testimonial-description{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    @media(min-width:450px) {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+.sinpa{
+  padding-left: 0;
+  padding-right: 0; 
+}
+
+.you-can-know{
+  color: #9768ff;
+  font-size: 14px;
+  transition: 0.5s;
+  img{
+    transition: 0.5s;
+  }
+  &:hover{
+    color:#6228e4 ;
+    img{
+      filter: brightness(0.8);
+    }
+  }
+}
+.operations-title{
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -2px ;
+}
+.imgs-gray{
+
+  @media(min-width: 768px){
+    margin-top: 30px;
+  }
+}
+
+.carousel-empresas-pc{
+  .testimonio{
+    padding-bottom: 15px;
+  }
+}
+.empresas-sec-5{
+  padding-bottom: 0 !important;
+}
+.digital-info{
+  margin: auto;
+}
+
+.logos_bancos{
+  img{
+    filter: grayscale(1);
+    &:hover{
+      filter: grayscale(0);
+    }
+  }
+}
+.logos_bancos-1{
+  justify-content: space-between;
+}
+
+
+.titulo-empresa .informacion-principal {
+  font-size: 22px;
+  font-family: 'DM Sans';
+  @media(min-width: 768px){
+    line-height: 55px;
+    font-size: 50px;
+    padding-top: 1.5vw !important;
+  }
+  
+  color: white;
+  
+}
+
+.subasta2-empresa-title {
+  font-size: 22px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 50px;
+  }
+}
+.seguro-banco{
+  padding-top: 10px;
+  .visible-xs{
+    display: block;
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+  .visible-sm{
+    display: none;
+    @media(min-width: 768px){
+      display: block;
+    }
+  }
+}
+
+.candado-responsive{
+  max-height: 120px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+.seguro-banco-responsive{
+  padding-bottom: 5px;
+  p{
+    color: #9768ff; 
+    margin-bottom: 5px;
+    a{
+      padding-bottom: 0;
+      &:hover{
+        color: #9768ff; 
+      }
+    }
+  }
+  .visible-xs{
+    display: block;
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+  .visible-sm{
+    display: none;
+    @media(min-width: 768px){
+      display: block;
+    }
+  }
+}
+.visible-xs{
+  display: block;
+  @media(min-width: 768px){
+    display: none;
+  }
+}
+.testimonies-carousel-responsive {
+  .testimonio{
+    padding-bottom: 60px;
+    .testimonial-charge{
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #9F9FAF;
+    }
+  }
+  .VueCarousel-pagination{
+    top: -30px;
+    .VueCarousel-dot-container{
+      margin-top: 0;
+      button{
+        margin-top: 0;
+      }
+    }
+  }
+  
+}

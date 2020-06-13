@@ -1,0 +1,26 @@
+.color-menu .nav-link[data-v-6f19aa43] {
+    color: #87879C !important;
+    font-size: 20px;
+}
+.color-menu .nav-link.active[data-v-6f19aa43]{
+    color: #9768ff !important;
+    background-color: #dce3ec;
+}
+.color-menu .nav-link[data-v-b917797a] {
+    color: #87879C !important;
+    font-size: 20px;
+}
+.el-dialog__header{
+    display: none!important;
+}
+.el-dialog__body{
+    padding: 0!important;
+    margin-bottom: -6px!important;
+}
+.el-dialog{
+    margin-top: 25vh!important;
+}
+.nav-pills .nav-link{
+    border-radius: 0px;
+}
+

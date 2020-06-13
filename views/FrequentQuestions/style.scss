@@ -1,0 +1,475 @@
+.sinpa{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.el-select,
+.el-input__inner {
+  height: 60px;
+  width: 80vw;
+  margin-bottom: 2rem;
+}
+
+@media(min-width:768px){
+  .el-select,
+  .el-input__inner {
+    height: 60px;
+    width: 100%;
+    max-width: 460px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+.el-input {
+  height: 60px !important;
+}
+
+.el-input__inner {
+  border-radius: 2px;
+  width: 30vw;
+}
+.card-body p{
+  padding-bottom: 15px;
+  -webkit-box-orient: initial !important;
+  -webkit-line-clamp: initial !important;
+  overflow: initial !important;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(31, 25, 51, 0.16);
+  button{
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+  .boton-buscador {
+    height: 57px !important;
+    width: 31.7vw !important;
+    padding-left: 2rem !important;
+    font-size: 14px;
+  }
+}
+
+#v-pills-tab {
+  -webkit-box-shadow: 0px 10px 24px rgba(166, 166, 166, 0.16);
+  -moz-box-shadow: 0px 10px 24px rgba(166, 166, 166, 0.16);
+  box-shadow: 0px 10px 24px rgba(166, 166, 166, 0.16);
+  width: 100%;
+  max-width: 261px;
+  padding-right: 0;
+  @media(min-width: 440px){
+    width: 60%;
+  }
+}
+
+
+.titulo-frecuente {
+  font-size: 22px;
+  padding-bottom: 30px;
+  @media(min-width: 768px){
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  @media(min-width: 992px){
+
+  }
+}
+.complemento-frecuente {
+  font-size: 16px;
+  @media(min-width: 768px){
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 0px;
+  }
+  @media(min-width: 992px){
+    padding-top: 80px;
+
+  }
+}
+.preguntas-title{
+  margin-bottom: 0;
+  padding: 13px 15px;
+  font-size: 18px;
+  color: #1F1933;
+}
+#v-pills-tab a {
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #87879C;
+  &.active{
+    background-color: #DCE3EC;
+    color: #9768FF;
+    text-decoration: none;
+  }
+}
+
+#v-pills-tab {
+  @media(min-width: 992px){
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .select {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card-f {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.19);
+}
+.card{
+  border: 0 !important;
+  box-shadow: 0px 10px 24px #A6A6A629;
+  margin-bottom: 10px;
+}
+// BODY
+.body {
+  font-family: "DM Sans";
+  font-weight: 400;
+  overflow-x: hidden;
+  margin-top: -15vh;
+}
+
+.tab-content {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 30px;;
+}
+
+.w-400 {
+  font-weight: 400;
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.w-700 {
+  font-weight: 700;
+}
+
+.hide-lg {
+  display: none;
+}
+// p{
+//   width: 80%;
+//   margin-left: 10%;
+// }
+
+// BANNER
+.fondo-frequent {
+  background: url("../../assets/fondos/f_ask.png");
+  // opacity: 0.68;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 157px;
+  padding-bottom: 190px;
+  @media(min-width:768px){
+    background-position: bottom;
+    background: url("../../assets/fondos/f_ask.png");
+    background-size: cover;
+
+  }
+  @media(min-width:992px){
+    padding-bottom: 90px;
+    padding-top: 158px;
+  }
+}
+
+.banner {
+}
+
+.banner .title {
+  font-size: 24px;
+}
+
+// AGRUPADOR
+.agrupador {
+  width: 60%;
+  margin-bottom: 10vh;
+}
+
+.second-banner .nav-link {
+  color: #87879c !important;
+  font-size: 20px;
+}
+
+.second-banner .nav-link.active {
+  color: #9768ff !important;
+  background-color: #dce3ec;
+}
+
+.second-banner a.nav-link:hover {
+  color: #9768ff !important;
+  background-color: #dce3ec;
+}
+
+.banner-input {
+  outline: none;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  // BODY
+  .hide-xs {
+    display: none;
+  }
+  .tab-content[data-v-b917797a] {
+    width: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin: auto;
+    .terminos-tab-pane{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  #v-pills-tab a {
+    font-size: 16px;
+    
+  }
+
+  .banner #headingOne {
+    width: 100% !important;
+  }
+
+  // p{
+  //   width: 100%;
+  //   margin-left: 0%;
+  //   margin: auto;
+  // }
+
+  .hide-lg {
+    display: block;
+  }
+
+  .fab,
+  .fas {
+    font-size: 1.8rem;
+  }
+
+  .fa-bars {
+    margin-right: 20%;
+  }
+
+  // BANNER
+  .banner .title {
+    font-size: 16px;
+  }
+
+  .banner .category {
+    font-size: 22px;
+  }
+
+
+  // AGRUPADOR
+  .agrupador {
+    width: 80%;
+    margin-top: -170px;
+    margin-bottom: 0;
+    @media(min-width:992px){
+      margin-top: 15vw;
+    }
+  }
+
+  .tab-content p {
+    font-size: 14px;
+  }
+
+  .tab-pane {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+  }
+
+  // FOOTER
+  .footer-logo li {
+    margin-left: 10px;
+  }
+
+  .footer {
+    font-size: 1.1rem;
+  }
+
+  .footer .terms {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  // HEADER
+  .nav-finale {
+    margin-top: 50%;
+  }
+
+  .firbid-responsive {
+    margin-top: 2rem;
+  }
+
+  .firbid-btn {
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .fab,
+  .fas {
+    font-size: 1.2rem;
+  }
+
+  .fa-bars {
+    margin-right: 20%;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+i.fas.fa-search {
+  color: #99abbf;
+}
+
+.border-input {
+  border: none !important;
+  border-radius: 0.1rem !important;
+}
+
+@media screen and (max-width: 728px) {
+  .w-80-sm {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 728px) {
+  .agrupador {
+    width: 33vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agrupador {
+    width: 80%;
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .clicking {
+    position: absolute;
+    bottom: 57%;
+    right: 7%;
+  }
+  .second-banner a {
+    font-size: 14px !important;
+  }
+  .accordion {
+    width: 100% !important;
+    margin-left:  !important;
+  }
+  .tab-pane p {
+    width: 100% !important;
+  }
+}
+
+.input-searching{
+  position: relative;
+  width: 100%;
+  @media(min-width: 768px){
+    padding-left: 0;
+    padding-right: 0;
+    width: 460px;
+
+  }
+}
+.el-input__suffix{
+  display: none;
+}
+
+.clicking-content{
+  height: 54px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  .clicking {
+  
+  }
+}
+
+.el-select input{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  padding-right: 45px !important;
+  border-radius: 0 !important;;
+}
+
+#v-pills-home{
+  h5{
+    padding-top: 15px;
+  }
+  .span{
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  p{
+    font-size: 16px;
+    color: #1F1933;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+}
+.tab-pane{
+  @media(min-width:992px){
+    max-width: 60%;
+  }
+  p{
+
+  }
+}
+
+.menu-options{
+  transition: 0.5s;
+}
