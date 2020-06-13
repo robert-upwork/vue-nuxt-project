@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 
 export default {
   mode: 'universal',
@@ -5,6 +6,7 @@ export default {
   ** Headers of the page
   */
   head: {
+    script: [{src: 'jquery.min.js', ssr: false}],
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -29,7 +31,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    
   ],
   /*
   ** Nuxt.js dev-modules
@@ -43,6 +46,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
   /*
   ** Axios module configuration
@@ -59,6 +63,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({  
+        jQuery: 'jquery',
+        $: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
+    ]
   }
 }

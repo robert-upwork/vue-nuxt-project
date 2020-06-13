@@ -281,7 +281,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/includes";
+@import "../assets/styles/includes";
 
 .content-button {
   display: flex;

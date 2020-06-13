@@ -4,7 +4,7 @@
       <div class="container  d-flex" style="justify-content: space-between;">
         <!-- Logo -->
         <div class="logo mt-1 mt-md-0">
-          <router-link to="/"><img id="logo-imagen" src="~/assets/logo.svg" alt /></router-link>
+          <router-link to="/"><img id="logo-imagen" src="@/assets/logo.svg" alt /></router-link>
         </div>
         <!-- Primer segmento -->
 
@@ -54,7 +54,7 @@
           </li>
           <li class="nav-item tel-header position-relative">
             <span class="badge bg-dark badge-number text-white rounded-pill pr-0" v-if="showNumber">
-              (01) 721-5407 <img src="~/assets/header/tele_h.svg"  @click="toggleNumber()" alt="">
+              (01) 721-5407 <img src="@/assets/header/tele_h.svg"  @click="toggleNumber()" alt="">
             </span>
             <a href="#" class="icon icon-tele2" @click="toggleNumber()">
               <div class="tele">
@@ -222,7 +222,7 @@ export default {
 </script>
 
 <style lang="scss">   
-@import '../styles/includes';
+@import '../assets/styles/includes';
 
   
   .content-button{

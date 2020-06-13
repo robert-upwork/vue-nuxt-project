@@ -177,7 +177,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/includes';
+@import '../assets/styles/includes';
 
 .footer-image {
   width: 30px;

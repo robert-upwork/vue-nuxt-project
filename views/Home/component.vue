@@ -23,18 +23,18 @@
     },
     data() {
       return {
-        cajaArequipaImg: require("@/assets/bancos/arequipa.svg"),
-        cajaArequipaBlanco: require("@/assets/bancos/arequipa_w.svg"),
-        cajaTemp: require("@/assets/bancos/arequipa_w.svg"),
-        santanderImg: require("@/assets/bancos/santander.svg"),
-        santanderBlanco: require("@/assets/bancos/santander_w.svg"),
-        santanderTemp: require("@/assets/bancos/santander_w.svg"),
-        grupoCorilImg: require("@/assets/bancos/coril.svg"),
-        grupoCorilBlanco: require("@/assets/bancos/coril_w.svg"),
-        grupoCorilTemp: require("@/assets/bancos/coril_w.svg"),
-        bancoRipleyImg: require("@/assets/bancos/ripley.svg"),
-        bancoRipleyBlanco: require("@/assets/bancos/ripley_w.svg"),
-        bancoRipleyTemp: require("@/assets/bancos/ripley_w.svg"),
+        cajaArequipaImg: require("../../assets/bancos/arequipa.svg"),
+        cajaArequipaBlanco: require("../../assets/bancos/arequipa_w.svg"),
+        cajaTemp: require("../../assets/bancos/arequipa_w.svg"),
+        santanderImg: require("../../assets/bancos/santander.svg"),
+        santanderBlanco: require("../../assets/bancos/santander_w.svg"),
+        santanderTemp: require("../../assets/bancos/santander_w.svg"),
+        grupoCorilImg: require("../../assets/bancos/coril.svg"),
+        grupoCorilBlanco: require("../../assets/bancos/coril_w.svg"),
+        grupoCorilTemp: require("../../assets/bancos/coril_w.svg"),
+        bancoRipleyImg: require("../../assets/bancos/ripley.svg"),
+        bancoRipleyBlanco: require("../../assets/bancos/ripley_w.svg"),
+        bancoRipleyTemp: require("../../assets/bancos/ripley_w.svg"),
         firbidChange: changeTypeForm,
         rextieChange: changeTypeForm,
         kambistaChange: changeTypeForm,
@@ -58,7 +58,7 @@
         readOnly: true,
         slides: 3,
         nextLabel: "<img src='../../assets/icons/right-arrow.png' />",
-        prevLabel: "<img src='@/assets/icons/right-arrow.png' />",
+        prevLabel: "<img src='../../assets/icons/right-arrow.png' />",
         img_default: "https://res.cloudinary.com/firbix/image/upload/v1587480854/LandingPage/xaiax7maltovouzzrdv6.png"
       };
     },
@@ -68,6 +68,7 @@
     },
     mounted() {
       $(document).ready(() => {
+        console.log("DDDD")
           $("#bid-input-1").focus(() => {
             var result = $("#bid-input-1").val();
             $("#bid-input-1").val(result.toString().replace(/,/g, ""));

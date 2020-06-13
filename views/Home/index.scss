@@ -1,4 +1,4 @@
-@import '~/assets/styles/includes';
+@import '../../assets/styles/includes';
 .body-home{
   margin-top: 0 !important;
 }
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: right !important;
-  background-image: url("~/assets/fondos/f_ask.png");
+  background-image: url("../../assets/fondos/f_ask.png");
   @media(min-width:768px){  
     padding-top: 100px;
     background-image: url("../../assets/fondos/f_home.jpg");
