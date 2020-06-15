@@ -1,6 +1,11 @@
 <style src="./style.scss" lang="scss" ></style>
+<style scoped>
+.privacy {
+      width: 50%;
+    line-height: 35px;
+}
+</style>
 <template src="./template.html"></template>
-
 <script>
 import politicas from "../../constants/politicasdeprivacidad.json";
 import $ from 'jquery'
