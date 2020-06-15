@@ -6,7 +6,7 @@
 
 import blog from "../../services/blog";
 import ChangeType from "../../services/changeType";
-import {Carousel3d, Slide} from "vue-carousel-3d"
+// import {Carousel3d, Slide} from "vue-carousel-3d"
 import FormatData from "../../helpers/formatData";
 import $ from 'jquery'
 
@@ -20,8 +20,8 @@ const changeTypeForm = {
 
 export default {
   components: {
-    "carousel-3d": Carousel3d,
-    "slide-3d": Slide
+      "carousel-3d": () => process.browser ? import('vue-carousel-3d').then(m => m.Carousel3d) : null,
+      "slide-3d": () => process.browser ? import('vue-carousel-3d').then(m => m.Slide) : null,
   },
   data() {
     return {
