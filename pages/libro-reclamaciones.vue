@@ -1,9 +1,9 @@
 <template>
-    <no-ssr>
+    <client-only>
   <header-layout>
       <reclamation-book></reclamation-book>
   </header-layout>
-    </no-ssr>
+    </client-only>
 </template>
 
 <script>

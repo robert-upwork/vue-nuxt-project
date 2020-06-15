@@ -1,9 +1,9 @@
 <template>
-    <no-ssr>
+    <client-only>
   <header-layout>
       <privacy-policy></privacy-policy>
   </header-layout>
-    </no-ssr>
+    </client-only>
 </template>
 
 <script>

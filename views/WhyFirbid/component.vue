@@ -2,15 +2,18 @@
 <template src="./template.html"></template>
 
 <script>
-import Vue from 'vue';
-import VueCarousel from 'vue-carousel';
+import Vue from "vue";
+
 // import carousel from 'vue-owl-carousel'
-import $ from 'jquery'
+import $ from "jquery";
 
 export default {
-  // components: {
-  //   "new-carousel": carousel
-  // },
+  components: {
+    Carousel: () =>
+      process.browser ? import("vue-carousel").then(m => m.Carousel) : null,
+    Slide: () =>
+      process.browser ? import("vue-carousel").then(m => m.Slide) : null
+  },
   data() {
     return {
       dialogVisible: false

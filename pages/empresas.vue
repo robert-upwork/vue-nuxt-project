@@ -1,9 +1,9 @@
 <template>
-      <no-ssr>
-  <header-layout>
-    <blog></blog>
-  </header-layout>
-    </no-ssr>
+  <client-only>
+    <header-layout>
+      <blog></blog>
+    </header-layout>
+  </client-only>
 </template>
 
 <script>

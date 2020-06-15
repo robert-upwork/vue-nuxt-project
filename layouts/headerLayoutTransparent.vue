@@ -1,5 +1,5 @@
 <template>
-<no-ssr>
+<client-only>
   <div>
     <div
       class="header position-fixed header-transparent sticky-top justify-content-lg-between align-items-center"
@@ -204,7 +204,7 @@
 
     <footer-layout></footer-layout>
   </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

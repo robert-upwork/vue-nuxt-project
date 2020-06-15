@@ -1,9 +1,9 @@
 <template>
-    <no-ssr>
+    <client-only>
   <header-layout>
       <terms-conditions></terms-conditions>
   </header-layout>
-    </no-ssr>
+    </client-only>
 </template>
 
 <script>

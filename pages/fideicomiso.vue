@@ -1,9 +1,9 @@
 <template>
-    <no-ssr>
+    <client-only>
   <header-layout>
       <fiduciary-corporation></fiduciary-corporation>
   </header-layout>
-    </no-ssr>
+    </client-only>
 </template>
 
 <script>

@@ -4,7 +4,8 @@
 <script>
   import ChangeType from "../../services/changeType";
   import blog from "../../services/blog";
-  import { Carousel3d, Slide } from "vue-carousel-3d";
+  // import Carousel3d, { Slide as Slide3d } from "vue-carousel-3d";
+  // import { Carousel, Slide } from 'vue-carousel';
   import sal from "sal.js";
   import FormatData from "../../helpers/formatData";
   import $ from 'jquery'
@@ -21,9 +22,11 @@
   const timeProvitional = "--:--"
   export default {
     components: {
-      "carousel-3d": Carousel3d,
-      "slide-3d": Slide,
-      VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+      "carousel-3d": () => process.browser ? import('vue-carousel-3d').then(m => m.Carousel3d) : null,
+      "slide-3d": () => process.browser ? import('vue-carousel-3d').then(m => m.Slide) : null,
+      VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp,
+      'Carousel': () => process.browser ? import('vue-carousel').then(m => m.Carousel) : null,
+      'Slide': () => process.browser ? import('vue-carousel').then(m => m.Slide) : null
     },
     data() {
       return {
@@ -76,7 +79,6 @@
     // },
     mounted() {
       $(document).ready(() => {
-        console.log("DDDD")
           $("#bid-input-1").focus(() => {
             var result = $("#bid-input-1").val();
             $("#bid-input-1").val(result.toString().replace(/,/g, ""));
