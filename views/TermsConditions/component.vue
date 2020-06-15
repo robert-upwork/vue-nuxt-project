@@ -1,18 +1,14 @@
-<style src="./style.scss" lang="scss" scoped></style>
+<style src="./style.scss" lang="scss"></style>
 <template src="./template.html"></template>
 
 <script>
 import terminos from "../../constants/terminosycondiciones.json";
 import $ from 'jquery'
-// import { ElSelect, ElOption } from 'element-ui';
 import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify/lib"
 
 export default {
-  // components: {
-  //  ElSelect, ElOption
-  // },
    components: {
-    VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+    // VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
   },
   data() {
     return {
@@ -28,7 +24,6 @@ export default {
     scrolling(id) {
           const nav = document.getElementById(id);
           $('.slider').click(function(){
-
             $(".text-dark").removeClass("active");
             $("."+id).addClass("active");
             $(".tab-pane").removeClass("active");

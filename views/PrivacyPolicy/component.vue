@@ -1,4 +1,4 @@
-<style src="./style.scss" lang="scss" scoped></style>
+<style src="./style.scss" lang="scss" ></style>
 <template src="./template.html"></template>
 
 <script>
@@ -8,7 +8,7 @@ import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify
 
 export default {
   components: {
-     VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+    //  VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
   },
   data() {
     return {

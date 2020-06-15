@@ -8,7 +8,7 @@ import {VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp} from "vuetify
 
 export default {
   components: {
-    VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
+    // VSelect, VRow, VCol, VTextField, VDatePicker, VMenu, VApp
   },
   data() {
     return {

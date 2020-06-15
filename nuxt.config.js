@@ -31,17 +31,19 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    'bootstrap/dist/css/bootstrap.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     { src: '~/plugins/element-ui', mode: 'client', ssr: false },
-    { src: '~/plugins/jquery', ssr: false },
+    { src: '~/plugins/jquery'},
     { src: '~/plugins/vuetify', mode: 'client', ssr: false },
     { src: '~/plugins/vue-carousel-3d',  ssr: false ,mode: 'client'},
     { src: '~/plugins/vue-carousel',  ssr: false ,mode: 'client'},
+    { src: '~/plugins/bootstrap'},
   ],
   /*
   ** Nuxt.js dev-modules
